@@ -1,0 +1,45 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    array_include_methods (1.4.0)
+    awesome_print (1.9.2)
+    chunky_png (1.4.0)
+    cryptopunks (2.0.1)
+      csvreader
+      gli
+      pixelart
+    csvjson (1.0.1)
+    csvreader (1.2.5)
+      csvjson (>= 1.0.0)
+      csvyaml (>= 0.1.0)
+      tabreader (>= 1.0.1)
+    csvyaml (1.0.0)
+    facets (3.1.0)
+    gli (2.20.1)
+    glimmer (2.4.0)
+      array_include_methods (~> 1.4.0)
+      facets (>= 3.1.0, < 4.0.0)
+    glimmer-dsl-tk (0.0.29)
+      glimmer (~> 2.4.0)
+      os (>= 1.0.0, < 2.0.0)
+      puts_debuggerer (~> 0.13.1)
+      tk (~> 0.4.0)
+    mini_magick (4.11.0)
+    os (1.1.1)
+    pixelart (1.2.0)
+      chunky_png
+      mini_magick
+    puts_debuggerer (0.13.1)
+      awesome_print (~> 1.9.2)
+    tabreader (1.0.1)
+    tk (0.4.0)
+
+PLATFORMS
+  x86_64-darwin-19
+
+DEPENDENCIES
+  cryptopunks
+  glimmer-dsl-tk
+
+BUNDLED WITH
+   2.2.29
