@@ -9,7 +9,9 @@ require 'puts_debuggerer'
 class CryptopunksGui
   include Glimmer
   
-  attr_accessor :punk_index, :zoom
+  PALETTES = ['Standard'] + (Palette8bit.constants).map(&:name).map {|palette| palette.split('_').map(&:capitalize).join(' ')}.reject { |palette| palette.include?(' ') }
+  
+  attr_accessor :punk_index, :zoom, :palette
   
   def initialize
     @punk_directory = File.join(Dir.home, '.cryptopunks')
@@ -18,22 +20,29 @@ class CryptopunksGui
     File.write(@punk_file, Net::HTTP.get(URI('https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png'))) unless File.exist?(@punk_file)
     @punks = Punks::Image::Composite.read(@punk_file)
     @zoom = 12
+    @palette = 'Standard'
     
     observer = Glimmer::DataBinding::Observer.proc do
       generate_image
     end
     observer.observe(self, :punk_index)
     observer.observe(self, :zoom)
+    observer.observe(self, :palette)
     
     create_gui
     self.punk_index = 0
     @root.open
   end
   
+  def palette_options
+    PALETTES
+  end
+  
   def generate_image
-    image_location = File.join(@punk_directory, "punk-#{@punk_index}#{"x#{@zoom}" if @zoom.to_i > 1}.png")
+    image_location = File.join(@punk_directory, "punk-#{@punk_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.downcase.gsub(' ', '_')}" if @palette != 'Standard'}.png")
     puts "Writing punk image to #{image_location}"
     selected_punk = @punks[@punk_index.to_i]
+    selected_punk = selected_punk.change_palette8bit(Palette8bit.const_get(@palette.gsub(' ', '_').upcase.to_sym)) if @palette != 'Standard'
     selected_punk = selected_punk.zoom(@zoom.to_i)
     selected_punk.save(image_location)
     @image_label.image = image_location
@@ -67,6 +76,15 @@ class CryptopunksGui
           from 1
           to 72
           text <=> [self, :zoom]
+        }
+        
+        label {
+          text 'Palette:'
+        }
+        combobox {
+          # TODO (mirrored, grayscale, sepia, etc...)
+          readonly true # this applies to text editing only (item selection still triggers a write to model)
+          text <=> [self, :palette]
         }
         
         label {

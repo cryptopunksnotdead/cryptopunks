@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.1
+# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.2
 ## Simplified Minting
 [![Gem Version](https://badge.fury.io/rb/cryptopunks-gui.svg)](http://badge.fury.io/rb/cryptopunks-gui)
 
@@ -25,7 +25,7 @@ You can use CryptoPunks GUI via gem or via cloning repository.
 Run:
 
 ```
-gem install cryptopunks-gui -v0.0.1
+gem install cryptopunks-gui -v0.0.2
 ```
 
 Afterwards, run app via:
@@ -66,6 +66,26 @@ Alternatively, run app manually via:
 ```
 ruby app/cryptopunks_gui.rb
 ```
+
+## Instructions
+
+### Punk Index
+
+Change punk index to pick a different punk.
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-different-punk-index.png)
+
+### Zoom
+
+Change zoom to enlarge punk to your liking.
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-different-zoom.png)
+
+### Palette
+
+Change palette to get different punk colors.
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-different-palette.png)
 
 ## TODO
 
