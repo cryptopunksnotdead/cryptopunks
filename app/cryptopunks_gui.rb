@@ -16,23 +16,9 @@ class CryptopunksGui
   attr_accessor :punk_index, :zoom, :palette, :style
   
   def initialize
-    @punk_directory = File.join(Dir.home, '.cryptopunks')
-    FileUtils.mkdir_p(@punk_directory)
-    @punk_file = File.join(@punk_directory, 'punks.png')
-    File.write(@punk_file, Net::HTTP.get(URI('https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png'))) unless File.exist?(@punk_file)
-    @punks = Punks::Image::Composite.read(@punk_file)
-    @zoom = 12
-    @palette = PALETTES.first
-    @style = STYLES.first
-    
-    observer = Glimmer::DataBinding::Observer.proc do
-      generate_image
-    end
-    observer.observe(self, :punk_index)
-    observer.observe(self, :zoom)
-    observer.observe(self, :palette)
-    observer.observe(self, :style)
-    
+    initialize_punks
+    initialize_defaults
+    observe_image_attribute_changes
     create_gui
     self.punk_index = 0
     @root.open
@@ -44,6 +30,28 @@ class CryptopunksGui
   
   def style_options
     STYLES
+  end
+  
+  def initialize_punks
+    @punk_directory = File.join(Dir.home, '.cryptopunks')
+    FileUtils.mkdir_p(@punk_directory)
+    @punk_file = File.join(@punk_directory, 'punks.png')
+    File.write(@punk_file, Net::HTTP.get(URI('https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png'))) unless File.exist?(@punk_file)
+    @punks = Punks::Image::Composite.read(@punk_file)
+  end
+  
+  def initialize_defaults
+    @zoom = 12
+    @palette = PALETTES.first
+    @style = STYLES.first
+  end
+  
+  def observe_image_attribute_changes
+    observer = Glimmer::DataBinding::Observer.proc { generate_image }
+    observer.observe(self, :punk_index)
+    observer.observe(self, :zoom)
+    observer.observe(self, :palette)
+    observer.observe(self, :style)
   end
   
   def generate_image
