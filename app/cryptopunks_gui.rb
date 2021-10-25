@@ -42,7 +42,8 @@ class CryptopunksGui
   
   def create_gui
     @root = root {
-      title 'Cryptopunks'
+      title 'CryptoPunks GUI'
+      iconphoto File.expand_path('../icons/cryptopunks-gui.png', __dir__)
       
       frame {
         label {
