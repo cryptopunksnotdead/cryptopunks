@@ -2,6 +2,9 @@
 
 ## 0.0.5
 
+- Led style spacing option
+- Led style round corner option
+- Sketch style line option
 - Apply zoom to led and sketch styles correctly
 
 ## 0.0.4

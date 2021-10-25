@@ -2,9 +2,6 @@
 
 ## Next
 
-- Sketch style line option
-- Sketch style spacing option
-- Sketch style round corner option
 - Multiple Punk Collections (https://github.com/cryptopunksnotdead/awesome-24px)
 - Generate Punks algorithmically from attributes
 - Report attributes

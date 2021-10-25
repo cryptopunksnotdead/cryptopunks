@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.4
+# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.5
 ## Simplified Minting
 [![Gem Version](https://badge.fury.io/rb/cryptopunks-gui.svg)](http://badge.fury.io/rb/cryptopunks-gui)
 
@@ -25,7 +25,7 @@ You can use CryptoPunks GUI via gem or via cloning repository.
 Run:
 
 ```
-gem install cryptopunks-gui -v0.0.4
+gem install cryptopunks-gui -v0.0.5
 ```
 
 Afterwards, run app via:
@@ -99,11 +99,29 @@ Change palette to get different punk colors.
 
 Change style to get different punk looks.
 
+#### Normal Style
+
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-normal.png)
+
+#### Led Style
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-led.png)
 
+##### Led Spacing
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-led-spacing.png)
+
+##### Led Round Corner
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-led-round-corner.png)
+
+#### Sketch Style
+
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-sketch.png)
+
+##### Sketch Line
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-sketch-line.png)
 
 ### Mirror/Flip
 

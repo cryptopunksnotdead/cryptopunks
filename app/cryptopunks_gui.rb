@@ -13,7 +13,7 @@ class CryptopunksGui
   PALETTES = ['Standard'] + (Palette8bit.constants).map(&:name).map {|palette| palette.split('_').map(&:capitalize).join(' ')}.reject { |palette| palette.include?(' ') }.sort
   STYLES = ['Normal', 'Led', 'Sketch']
   
-  attr_accessor :punk_index, :zoom, :palette, :style, :flip, :mirror
+  attr_accessor :punk_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror
   
   def initialize
     initialize_punks
@@ -44,6 +44,9 @@ class CryptopunksGui
     @zoom = 12
     @palette = PALETTES.first
     @style = STYLES.first
+    @led_spacing = 2
+    @led_round_corner = false
+    @sketch_line = 1
     @mirror = false
     @flip = false
   end
@@ -54,6 +57,9 @@ class CryptopunksGui
     observer.observe(self, :zoom)
     observer.observe(self, :palette)
     observer.observe(self, :style)
+    observer.observe(self, :led_spacing)
+    observer.observe(self, :led_round_corner)
+    observer.observe(self, :sketch_line)
     observer.observe(self, :mirror)
     observer.observe(self, :flip)
   end
@@ -64,7 +70,17 @@ class CryptopunksGui
     selected_punk = @punks[@punk_index.to_i]
     selected_punk = selected_punk.change_palette8bit(Palette8bit.const_get(@palette.gsub(' ', '_').upcase.to_sym)) if @palette != PALETTES.first
     @original_zoom = @zoom
-    selected_punk = selected_punk.send(@style.underscore, @zoom.to_i) if @style != STYLES.first
+    if @style != STYLES.first
+      style_options = {}
+      if @style == 'Led'
+        style_options[:spacing] = @led_spacing.to_i
+        style_options[:round_corner] = @led_round_corner
+      end
+      if @style == 'Sketch'
+        style_options[:line] = @sketch_line.to_i
+      end
+      selected_punk = selected_punk.send(@style.underscore, @zoom.to_i, **style_options)
+    end
     selected_punk = selected_punk.mirror if @mirror
     selected_punk = selected_punk.flip if @flip
     selected_punk = selected_punk.zoom(@zoom.to_i) if @style == STYLES.first
@@ -117,7 +133,11 @@ class CryptopunksGui
         }
         combobox {
           readonly true
-          text <=> [self, :style]
+          text <=> [self, :style, after_write: ->(val) {add_style_options}]
+        }
+        
+        @style_options_frame = frame {
+          padding 0
         }
         
         frame {
@@ -161,6 +181,62 @@ class CryptopunksGui
           grid row_weight: 1
         }
       }
+    }
+  end
+  
+  def add_style_options
+    @style_options_frame.content {
+      @style_options_frame.children.each(&:destroy)
+      if @style == 'Led'
+        frame {
+          padding 0
+          
+          label {
+            grid row: 0, column: 0, column_weight: 0
+            text 'Spacing:'
+          }
+          spinbox {
+            grid row: 0, column: 1
+            from 1
+            to 72
+            text <=> [self, :led_spacing]
+          }
+          
+          checkbutton {
+            grid row: 0, column: 2
+            variable <=> [self, :led_round_corner]
+          }
+          label {
+            grid row: 0, column: 3
+            text 'Round Corner'
+            
+            on('Button-1') do
+              self.led_round_corner = !led_round_corner
+            end
+          }
+        }
+      elsif @style == 'Sketch'
+        frame {
+          padding 0
+          
+          label {
+            grid row: 0, column: 0, column_weight: 0
+            text 'Line:'
+          }
+          spinbox {
+            grid row: 0, column: 1
+            from 1
+            to 72
+            text <=> [self, :sketch_line]
+          }
+        }
+      else
+        frame { # filler
+          padding 0
+          height 0
+          width 0
+        }
+      end
     }
   end
 end
