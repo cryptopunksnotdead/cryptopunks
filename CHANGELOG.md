@@ -6,6 +6,7 @@
 - Led style round corner option
 - Sketch style line option
 - Apply zoom to led and sketch styles correctly
+- Fixed issue with typing punk index higher than 9999 (ignore)
 
 ## 0.0.4
 

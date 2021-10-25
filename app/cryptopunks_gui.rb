@@ -65,6 +65,7 @@ class CryptopunksGui
   end
   
   def generate_image
+    return if @punk_index.to_i > 9999
     image_location = File.join(@punk_directory, "punk-#{@punk_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}.png")
     puts "Writing punk image to #{image_location}"
     selected_punk = @punks[@punk_index.to_i]
