@@ -1,5 +1,6 @@
 require 'glimmer-dsl-tk'
 require 'cryptopunks'
+require 'facets'
 require 'fileutils'
 require 'net/http'
 require 'uri'
@@ -10,8 +11,9 @@ class CryptopunksGui
   include Glimmer
   
   PALETTES = ['Standard'] + (Palette8bit.constants).map(&:name).map {|palette| palette.split('_').map(&:capitalize).join(' ')}.reject { |palette| palette.include?(' ') }
+  STYLES = ['Normal', 'Flip', 'Mirror', 'Led', 'Sketch']
   
-  attr_accessor :punk_index, :zoom, :palette
+  attr_accessor :punk_index, :zoom, :palette, :style
   
   def initialize
     @punk_directory = File.join(Dir.home, '.cryptopunks')
@@ -20,7 +22,8 @@ class CryptopunksGui
     File.write(@punk_file, Net::HTTP.get(URI('https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png'))) unless File.exist?(@punk_file)
     @punks = Punks::Image::Composite.read(@punk_file)
     @zoom = 12
-    @palette = 'Standard'
+    @palette = PALETTES.first
+    @style = STYLES.first
     
     observer = Glimmer::DataBinding::Observer.proc do
       generate_image
@@ -28,6 +31,7 @@ class CryptopunksGui
     observer.observe(self, :punk_index)
     observer.observe(self, :zoom)
     observer.observe(self, :palette)
+    observer.observe(self, :style)
     
     create_gui
     self.punk_index = 0
@@ -38,15 +42,30 @@ class CryptopunksGui
     PALETTES
   end
   
+  def style_options
+    STYLES
+  end
+  
   def generate_image
-    image_location = File.join(@punk_directory, "punk-#{@punk_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.downcase.gsub(' ', '_')}" if @palette != 'Standard'}.png")
+    image_location = File.join(@punk_directory, "punk-#{@punk_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}.png")
     puts "Writing punk image to #{image_location}"
     selected_punk = @punks[@punk_index.to_i]
-    selected_punk = selected_punk.change_palette8bit(Palette8bit.const_get(@palette.gsub(' ', '_').upcase.to_sym)) if @palette != 'Standard'
+    selected_punk = selected_punk.change_palette8bit(Palette8bit.const_get(@palette.gsub(' ', '_').upcase.to_sym)) if @palette != PALETTES.first
+    @original_zoom = @zoom
+    if @style != STYLES.first
+      selected_punk = selected_punk.send(@style.underscore)
+      if @style != @previous_style
+        @zoom = 12 if @style == 'Flip' && !['Normal', 'Mirror'].include?(@previous_style)
+        @zoom = 12 if @style == 'Mirror' && !['Normal', 'Flip'].include?(@previous_style)
+        @zoom = 2 if @style == 'Sketch'
+        @zoom = 1 if @style == 'Led'
+      end
+    end
     selected_punk = selected_punk.zoom(@zoom.to_i)
     selected_punk.save(image_location)
     @image_label.image = image_location
     @message_entry.text = image_location
+    notify_observers(:zoom) if @zoom != @original_zoom
   end
   
   def create_gui
@@ -82,9 +101,16 @@ class CryptopunksGui
           text 'Palette:'
         }
         combobox {
-          # TODO (mirrored, grayscale, sepia, etc...)
-          readonly true # this applies to text editing only (item selection still triggers a write to model)
+          readonly true
           text <=> [self, :palette]
+        }
+        
+        label {
+          text 'Style:'
+        }
+        combobox {
+          readonly true
+          text <=> [self, :style, before_write: ->(v) {@previous_style = @style}]
         }
         
         label {
