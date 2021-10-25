@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.4
+
+- Fixed zooming for led and sketch styles
+
 ## 0.0.3
 
 - Style support (e.g. mirror, flip, sketch, led)

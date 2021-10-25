@@ -73,6 +73,7 @@ class CryptopunksGui
     selected_punk.save(image_location)
     @image_label.image = image_location
     @message_entry.text = image_location
+    @previous_style = @style
     notify_observers(:zoom) if @zoom != @original_zoom
   end
   
@@ -118,7 +119,7 @@ class CryptopunksGui
         }
         combobox {
           readonly true
-          text <=> [self, :style, before_write: ->(v) {@previous_style = @style}]
+          text <=> [self, :style]
         }
         
         label {
