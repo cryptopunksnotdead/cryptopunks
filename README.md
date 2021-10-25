@@ -85,7 +85,27 @@ Change zoom to enlarge punk to your liking.
 
 Change palette to get different punk colors.
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-different-palette.png)
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-palette-standard.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-palette-sepia.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-palette-blue.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-palette-false.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-palette-grayscale.png)
+
+### Style
+
+Change style to get different punk looks.
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-mirror.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-flip.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-led.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-sketch.png)
 
 ## TODO
 
