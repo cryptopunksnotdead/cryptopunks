@@ -64,18 +64,10 @@ class CryptopunksGui
     selected_punk = @punks[@punk_index.to_i]
     selected_punk = selected_punk.change_palette8bit(Palette8bit.const_get(@palette.gsub(' ', '_').upcase.to_sym)) if @palette != PALETTES.first
     @original_zoom = @zoom
-    if @style != STYLES.first
-      selected_punk = selected_punk.send(@style.underscore)
-      if @style != @previous_style
-        @zoom = 2 if @style == 'Sketch'
-        @zoom = 1 if @style == 'Led'
-      end
-    else
-      @zoom = 12 if @style != @previous_style
-    end
+    selected_punk = selected_punk.send(@style.underscore, @zoom.to_i) if @style != STYLES.first
     selected_punk = selected_punk.mirror if @mirror
     selected_punk = selected_punk.flip if @flip
-    selected_punk = selected_punk.zoom(@zoom.to_i)
+    selected_punk = selected_punk.zoom(@zoom.to_i) if @style == STYLES.first
     selected_punk.save(image_location)
     @image_label.image = image_location
     @message_entry.text = image_location
@@ -131,7 +123,7 @@ class CryptopunksGui
         frame {
           padding 0
           
-          @mirror_checkbutton = checkbutton {
+          checkbutton {
             grid row: 0, column: 0, column_weight: 0
             variable <=> [self, :mirror]
           }
@@ -144,7 +136,7 @@ class CryptopunksGui
             end
           }
           
-          @flip_checkbutton = checkbutton {
+          checkbutton {
             grid row: 0, column: 2
             variable <=> [self, :flip]
           }

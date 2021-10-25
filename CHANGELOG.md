@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.5
+
+- Apply zoom to led and sketch styles correctly
+
 ## 0.0.4
 
 - Changed flip and mirror to checkbuttons
