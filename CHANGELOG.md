@@ -2,6 +2,7 @@
 
 ## 0.0.4
 
+- Changed flip and mirror to checkbuttons
 - Fixed zooming for led and sketch styles
 
 ## 0.0.3

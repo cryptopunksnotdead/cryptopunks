@@ -10,10 +10,10 @@ require 'puts_debuggerer'
 class CryptopunksGui
   include Glimmer
   
-  PALETTES = ['Standard'] + (Palette8bit.constants).map(&:name).map {|palette| palette.split('_').map(&:capitalize).join(' ')}.reject { |palette| palette.include?(' ') }
-  STYLES = ['Normal', 'Flip', 'Mirror', 'Led', 'Sketch']
+  PALETTES = ['Standard'] + (Palette8bit.constants).map(&:name).map {|palette| palette.split('_').map(&:capitalize).join(' ')}.reject { |palette| palette.include?(' ') }.sort
+  STYLES = ['Normal', 'Led', 'Sketch']
   
-  attr_accessor :punk_index, :zoom, :palette, :style
+  attr_accessor :punk_index, :zoom, :palette, :style, :flip, :mirror
   
   def initialize
     initialize_punks
@@ -44,6 +44,8 @@ class CryptopunksGui
     @zoom = 12
     @palette = PALETTES.first
     @style = STYLES.first
+    @mirror = false
+    @flip = false
   end
   
   def observe_image_attribute_changes
@@ -52,6 +54,8 @@ class CryptopunksGui
     observer.observe(self, :zoom)
     observer.observe(self, :palette)
     observer.observe(self, :style)
+    observer.observe(self, :mirror)
+    observer.observe(self, :flip)
   end
   
   def generate_image
@@ -63,12 +67,14 @@ class CryptopunksGui
     if @style != STYLES.first
       selected_punk = selected_punk.send(@style.underscore)
       if @style != @previous_style
-        @zoom = 12 if @style == 'Flip' && !['Normal', 'Mirror'].include?(@previous_style)
-        @zoom = 12 if @style == 'Mirror' && !['Normal', 'Flip'].include?(@previous_style)
         @zoom = 2 if @style == 'Sketch'
         @zoom = 1 if @style == 'Led'
       end
+    else
+      @zoom = 12 if @style != @previous_style
     end
+    selected_punk = selected_punk.mirror if @mirror
+    selected_punk = selected_punk.flip if @flip
     selected_punk = selected_punk.zoom(@zoom.to_i)
     selected_punk.save(image_location)
     @image_label.image = image_location
@@ -120,6 +126,36 @@ class CryptopunksGui
         combobox {
           readonly true
           text <=> [self, :style]
+        }
+        
+        frame {
+          padding 0
+          
+          @mirror_checkbutton = checkbutton {
+            grid row: 0, column: 0, column_weight: 0
+            variable <=> [self, :mirror]
+          }
+          label {
+            grid row: 0, column: 1
+            text 'Mirror'
+            
+            on('Button-1') do
+              self.mirror = !mirror
+            end
+          }
+          
+          @flip_checkbutton = checkbutton {
+            grid row: 0, column: 2
+            variable <=> [self, :flip]
+          }
+          label {
+            grid row: 0, column: 3
+            text 'Flip'
+            
+            on('Button-1') do
+              self.flip = !flip
+            end
+          }
         }
         
         label {

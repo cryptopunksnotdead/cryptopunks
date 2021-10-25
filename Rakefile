@@ -16,8 +16,8 @@ Juwelier::Tasks.new do |gem|
   gem.name = "cryptopunks-gui"
   gem.homepage = "http://github.com/AndyObtiva/cryptopunks-gui"
   gem.license = "MIT"
-  gem.summary = %Q{Cryptopunks GUI for Simplified Minting}
-  gem.description = %Q{Cryptopunks GUI for simplified minting built with Glimmer DSL for Tk (requires ActiveTcl to run cryptopunks-gui command)}
+  gem.summary = %Q{CryptoPunks GUI for Simplified Minting}
+  gem.description = %Q{CryptoPunks GUI for Simplified Minting - Built with Glimmer DSL for Tk (requires ActiveTcl to run cryptopunks-gui command)}
   gem.email = "andy.am@gmail.com"
   gem.authors = ["Andy Maleh"]
   gem.executables = ['cryptopunks-gui']
