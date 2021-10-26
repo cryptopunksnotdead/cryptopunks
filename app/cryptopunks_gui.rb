@@ -33,7 +33,7 @@ class CryptopunksGui
   end
   
   def initialize_punks
-    @punk_directory = File.join(Dir.home, '.cryptopunks')
+    @punk_directory = File.join(Dir.home, 'cryptopunks')
     FileUtils.mkdir_p(@punk_directory)
     @punk_file = File.join(@punk_directory, 'punks.png')
     File.write(@punk_file, Net::HTTP.get(URI('https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png'))) unless File.exist?(@punk_file)
@@ -65,7 +65,7 @@ class CryptopunksGui
   end
   
   def generate_image
-    return if @punk_index.to_i > 9999
+    return if @punk_index.to_i > @punks.size
     image_location = File.join(@punk_directory, "punk-#{@punk_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}.png")
     puts "Writing punk image to #{image_location}"
     selected_punk = @punks[@punk_index.to_i]
@@ -87,7 +87,7 @@ class CryptopunksGui
     selected_punk = selected_punk.zoom(@zoom.to_i) if @style == STYLES.first
     selected_punk.save(image_location)
     @image_label.image = image_location
-    @message_entry.text = image_location
+    @output_location_entry.text = image_location
     @previous_style = @style
     notify_observers(:zoom) if @zoom != @original_zoom
   end
@@ -98,11 +98,6 @@ class CryptopunksGui
       iconphoto File.expand_path('../icons/cryptopunks-gui.png', __dir__)
       
       frame {
-        label {
-          text 'Select Punk Index and Zoom To Mint Cryptopunk'
-          font weight: 'bold'
-        }
-        
         label {
           text 'Punk Index:'
         }
@@ -174,8 +169,24 @@ class CryptopunksGui
         label {
           text 'Output Location:'
         }
-        @message_entry = entry {
-          readonly true
+        frame {
+          padding 0
+          
+          @output_location_entry = entry {
+            grid row: 0, column: 0
+            readonly true
+            width 32
+          }
+          button {
+            grid row: 0, column: 1
+            text '...'
+            width 1.1
+            
+            on('command') do
+              @punk_directory = choose_directory(parent: @root)
+              generate_image
+            end
+          }
         }
         
         @image_label = label {

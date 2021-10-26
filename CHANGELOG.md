@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.0.6
+
+- Provide option to change output location
+- Update default output location not to be a hidden location, switching `~/.cryptopunks` to `~/cryptopunks`
+
 ## 0.0.5
 
 - Led style spacing option

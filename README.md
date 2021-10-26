@@ -125,7 +125,7 @@ Change style to get different punk looks.
 
 ### Mirror/Flip
 
-Check mirror and/or flip to apply punk transformation. Can combine with different palettes and styles.
+Check mirror and/or flip to apply punk transformations. Can be combined with different palettes and styles.
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-no-mirror-no-flip.png)
 
