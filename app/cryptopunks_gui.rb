@@ -85,10 +85,11 @@ class CryptopunksGui
     url = COLLECTION_URL_MAP[@collection]
     @punk_file = File.join(@punk_config_directory, File.basename(url, '.png'))
     File.write(@punk_file, Net::HTTP.get(URI(url))) unless File.exist?(@punk_file)
-    @punks = Punks::Image::Composite.read(@punk_file)
+    @punks ||= {}
+    @punks[@collection] ||= Punks::Image::Composite.read(@punk_file)
     @last_collection = @collection
     self.punk_index = 0
-    @punk_index_spinbox.to = @punks.size - 1 if @punk_index_spinbox
+    @punk_index_spinbox.to = @punks[@collection].size - 1 if @punk_index_spinbox
   end
   
   def load_config
@@ -130,10 +131,10 @@ class CryptopunksGui
   
   def generate_image
     initialize_collection
-    return if @punk_index.to_i > @punks.size
+    return if @punk_index.to_i > @punks[@collection].size
     image_location = File.join(@punk_directory, "#{@collection.gsub(' ', '').downcase}-#{@punk_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}.png")
     puts "Writing punk image to #{image_location}"
-    selected_punk = @punks[@punk_index.to_i]
+    selected_punk = @punks[@collection][@punk_index.to_i]
     selected_punk = selected_punk.change_palette8bit(Palette8bit.const_get(@palette.gsub(' ', '_').upcase.to_sym)) if @palette != PALETTES.first
     @original_zoom = @zoom
     if @style != STYLES.first
@@ -176,7 +177,7 @@ class CryptopunksGui
         }
         @punk_index_spinbox = spinbox {
           from 0
-          to @punks.size - 1
+          to @punks[@collection].size - 1
           text <=> [self, :punk_index]
         }
         
