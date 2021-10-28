@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.8
+
+- Add missing Boring Apes (vanilla) collection
+
 ## 0.0.7
 
 - Multiple Punk Collections (https://github.com/cryptopunksnotdead/awesome-24px)

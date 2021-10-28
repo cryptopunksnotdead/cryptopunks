@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.7
+# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.8
 ## Simplified Minting
 [![Gem Version](https://badge.fury.io/rb/cryptopunks-gui.svg)](http://badge.fury.io/rb/cryptopunks-gui)
 
@@ -25,7 +25,7 @@ You can use CryptoPunks GUI via gem or via cloning repository.
 Run:
 
 ```
-gem install cryptopunks-gui -v0.0.7
+gem install cryptopunks-gui -v0.0.8
 ```
 
 Afterwards, run app via:
@@ -73,40 +73,41 @@ ruby app/cryptopunks_gui.rb
 
 Change collection to pick a different collection of images.
 
-There are currently 33 available collections (from https://github.com/cryptopunksnotdead/awesome-24px):
+There are currently 34 available collections (from https://github.com/cryptopunksnotdead/awesome-24px):
 - [Punks](https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/punks-strip.png)
-- [Mohawks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/mohawks.png)
-- [Blondies](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/blondies.png)
-- [Zombies](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/zombies.png)
-- [Apes](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/apes.png)
-- [Aliens](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/aliens.png)
-- [Golden Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/goldenpunks.png)
-- [Halloween Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/halloweenpunks.png)
-- [Front Punks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/frontpunks.png)
-- [More Punks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/morepunks.png')
-- [Expansion Punks](https://expansionpunks.com/provenance/expansionpunks.png)
-- [Avalanche Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/avalanchepunks.png)
-- [Intl Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/intlpunks.png)
-- [Ape Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/apepunks.png)
-- [Alien Clan](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/alienclan.png)
-- [Bored Apes Blue](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_blue.png)
-- [Bored Apes Red](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_red.png)
-- [Bored Apes Neon Glow](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_neon_glow.png)
-- [Bored Apes Stars and Stripes](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_stars_and_stripes.png)
-- [Bored Apes Acid](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_acid.png)
-- [Cool Cats](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats.png)
-- [Cool Cats Mohawks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_mohawks.png)
-- [Cool Cats Ninjas](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_ninjas.png)
-- [Cool Cats TV Heads](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_tvheads.png)
-- [Cool Cats Pirates](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_pirates.png)
-- [Cool Cats Unicorns](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_unicorns.png)
-- [Cool Cats Dragons](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_dragons.png)
-- [Cool Cats Frogs](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_frogs.png)
-- [Pudgy Penguins](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/pudgypenguins.png)
-- [Dodge](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/dodge.png)
-- [Rocks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/rocks.png)
-- [Punk Rocks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/punkrocks.png)
-- [Tulips](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/tulips.png)
+- [Mohawks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/mohawks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/mohawks-strip.png)
+- [Blondies](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/blondies.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/blondies-strip.png)
+- [Zombies](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/zombies.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/zombies-strip.png)
+- [Apes](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/apes.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/apes-strip.png)
+- [Aliens](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/aliens.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/aliens-strip.png)
+- [Golden Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/goldenpunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/goldenpunks-strip.png)
+- [Halloween Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/halloweenpunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/halloweenpunks-strip.png)
+- [Front Punks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/frontpunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/frontpunks-strip.png)
+- [More Punks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/morepunks.png') ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/morepunks-strip.png)
+- [Expansion Punks](https://expansionpunks.com/provenance/expansionpunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/expansionpunks-strip.png)
+- [Avalanche Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/avalanchepunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/avalanchepunks-strip.png)
+- [International Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/intlpunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/intlpunks-strip.png)
+- [Ape Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/apepunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/apepunks-strip.png)
+- [Alien Clan](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/alienclan.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/alienclan-strip.png)
+- [Bored Apes](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/boredapes-strip.png)
+- [Bored Apes Blue](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_blue.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/boredapes_blue-strip.png)
+- [Bored Apes Red](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_red.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/boredapes_red-strip.png)
+- [Bored Apes Neon Glow](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_neon_glow.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/boredapes_neon_glow-strip.png)
+- [Bored Apes Stars and Stripes](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_stars_and_stripes.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/boredapes_stars_and_stripes-strip.png)
+- [Bored Apes Acid](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_acid.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/boredapes_acid-strip.png)
+- [Cool Cats](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/coolcats-strip.png)
+- [Cool Cats Mohawks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_mohawks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/coolcats_mohawks-strip.png)
+- [Cool Cats Ninjas](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_ninjas.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/coolcats_ninjas-strip.png)
+- [Cool Cats TV Heads](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_tvheads.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/coolcats_tvheads-strip.png)
+- [Cool Cats Pirates](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_pirates.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/coolcats_pirates-strip.png)
+- [Cool Cats Unicorns](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_unicorns.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/coolcats_unicorns-strip.png)
+- [Cool Cats Dragons](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_dragons.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/coolcats_dragons-strip.png)
+- [Cool Cats Frogs](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_frogs.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/blob/master/i/coolcats_frogs-strip.png)
+- [Pudgy Penguins](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/pudgypenguins.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/pudgypenguins-strip.png)
+- [Dodge](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/dodge.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/dodge-strip.png)
+- [Rocks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/rocks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/rocks-strip.png)
+- [Punk Rocks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/punkrocks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/punkrocks-strip.png)
+- [Tulips](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/tulips.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/tulips-strip.png)
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-zombies.png)
 
