@@ -34,6 +34,19 @@ class CryptopunksGui
     'Bored Apes Neon Glow' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_neon_glow.png',
     'Bored Apes Stars and Stripes' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_stars_and_stripes.png',
     'Bored Apes Acid' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_acid.png',
+    'Cool Cats' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats.png',
+    'Cool Cats Mohawks' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_mohawks.png',
+    'Cool Cats Ninjas' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_ninjas.png',
+    'Cool Cats TV Heads' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_tvheads.png',
+    'Cool Cats Pirates' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_pirates.png',
+    'Cool Cats Unicorns' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_unicorns.png',
+    'Cool Cats Dragons' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_dragons.png',
+    'Cool Cats Frogs' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_frogs.png',
+    'Pudgy Penguins' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/pudgypenguins.png',
+    'Dodge' => 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/dodge.png',
+    'Rocks' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/rocks.png',
+    'Punk Rocks' => 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/punkrocks.png',
+    'Tulips' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/tulips.png',
   }
   
   attr_accessor :collection, :punk_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror
@@ -118,7 +131,7 @@ class CryptopunksGui
   def generate_image
     initialize_collection
     return if @punk_index.to_i > @punks.size
-    image_location = File.join(@punk_directory, "punk-#{@punk_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}.png")
+    image_location = File.join(@punk_directory, "#{@collection.gsub(' ', '').downcase}-#{@punk_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}.png")
     puts "Writing punk image to #{image_location}"
     selected_punk = @punks[@punk_index.to_i]
     selected_punk = selected_punk.change_palette8bit(Palette8bit.const_get(@palette.gsub(' ', '_').upcase.to_sym)) if @palette != PALETTES.first
@@ -235,7 +248,7 @@ class CryptopunksGui
           @output_location_entry = entry {
             grid row: 0, column: 0
             readonly true
-            width 35
+            width 47
           }
           button {
             grid row: 0, column: 1
