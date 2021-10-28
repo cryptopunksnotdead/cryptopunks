@@ -73,47 +73,46 @@ ruby app/cryptopunks_gui.rb
 
 Change collection to pick a different collection of images.
 
-There are currently 73 available collections (from https://github.com/cryptopunksnotdead/awesome-24px):
-- Punks
-- Mohawks
-- Blondies
-- Zombies
-- Apes
-- Aliens
-- Golden Punks
-- Halloween Punks
-- Front Punks
-- More Punks
-- Expansion Punks
-- Avalanche Punks
-- Intl Punks
-- Ape Punks
-- Alien Clan
-- Bored Apes Blue
-- Bored Apes Red
-- Bored Apes Neon Glow
-- Bored Apes Stars and Stripes
-- Bored Apes Acid
-- Cool Cats
-- Cool Cats Mohawks
-- Cool Cats Ninjas
-- Cool Cats TV Heads
-- Cool Cats Pirates
-- Cool Cats Unicorns
-- Cool Cats Dragons
-- Cool Cats Frogs
-- Pudgy Penguins
-- Dodge
-- Rocks
-- Punk Rocks
-- Tulips
-
+There are currently 33 available collections (from https://github.com/cryptopunksnotdead/awesome-24px):
+- [Punks](https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png)
+- [Mohawks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/mohawks.png)
+- [Blondies](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/blondies.png)
+- [Zombies](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/zombies.png)
+- [Apes](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/apes.png)
+- [Aliens](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/aliens.png)
+- [Golden Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/goldenpunks.png)
+- [Halloween Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/halloweenpunks.png)
+- [Front Punks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/frontpunks.png)
+- [More Punks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/morepunks.png')
+- [Expansion Punks](https://expansionpunks.com/provenance/expansionpunks.png)
+- [Avalanche Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/avalanchepunks.png)
+- [Intl Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/intlpunks.png)
+- [Ape Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/apepunks.png)
+- [Alien Clan](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/alienclan.png)
+- [Bored Apes Blue](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_blue.png)
+- [Bored Apes Red](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_red.png)
+- [Bored Apes Neon Glow](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_neon_glow.png)
+- [Bored Apes Stars and Stripes](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_stars_and_stripes.png)
+- [Bored Apes Acid](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_acid.png)
+- [Cool Cats](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats.png)
+- [Cool Cats Mohawks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_mohawks.png)
+- [Cool Cats Ninjas](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_ninjas.png)
+- [Cool Cats TV Heads](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_tvheads.png)
+- [Cool Cats Pirates](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_pirates.png)
+- [Cool Cats Unicorns](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_unicorns.png)
+- [Cool Cats Dragons](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_dragons.png)
+- [Cool Cats Frogs](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_frogs.png)
+- [Pudgy Penguins](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/pudgypenguins.png)
+- [Dodge](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/dodge.png)
+- [Rocks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/rocks.png)
+- [Punk Rocks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/punkrocks.png)
+- [Tulips](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/tulips.png)
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-zombies.png)
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-apes.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-alien-clasn.png)
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-alien-clan.png)
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-bored-apes-stars-and-stripes.png)
 
