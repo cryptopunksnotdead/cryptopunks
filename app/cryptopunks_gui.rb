@@ -87,7 +87,8 @@ class CryptopunksGui
     @punk_file = File.join(@punk_config_directory, File.basename(url, '.png'))
     File.write(@punk_file, Net::HTTP.get(URI(url))) unless File.exist?(@punk_file)
     @images ||= {}
-    @images[@collection] ||= Punks::Image::Composite.read(@punk_file)
+    dimension = @collection.start_with?('Bored Apes') ? 28 : 24
+    @images[@collection] ||= Punks::Image::Composite.read(@punk_file, width: dimension, height: dimension)
     @last_collection = @collection
     self.image_index = 0
     @image_index_spinbox.to = @images[@collection].size - 1 if @image_index_spinbox
