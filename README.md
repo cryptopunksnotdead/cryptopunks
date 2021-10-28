@@ -74,7 +74,7 @@ ruby app/cryptopunks_gui.rb
 Change collection to pick a different collection of images.
 
 There are currently 33 available collections (from https://github.com/cryptopunksnotdead/awesome-24px):
-- [Punks](https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png)
+- [Punks](https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/punks-strip.png)
 - [Mohawks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/mohawks.png)
 - [Blondies](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/blondies.png)
 - [Zombies](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/zombies.png)
