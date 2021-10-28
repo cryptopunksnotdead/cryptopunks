@@ -188,7 +188,7 @@ class CryptopunksGui
           @output_location_entry = entry {
             grid row: 0, column: 0
             readonly true
-            width 32
+            width 35
           }
           button {
             grid row: 0, column: 1

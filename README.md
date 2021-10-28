@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.5
+# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.6
 ## Simplified Minting
 [![Gem Version](https://badge.fury.io/rb/cryptopunks-gui.svg)](http://badge.fury.io/rb/cryptopunks-gui)
 
@@ -25,7 +25,7 @@ You can use CryptoPunks GUI via gem or via cloning repository.
 Run:
 
 ```
-gem install cryptopunks-gui -v0.0.5
+gem install cryptopunks-gui -v0.0.6
 ```
 
 Afterwards, run app via:
@@ -136,6 +136,12 @@ Check mirror and/or flip to apply punk transformations. Can be combined with dif
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-mirror-flip.png)
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-palette-false-style-led-mirror-flip.png)
+
+### Output Location
+
+You may select a new output location by clicking on the `...` button.
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-output-location.png)
 
 ## TODO
 

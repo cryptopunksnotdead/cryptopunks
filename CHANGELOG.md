@@ -5,6 +5,7 @@
 - Provide option to change output location
 - Update default output location not to be a hidden location, switching `~/.cryptopunks` to `~/cryptopunks`
 - Remember last selected output location upon app start
+- Avoid hardcoding punk count in code (change 9999 to size of `@punks` array)
 
 ## 0.0.5
 
