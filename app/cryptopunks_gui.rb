@@ -49,7 +49,7 @@ class CryptopunksGui
     'Tulips' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/tulips.png',
   }
   
-  attr_accessor :collection, :punk_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror
+  attr_accessor :collection, :image_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror
   
   def initialize
     initialize_punk_directory
@@ -58,7 +58,7 @@ class CryptopunksGui
     initialize_defaults
     observe_image_attribute_changes
     create_gui
-    self.punk_index = 0
+    self.image_index = 0
     @root.open
   end
   
@@ -85,11 +85,11 @@ class CryptopunksGui
     url = COLLECTION_URL_MAP[@collection]
     @punk_file = File.join(@punk_config_directory, File.basename(url, '.png'))
     File.write(@punk_file, Net::HTTP.get(URI(url))) unless File.exist?(@punk_file)
-    @punks ||= {}
-    @punks[@collection] ||= Punks::Image::Composite.read(@punk_file)
+    @images ||= {}
+    @images[@collection] ||= Punks::Image::Composite.read(@punk_file)
     @last_collection = @collection
-    self.punk_index = 0
-    @punk_index_spinbox.to = @punks[@collection].size - 1 if @punk_index_spinbox
+    self.image_index = 0
+    @image_index_spinbox.to = @images[@collection].size - 1 if @image_index_spinbox
   end
   
   def load_config
@@ -118,7 +118,7 @@ class CryptopunksGui
   def observe_image_attribute_changes
     observer = Glimmer::DataBinding::Observer.proc { generate_image }
     observer.observe(self, :collection)
-    observer.observe(self, :punk_index)
+    observer.observe(self, :image_index)
     observer.observe(self, :zoom)
     observer.observe(self, :palette)
     observer.observe(self, :style)
@@ -131,10 +131,10 @@ class CryptopunksGui
   
   def generate_image
     initialize_collection
-    return if @punk_index.to_i > @punks[@collection].size
-    image_location = File.join(@punk_directory, "#{@collection.gsub(' ', '').downcase}-#{@punk_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}.png")
+    return if @image_index.to_i > @images[@collection].size
+    image_location = File.join(@punk_directory, "#{@collection.gsub(' ', '').downcase}-#{@image_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}.png")
     puts "Writing punk image to #{image_location}"
-    selected_punk = @punks[@collection][@punk_index.to_i]
+    selected_punk = @images[@collection][@image_index.to_i]
     selected_punk = selected_punk.change_palette8bit(Palette8bit.const_get(@palette.gsub(' ', '_').upcase.to_sym)) if @palette != PALETTES.first
     @original_zoom = @zoom
     if @style != STYLES.first
@@ -173,12 +173,12 @@ class CryptopunksGui
         }
         
         label {
-          text 'Punk Index:'
+          text 'Image Index:'
         }
-        @punk_index_spinbox = spinbox {
+        @image_index_spinbox = spinbox {
           from 0
-          to @punks[@collection].size - 1
-          text <=> [self, :punk_index]
+          to @images[@collection].size - 1
+          text <=> [self, :image_index]
         }
         
         label {

@@ -1,12 +1,12 @@
-# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.6
+# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.7
 ## Simplified Minting
 [![Gem Version](https://badge.fury.io/rb/cryptopunks-gui.svg)](http://badge.fury.io/rb/cryptopunks-gui)
 
 This is a Graphical User Interface for the famous [cryptopunks Ruby gem](https://github.com/cryptopunksnotdead/cryptopunks/tree/master/cryptopunks).
 
-It automatically downloads `punks.png` from https://github.com/larvalabs/cryptopunks on first use.
+It automatically downloads image collection sprites on first use (e.g. `punks.png` from https://github.com/larvalabs/cryptopunks).
 
-Minted cryptopunks are stored at `~/.cryptopunks/`.
+Minted cryptopunks are stored at `~/cryptopunks/` by default ([output location can be changed](#output-location)).
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot.png)
 
@@ -25,7 +25,7 @@ You can use CryptoPunks GUI via gem or via cloning repository.
 Run:
 
 ```
-gem install cryptopunks-gui -v0.0.6
+gem install cryptopunks-gui -v0.0.7
 ```
 
 Afterwards, run app via:
@@ -69,9 +69,61 @@ ruby app/cryptopunks_gui.rb
 
 ## Instructions
 
-### Punk Index
+### Collection
 
-Change punk index to pick a different punk.
+Change collection to pick a different collection of images.
+
+There are currently 73 available collections (from https://github.com/cryptopunksnotdead/awesome-24px):
+- Punks
+- Mohawks
+- Blondies
+- Zombies
+- Apes
+- Aliens
+- Golden Punks
+- Halloween Punks
+- Front Punks
+- More Punks
+- Expansion Punks
+- Avalanche Punks
+- Intl Punks
+- Ape Punks
+- Alien Clan
+- Bored Apes Blue
+- Bored Apes Red
+- Bored Apes Neon Glow
+- Bored Apes Stars and Stripes
+- Bored Apes Acid
+- Cool Cats
+- Cool Cats Mohawks
+- Cool Cats Ninjas
+- Cool Cats TV Heads
+- Cool Cats Pirates
+- Cool Cats Unicorns
+- Cool Cats Dragons
+- Cool Cats Frogs
+- Pudgy Penguins
+- Dodge
+- Rocks
+- Punk Rocks
+- Tulips
+
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-zombies.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-apes.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-alien-clasn.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-bored-apes-stars-and-stripes.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-cool-cats-ninjas.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-dodge.png)
+
+### Image Index
+
+Change image index to pick a different image.
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-different-punk-index.png)
 
