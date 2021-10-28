@@ -5,6 +5,7 @@ require 'fileutils'
 require 'net/http'
 require 'uri'
 require 'glimmer/data_binding/observer'
+require 'yaml'
 require 'puts_debuggerer'
 
 class CryptopunksGui
@@ -17,6 +18,7 @@ class CryptopunksGui
   
   def initialize
     initialize_punks
+    load_config
     initialize_defaults
     observe_image_attribute_changes
     create_gui
@@ -38,6 +40,17 @@ class CryptopunksGui
     @punk_file = File.join(@punk_directory, 'punks.png')
     File.write(@punk_file, Net::HTTP.get(URI('https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png'))) unless File.exist?(@punk_file)
     @punks = Punks::Image::Composite.read(@punk_file)
+  end
+  
+  def load_config
+    @punk_config_file = File.join(@punk_directory, 'cryptopunks.yml')
+    FileUtils.touch(@punk_config_file)
+    @punk_config = YAML.load(File.read(@punk_config_file)) || {punk_directory: @punk_directory}
+    @punk_directory = @punk_config[:punk_directory]
+  end
+  
+  def save_config
+    File.write(@punk_config_file, YAML.dump(@punk_config))
   end
   
   def initialize_defaults
@@ -184,6 +197,8 @@ class CryptopunksGui
             
             on('command') do
               @punk_directory = choose_directory(parent: @root)
+              @punk_config[:punk_directory] = @punk_directory
+              save_config
               generate_image
             end
           }

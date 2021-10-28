@@ -4,6 +4,7 @@
 
 - Provide option to change output location
 - Update default output location not to be a hidden location, switching `~/.cryptopunks` to `~/cryptopunks`
+- Remember last selected output location upon app start
 
 ## 0.0.5
 
