@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.7
+
+- Multiple Punk Collections (https://github.com/cryptopunksnotdead/awesome-24px)
+
 ## 0.0.6
 
 - Provide option to change output location

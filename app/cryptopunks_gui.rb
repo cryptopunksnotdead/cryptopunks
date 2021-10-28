@@ -13,17 +13,44 @@ class CryptopunksGui
   
   PALETTES = ['Standard'] + (Palette8bit.constants).map(&:name).map {|palette| palette.split('_').map(&:capitalize).join(' ')}.reject { |palette| palette.include?(' ') }.sort
   STYLES = ['Normal', 'Led', 'Sketch']
+  COLLECTION_URL_MAP = {
+    'Punks' => 'https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png',
+    'Mohawks' => 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/mohawks.png',
+    'Blondies' => 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/blondies.png',
+    'Zombies' => 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/zombies.png',
+    'Apes' => 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/apes.png',
+    'Aliens' => 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/aliens.png',
+    'Golden Punks' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/goldenpunks.png',
+    'Halloween Punks' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/halloweenpunks.png',
+    'Front Punks' => 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/frontpunks.png',
+    'More Punks' => 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/morepunks.png',
+    'Expansion Punks' => 'https://expansionpunks.com/provenance/expansionpunks.png',
+    'Avalanche Punks' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/avalanchepunks.png',
+    'Intl Punks' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/intlpunks.png',
+    'Ape Punks' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/apepunks.png',
+    'Alien Clan' => 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/alienclan.png',
+    'Bored Apes Blue' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_blue.png',
+    'Bored Apes Red' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_red.png',
+    'Bored Apes Neon Glow' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_neon_glow.png',
+    'Bored Apes Stars and Stripes' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_stars_and_stripes.png',
+    'Bored Apes Acid' => 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_acid.png',
+  }
   
-  attr_accessor :punk_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror
+  attr_accessor :collection, :punk_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror
   
   def initialize
-    initialize_punks
+    initialize_punk_directory
+    initialize_collection
     load_config
     initialize_defaults
     observe_image_attribute_changes
     create_gui
     self.punk_index = 0
     @root.open
+  end
+  
+  def collection_options
+    COLLECTION_URL_MAP.keys
   end
   
   def palette_options
@@ -34,16 +61,25 @@ class CryptopunksGui
     STYLES
   end
   
-  def initialize_punks
-    @punk_directory = File.join(Dir.home, 'cryptopunks')
+  def initialize_punk_directory
+    @punk_directory = @punk_config_directory = File.join(Dir.home, 'cryptopunks')
     FileUtils.mkdir_p(@punk_directory)
-    @punk_file = File.join(@punk_directory, 'punks.png')
-    File.write(@punk_file, Net::HTTP.get(URI('https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png'))) unless File.exist?(@punk_file)
+  end
+  
+  def initialize_collection
+    return if @collection && @collection == @last_collection
+    @collection ||= COLLECTION_URL_MAP.keys.first
+    url = COLLECTION_URL_MAP[@collection]
+    @punk_file = File.join(@punk_config_directory, File.basename(url, '.png'))
+    File.write(@punk_file, Net::HTTP.get(URI(url))) unless File.exist?(@punk_file)
     @punks = Punks::Image::Composite.read(@punk_file)
+    @last_collection = @collection
+    self.punk_index = 0
+    @punk_index_spinbox.to = @punks.size - 1 if @punk_index_spinbox
   end
   
   def load_config
-    @punk_config_file = File.join(@punk_directory, 'cryptopunks.yml')
+    @punk_config_file = File.join(@punk_config_directory, 'cryptopunks.yml')
     FileUtils.touch(@punk_config_file)
     @punk_config = YAML.load(File.read(@punk_config_file)) || {punk_directory: @punk_directory}
     @punk_directory = @punk_config[:punk_directory]
@@ -54,6 +90,7 @@ class CryptopunksGui
   end
   
   def initialize_defaults
+    @collection = COLLECTION_URL_MAP.keys.first
     @zoom = 12
     @palette = PALETTES.first
     @style = STYLES.first
@@ -66,6 +103,7 @@ class CryptopunksGui
   
   def observe_image_attribute_changes
     observer = Glimmer::DataBinding::Observer.proc { generate_image }
+    observer.observe(self, :collection)
     observer.observe(self, :punk_index)
     observer.observe(self, :zoom)
     observer.observe(self, :palette)
@@ -78,6 +116,7 @@ class CryptopunksGui
   end
   
   def generate_image
+    initialize_collection
     return if @punk_index.to_i > @punks.size
     image_location = File.join(@punk_directory, "punk-#{@punk_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}.png")
     puts "Writing punk image to #{image_location}"
@@ -112,9 +151,17 @@ class CryptopunksGui
       
       frame {
         label {
+          text 'Collection:'
+        }
+        combobox {
+          readonly true
+          text <=> [self, :collection]
+        }
+        
+        label {
           text 'Punk Index:'
         }
-        spinbox {
+        @punk_index_spinbox = spinbox {
           from 0
           to @punks.size - 1
           text <=> [self, :punk_index]
