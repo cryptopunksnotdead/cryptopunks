@@ -2,8 +2,8 @@
 
 ## 0.0.8
 
-- Remove Boring Apes collections since they are 28x28 instead of 24x24, thus incomptible with the cryptopunks Ruby gem
-- Fixed Boring Apes collection image dimensions (28x28 instead of default 24x24)
+- Added missing Bored Apes (vanilla) collection
+- Fixed Bored Apes collection image dimensions (28x28 instead of default 24x24)
 
 ## 0.0.7
 
