@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.9
+
+- Added Halloween special collections: Scream, Jack 'O' Lantern, Joker, and Frankestein
+
 ## 0.0.8
 
 - Added missing Bored Apes (vanilla) collection

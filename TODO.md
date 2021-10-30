@@ -7,5 +7,6 @@
 - Report rarity and popularity
 - Change skin tone
 - Support configuring new collections through preferences (including their dimensions like 28x28)
+- Support configuring default collections through a GitHub hosted yaml file
 - Build a Windows native executable
 - Build a Mac native executable

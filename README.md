@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.8
+# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.9
 ## Simplified Minting
 [![Gem Version](https://badge.fury.io/rb/cryptopunks-gui.svg)](http://badge.fury.io/rb/cryptopunks-gui)
 
@@ -25,7 +25,7 @@ You can use CryptoPunks GUI via gem or via cloning repository.
 Run:
 
 ```
-gem install cryptopunks-gui -v0.0.8
+gem install cryptopunks-gui -v0.0.9
 ```
 
 Afterwards, run app via:
@@ -73,7 +73,7 @@ ruby app/cryptopunks_gui.rb
 
 Change collection to pick a different collection of images.
 
-There are currently 34 available collections (from https://github.com/cryptopunksnotdead/awesome-24px):
+There are currently 38 available collections (from https://github.com/cryptopunksnotdead/awesome-24px):
 - [Punks](https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/punks-strip.png)
 - [Mohawks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/mohawks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/mohawks-strip.png)
 - [Blondies](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/blondies.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/blondies-strip.png)
@@ -82,6 +82,10 @@ There are currently 34 available collections (from https://github.com/cryptopunk
 - [Aliens](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/aliens.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/aliens-strip.png)
 - [Golden Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/goldenpunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/goldenpunks-strip.png)
 - [Halloween Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/halloweenpunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/halloweenpunks-strip.png)
+- [Scream Punks](https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks/master/halloween/i/screampunks%402x.png)
+- [Jack 'O' Lantern Punks](https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks/master/halloween/i/jackpunks%402x.png)
+- [Joker Punks](https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks/master/halloween/i/jokerpunks%402x.png)
+- [Frankenstein Punks](https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks/master/halloween/i/frankensteinpunks%402x.png)
 - [Front Punks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/frontpunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/frontpunks-strip.png)
 - [More Punks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/morepunks.png') ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/morepunks-strip.png)
 - [Expansion Punks](https://expansionpunks.com/provenance/expansionpunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/expansionpunks-strip.png)
