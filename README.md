@@ -10,6 +10,24 @@ Minted cryptopunks are stored at `~/cryptopunks/` by default ([output location c
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot.png)
 
+**Halloween 2021 Special Collections:**
+
+Scream Punks
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-scream-punks.png)
+
+Jack 'O' Lantern Punks
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-jack-o-lantern-punks.png)
+
+Joker Punks
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-joker-punks.png)
+
+Frankenstein Punks
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-frankenstein-punks.png)
+
 ## Prerequities
 
 - [Tcl/Tk (ActiveTcl)](https://tkdocs.com/tutorial/install.html)

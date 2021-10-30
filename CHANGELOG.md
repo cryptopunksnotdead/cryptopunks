@@ -2,7 +2,7 @@
 
 ## 0.0.9
 
-- Added Halloween special collections: Scream, Jack 'O' Lantern, Joker, and Frankestein
+- Added Halloween special collections: Scream, Jack 'O' Lantern, Joker, and Frankenstein
 
 ## 0.0.8
 
