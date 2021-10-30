@@ -53,7 +53,7 @@ GEM
     glimmer (2.4.0)
       array_include_methods (~> 1.4.0)
       facets (>= 3.1.0, < 4.0.0)
-    glimmer-dsl-tk (0.0.30)
+    glimmer-dsl-tk (0.0.33)
       glimmer (~> 2.4.0)
       os (>= 1.0.0, < 2.0.0)
       puts_debuggerer (~> 0.13.1)
@@ -142,7 +142,7 @@ PLATFORMS
 
 DEPENDENCIES
   cryptopunks (~> 2.0.1)
-  glimmer-dsl-tk (~> 0.0.30)
+  glimmer-dsl-tk (~> 0.0.33)
   juwelier (~> 2.1.0)
   rake-tui
   rdoc (~> 3.12)
