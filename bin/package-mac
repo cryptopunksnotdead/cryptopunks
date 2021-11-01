@@ -1,4 +1,4 @@
 #!/bin/sh
 
-rm -rf /Applications/CryptoPunks\ GUI.app
-platypus --name "CryptoPunks GUI" -o 'None' -i icons/cryptopunks-gui.png -u 'Andy Maleh' -V '1.0.0' -I 'org.andymaleh.CryptoPunksGUI' -B -f "$(pwd)|$(dirname $(dirname $(which ruby)))|$(dirname $(dirname $(dirname $(dirname $(gem which glimmer)))))" /Users/andymaleh/code/cryptopunks-gui/bin/cryptopunks-mac-gui /Applications/CryptoPunks\ GUI.app
+rm -rf "/Applications/CryptoPunks GUI.app"
+platypus --name "CryptoPunks GUI" -o "None" -B -i "icons/cryptopunks-gui.icns" -u "Andy Maleh" -V "1.0.0" -I "org.andymaleh.CryptoPunksGUI" -f "$(pwd)|$(dirname $(dirname $(which ruby)))|$(dirname $(dirname $(dirname $(dirname $(gem which glimmer)))))" "/Users/andymaleh/code/cryptopunks-gui/bin/cryptopunks-mac-gui" "/Applications/CryptoPunks GUI.app"
