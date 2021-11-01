@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ruby-3.0.2/bin/ruby cryptopunks-gui/bin/cryptopunks-mac-gui.rb
