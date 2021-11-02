@@ -1,3 +1,8 @@
 #!/bin/sh
 
-ruby-3.0.2/bin/ruby cryptopunks-gui/bin/cryptopunks-mac-gui.rb
+mkdir -p ~/Library/Frameworks
+cp -r Tcl ~/Library/Tcl
+cp -r Tcl.framework ~/Library/Frameworks/Tcl.framework
+cp -r Tk.framework ~/Library/Frameworks/Tk.framework
+
+ruby-3.0.2/bin/ruby cryptopunks-gui/bin/cryptopunks-mac-gui.rb &
