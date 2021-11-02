@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.10
+
+- Fix issue with cryptopunks GUI when cancelling selection of a new path (or getting blocked for security reasons)
+
 ## 0.0.9
 
 - Added Halloween special collections: Scream, Jack 'O' Lantern, Joker, and Frankenstein

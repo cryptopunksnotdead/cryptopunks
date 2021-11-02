@@ -1,8 +1,8 @@
 #!/bin/sh
 
 mkdir -p ~/Library/Frameworks
-cp -r Tcl ~/Library/Tcl
-cp -r Tcl.framework ~/Library/Frameworks/Tcl.framework
-cp -r Tk.framework ~/Library/Frameworks/Tk.framework
+[ ! -d ~/Library/Tcl ] && cp -r Tcl ~/Library/Tcl
+[ ! -d ~/Library/Frameworks/Tcl.framework ] && cp -r Tcl.framework ~/Library/Frameworks/Tcl.framework
+[ ! -d ~/Library/Frameworks/Tk.framework ] && cp -r Tk.framework ~/Library/Frameworks/Tk.framework
 
-ruby-3.0.2/bin/ruby cryptopunks-gui/bin/cryptopunks-mac-gui.rb &
+ruby-3.0.2/bin/ruby cryptopunks-gui/bin/cryptopunks-mac-gui.rb

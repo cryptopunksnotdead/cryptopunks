@@ -268,10 +268,13 @@ class CryptopunksGui
             width 1.1
             
             on('command') do
-              @punk_directory = choose_directory(parent: @root)
-              @punk_config[:punk_directory] = @punk_directory
-              save_config
-              generate_image
+              new_punk_directory = choose_directory(parent: @root)
+              unless new_punk_directory.to_s.empty?
+                @punk_directory = new_punk_directory
+                @punk_config[:punk_directory] = @punk_directory
+                save_config
+                generate_image
+              end
             end
           }
         }

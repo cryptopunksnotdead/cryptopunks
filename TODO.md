@@ -2,6 +2,10 @@
 
 ## Next
 
+- Activate window soon after it shows up given that app is started as a background app
+
+## Soon
+
 - Generate Punks algorithmically from attributes
 - Report attributes
 - Report rarity and popularity

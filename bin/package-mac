@@ -1,3 +1,3 @@
 #!/bin/sh
 
-platypus -B -o "None" --name "CryptoPunks GUI" -i "icons/cryptopunks-gui.icns" -u "Andy Maleh" -V "1.0.0" -I "org.andymaleh.CryptoPunksGUI" -f "$(pwd)|$(dirname $(dirname $(which ruby)))|$(dirname $(dirname $(dirname $(dirname $(gem which glimmer)))))|/Library/Frameworks/Tcl.framework|/Library/Frameworks/Tk.framework|/Library/Tcl" "bin/cryptopunks-mac-gui" -y "~/Applications/CryptoPunks GUI.app"
+platypus --background --interface-type "None" --name "CryptoPunks GUI" --app-icon "icons/cryptopunks-gui.icns" --author "Andy Maleh" --app-version "1.0.0" --bundle-identifier "org.andymaleh.CryptoPunksGUI" --bundled-file "$(pwd)|$(dirname $(dirname $(which ruby)))|$(dirname $(dirname $(dirname $(dirname $(gem which glimmer)))))|/Library/Frameworks/Tcl.framework|/Library/Frameworks/Tk.framework|/Library/Tcl" "bin/cryptopunks-mac-gui" --overwrite "~/Applications/CryptoPunks GUI.app"
