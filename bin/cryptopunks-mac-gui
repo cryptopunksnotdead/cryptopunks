@@ -1,5 +1,3 @@
 #!/bin/sh
 
-export SELF_PATH=$(realpath "$BASH_SOURCE")
-export APP_DIR=$(dirname "$SELF_PATH")
-"$APP_DIR/ruby-3.0.2/bin/ruby" "$APP_DIR/cryptopunks-gui/bin/cryptopunks-mac-gui.rb"
+ruby-3.0.2/bin/ruby cryptopunks-gui/bin/cryptopunks-mac-gui.rb
