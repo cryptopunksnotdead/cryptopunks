@@ -2,6 +2,7 @@
 
 ## 0.0.10
 
+- Mac [packaging](/README.md#packaging) support (and a Mac package download link in [README.md](/README.md))
 - Fix issue with cryptopunks GUI erroring when cancelling selection of a new output location (or getting blocked by OS for security reasons)
 
 ## 0.0.9
