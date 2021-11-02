@@ -1,3 +1,9 @@
 #!/bin/sh
 
-platypus --quit-after-execution --interface-type "None" --name "CryptoPunks GUI" --app-icon "icons/cryptopunks-gui.icns" --author "Andy Maleh" --app-version "1.0.0" --bundle-identifier "org.andymaleh.CryptoPunksGUI" --bundled-file "$(pwd)|$(dirname $(dirname $(which ruby)))|$(dirname $(dirname $(dirname $(dirname $(gem which glimmer)))))|/Library/Frameworks/Tcl.framework|/Library/Frameworks/Tk.framework|/Library/Tcl" "bin/cryptopunks-mac-gui" --overwrite "~/Applications/CryptoPunks GUI.app"
+source "$(dirname "$BASH_SOURCE")/package-mac-app"
+source "$(dirname "$BASH_SOURCE")/package-mac-dmg"
+echo "Moving .app file to ~/Applications/ to make ready for use..."
+rm -rf ~/Applications/CryptoPunks\ GUI.app
+mv ~/Applications/CryptoPunks\ GUI/CryptoPunks\ GUI.app ~/Applications/CryptoPunks\ GUI.app
+rm -rf ~/Applications/CryptoPunks\ GUI
+echo "Done packaging."

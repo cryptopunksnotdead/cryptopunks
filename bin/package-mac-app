@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "Packaging .app file..."
+mkdir -p ~/Applications/CryptoPunks\ GUI
+platypus --quit-after-execution --interface-type "None" --name "CryptoPunks GUI" --app-icon "icons/cryptopunks-gui.icns" --author "Andy Maleh" --app-version "1.0.0" --bundle-identifier "org.andymaleh.CryptoPunksGUI" --bundled-file "$(pwd)|$(dirname $(dirname $(which ruby)))|$(dirname $(dirname $(dirname $(dirname $(gem which glimmer)))))|/Library/Frameworks/Tcl.framework|/Library/Frameworks/Tk.framework|/Library/Tcl" "bin/cryptopunks-mac-gui" --overwrite "~/Applications/CryptoPunks GUI/CryptoPunks GUI.app"
