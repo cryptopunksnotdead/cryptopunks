@@ -10,23 +10,7 @@ Minted cryptopunks are stored at `~/cryptopunks/` by default ([output location c
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot.png)
 
-**Halloween 2021 Special Collections:**
-
-Scream Punks
-
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-scream-punks.png)
-
-Jack 'O' Lantern Punks
-
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-jack-o-lantern-punks.png)
-
-Joker Punks
-
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-joker-punks.png)
-
-Frankenstein Punks
-
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-frankenstein-punks.png)
+[<img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=40 /> Download DMG native executable package for Mac (Catalina x64 and older)](https://www.dropbox.com/s/gfh7e9osw30sjiq/CryptoPunks%20GUI.dmg?dl=1)
 
 ## Prerequities
 
@@ -134,6 +118,14 @@ There are currently 38 available collections (from https://github.com/cryptopunk
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-zombies.png)
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-apes.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-scream-punks.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-jack-o-lantern-punks.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-joker-punks.png)
+
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-frankenstein-punks.png)
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-alien-clan.png)
 
