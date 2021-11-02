@@ -5,4 +5,5 @@ mkdir -p ~/Library/Frameworks
 [ ! -d ~/Library/Frameworks/Tcl.framework ] && cp -r Tcl.framework ~/Library/Frameworks/Tcl.framework
 [ ! -d ~/Library/Frameworks/Tk.framework ] && cp -r Tk.framework ~/Library/Frameworks/Tk.framework
 
-ruby-3.0.2/bin/ruby cryptopunks-gui/bin/cryptopunks-mac-gui.rb
+export GLIMMER_APP_PREFIX="$(dirname "$BASH_SOURCE")"
+DYLD_LIBRARY_PATH="$GLIMMER_APP_PREFIX/6.2.1_1/lib" "$GLIMMER_APP_PREFIX/ruby-3.0.2/bin/ruby" "$GLIMMER_APP_PREFIX/cryptopunks-gui/bin/cryptopunks-mac-gui.rb"

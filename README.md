@@ -10,7 +10,7 @@ Minted cryptopunks are stored at `~/cryptopunks/` by default ([output location c
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot.png)
 
-[<img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=40 /> Download DMG installer for Mac (Catalina x64 and older)](https://www.dropbox.com/s/gfh7e9osw30sjiq/CryptoPunks%20GUI.dmg?dl=1)
+[<img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=40 /> Download DMG installer for Mac x64](https://www.dropbox.com/s/gfh7e9osw30sjiq/CryptoPunks%20GUI.dmg?dl=1)
 
 If your machine is incompatible with the downloadable DMG package, you may follow [Packaging](#packaging) instructions to produce your own machine compatible installer.
 
@@ -252,11 +252,21 @@ bin/package-mac-app
 
 ### Packaging Gotchas
 
-When running the packaged app, two app icons will show up; one immediately after launching and another when the GUI opens.
+#### First Run
+
+The first time the packaged app runs after install, it takes a little while to load. Please be patient. Subsequent runs are much faster (almost instant).
+
+#### Double-Icon
+
+Also, when running the packaged app, two app icons will show up; one immediately after launching and another when the GUI opens.
 
 That is caused by the way [Platypus](https://github.com/sveinbjornt/Platypus) is used.
 
 Please ignore as that is harmless in practice even if it looks quirky.
+
+#### GMP Dependency Version
+
+Packaging scripts expect gmp version 6.2.1_1 to be installed locally by Homebrew during Ruby's installation by RVM. They include it in the app package bundles. If you have a different version of GMP, you would have to update the [packaging script](/bin/package-mac-app).
 
 ## TODO
 
