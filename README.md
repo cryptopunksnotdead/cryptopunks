@@ -215,6 +215,27 @@ You may select a new output location by clicking on the `...` button.
 
 Assuming you have setup all prerequisites and cloned the project locally, you can package the project files, Ruby, gem dependencies, and ActiveTcl (Tcl/Tk) into fully self-contained native executable bundles for the Mac.
 
+### Packaging Prerequisites
+
+Packaging is currently supported on Mac only.
+
+- [Platypus](https://github.com/sveinbjornt/Platypus): Install Platypus 5.3
+- [Platypus Command Line Tool](https://github.com/sveinbjornt/Platypus/blob/master/Documentation/Documentation.md#show-shell-command): Run Platypus GUI -> Go to Preferences -> Install Command Line Tool.
+
+Finally, ensure the `platypus` command is available in the terminal by simply running:
+
+```
+platypus --version
+```
+
+Output:
+
+```
+platypus version 5.3
+```
+
+### Packaging Commands
+
 To package this app as both a Mac native executable (APP file) and a Mac native installer (DMG file), run this command (produces packages under `~/Applications`):
 
 ```
