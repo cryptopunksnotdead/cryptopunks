@@ -10,10 +10,6 @@ Minted cryptopunks are stored at `~/cryptopunks/` by default ([output location c
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot.png)
 
-[<img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=40 /> Download DMG installer for Mac x64](https://www.dropbox.com/s/gfh7e9osw30sjiq/CryptoPunks%20GUI.dmg?dl=1)
-
-If your machine is incompatible with the downloadable DMG package, you may follow [Packaging](#packaging) instructions to produce your own machine compatible installer.
-
 ## Prerequities
 
 - [Tcl/Tk (ActiveTcl)](https://tkdocs.com/tutorial/install.html)
@@ -210,63 +206,6 @@ Check mirror and/or flip to apply punk transformations. Can be combined with dif
 You may select a new output location by clicking on the `...` button.
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-output-location.png)
-
-## Packaging
-
-Assuming you have setup all prerequisites and cloned the project locally, you can package the project files, Ruby, gem dependencies, and ActiveTcl (Tcl/Tk) into fully self-contained native executable bundles for the Mac.
-
-### Packaging Prerequisites
-
-Packaging is currently supported on Mac only.
-
-- [Platypus](https://github.com/sveinbjornt/Platypus): Install Platypus 5.3
-- [Platypus Command Line Tool](https://github.com/sveinbjornt/Platypus/blob/master/Documentation/Documentation.md#show-shell-command): Run Platypus GUI -> Go to Preferences -> Install Command Line Tool.
-
-Finally, ensure the `platypus` command is available in the terminal by simply running:
-
-```
-platypus --version
-```
-
-Output:
-
-```
-platypus version 5.3
-```
-
-### Packaging Commands
-
-To package this app as both a Mac native executable (APP file) and a Mac native installer (DMG file), run this command (produces packages under `~/Applications`):
-
-```
-bin/package-mac
-```
-
-To package a Mac native executable only (quicker for local APP use without distribution), run:
-
-```
-bin/package-mac-app
-```
-
-![Screenshot](/screenshots/cryptopunks-gui-package-screenshot-mac-dmg.png)
-
-### Packaging Gotchas
-
-#### First Run
-
-The first time the packaged app runs after install, it takes a little while to load. Please be patient. Subsequent runs are much faster (almost instant).
-
-#### Double-Icon
-
-Also, when running the packaged app, two app icons will show up; one immediately after launching and another when the GUI opens.
-
-That is caused by the way [Platypus](https://github.com/sveinbjornt/Platypus) is used.
-
-Please ignore as that is harmless in practice even if it looks quirky.
-
-#### GMP Dependency Version
-
-Packaging scripts expect gmp version 6.2.1_1 to be installed locally by Homebrew during Ruby's installation by RVM. They include it in the app package bundles. If you have a different version of GMP, you would have to update the [packaging script](/bin/package-mac-app).
 
 ## TODO
 
