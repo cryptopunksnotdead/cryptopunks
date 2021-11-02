@@ -2,7 +2,7 @@
 
 ## 0.0.10
 
-- Fix issue with cryptopunks GUI when cancelling selection of a new path (or getting blocked for security reasons)
+- Fix issue with cryptopunks GUI erroring when cancelling selection of a new output location (or getting blocked by OS for security reasons)
 
 ## 0.0.9
 

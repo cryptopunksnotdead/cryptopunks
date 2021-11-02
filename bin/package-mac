@@ -1,6 +1,5 @@
 #!/bin/sh
 
-source "$(dirname "$BASH_SOURCE")/package-mac-app"
 source "$(dirname "$BASH_SOURCE")/package-mac-dmg"
 echo "Moving .app file to ~/Applications/ to make ready for use..."
 rm -rf ~/Applications/CryptoPunks\ GUI.app

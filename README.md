@@ -10,13 +10,15 @@ Minted cryptopunks are stored at `~/cryptopunks/` by default ([output location c
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot.png)
 
-[<img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=40 /> Download DMG native executable package for Mac (Catalina x64 and older)](https://www.dropbox.com/s/gfh7e9osw30sjiq/CryptoPunks%20GUI.dmg?dl=1)
+[<img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=40 /> Download DMG installer for Mac (Catalina x64 and older)](https://www.dropbox.com/s/gfh7e9osw30sjiq/CryptoPunks%20GUI.dmg?dl=1)
+
+If your machine is incompatible with the downloadable DMG package, you may follow [Packaging](#packaging) instructions to produce your own machine compatible installer.
 
 ## Prerequities
 
 - [Tcl/Tk (ActiveTcl)](https://tkdocs.com/tutorial/install.html)
 - [RVM](https://rvm.io/) (unless you are on Windows)
-- [Ruby 3.0.2 compiled with RVM for Tk](https://rvm.io/integration/tk#tk) (unless you are on Windows for which Tcl/Tk instructions include installation of Ruby)
+- [Ruby 3.0.2 compiled with RVM for Tk](https://rvm.io/integration/tk#tk) (unless you are on Windows for which Tcl/Tk instructions include installation of Ruby [get v3.0.2])
 
 ## Setup
 
@@ -208,6 +210,24 @@ Check mirror and/or flip to apply punk transformations. Can be combined with dif
 You may select a new output location by clicking on the `...` button.
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-output-location.png)
+
+## Packaging
+
+Assuming you have setup all prerequisites and cloned the project locally, you can package the project files, Ruby, gem dependencies, and ActiveTcl (Tcl/Tk) into fully self-contained native executable bundles for the Mac.
+
+To package this app as both a Mac native executable (APP file) and a Mac native installer (DMG file), run this command (produces packages under `~/Applications`):
+
+```
+bin/package-mac
+```
+
+To package a Mac native executable only (quicker for local APP use without distribution), run:
+
+```
+bin/package-mac-app
+```
+
+![Screenshot](/screenshots/cryptopunks-gui-package-screenshot-mac-dmg.png)
 
 ## TODO
 

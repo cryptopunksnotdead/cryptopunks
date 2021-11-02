@@ -1,5 +1,6 @@
 #!/bin/sh
 
+source "$(dirname "$BASH_SOURCE")/package-mac-app"
 echo "Packaging .dmg file..."
 rm -rf ~/Applications/CryptoPunks\ GUI.dmg
 hdiutil create -format UDZO -srcfolder ~/Applications/CryptoPunks\ GUI ~/Applications/CryptoPunks\ GUI.dmg
