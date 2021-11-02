@@ -250,6 +250,14 @@ bin/package-mac-app
 
 ![Screenshot](/screenshots/cryptopunks-gui-package-screenshot-mac-dmg.png)
 
+### Packaging Gotchas
+
+When running the packaged app, two app icons will show up; one immediately after launching and another when the GUI opens.
+
+That is caused by the way [Platypus](https://github.com/sveinbjornt/Platypus) is used.
+
+Please ignore as that is harmless in practice even if it looks quirky.
+
 ## TODO
 
 [TODO.md](TODO.md)
