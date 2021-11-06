@@ -13,51 +13,14 @@ class CryptopunksGui
   
   PALETTES = ['Standard'] + (Palette8bit.constants).map(&:name).map {|palette| palette.split('_').map(&:capitalize).join(' ')}.reject { |palette| palette.include?(' ') }.sort
   STYLES = ['Normal', 'Led', 'Sketch']
-  COLLECTION_URL_MAP = {
-    'Punks' => {url: 'https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png', width: 24, height: 24, default_zoom: 12},
-    'Mohawks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/mohawks.png', width: 24, height: 24, default_zoom: 12},
-    'Blondies' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/blondies.png', width: 24, height: 24, default_zoom: 12},
-    'Zombies' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/zombies.png', width: 24, height: 24, default_zoom: 12},
-    'Apes' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/apes.png', width: 24, height: 24, default_zoom: 12},
-    'Aliens' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/aliens.png', width: 24, height: 24, default_zoom: 12},
-    'Golden Punks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/goldenpunks.png', width: 24, height: 24, default_zoom: 12},
-    'Halloween Punks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/halloweenpunks.png', width: 24, height: 24, default_zoom: 12},
-    'Scream Punks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks/master/halloween/i/screampunks%402x.png', width: 48, height: 48, default_zoom: 6},
-    "Jack 'O' Lantern Punks" => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks/master/halloween/i/jackpunks%402x.png', width: 48, height: 48, default_zoom: 6},
-    'Joker Punks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks/master/halloween/i/jokerpunks%402x.png', width: 48, height: 48, default_zoom: 6},
-    'Frankenstein Punks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks/master/halloween/i/frankensteinpunks%402x.png', width: 48, height: 48, default_zoom: 6},
-    'Front Punks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/frontpunks.png', width: 24, height: 24, default_zoom: 12},
-    'More Punks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/morepunks.png', width: 24, height: 24, default_zoom: 12},
-    'Expansion Punks' => {url: 'https://expansionpunks.com/provenance/expansionpunks.png', width: 24, height: 24, default_zoom: 12},
-    'Avalanche Punks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/avalanchepunks.png', width: 24, height: 24, default_zoom: 12},
-    'International Punks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/intlpunks.png', width: 24, height: 24, default_zoom: 12},
-    'Ape Punks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/apepunks.png', width: 24, height: 24, default_zoom: 12},
-    'Alien Clan' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/alienclan.png', width: 24, height: 24, default_zoom: 12},
-    'Bored Apes' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes.png', width: 28, height: 28, default_zoom: 10},
-    'Bored Apes Blue' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_blue.png', width: 28, height: 28, default_zoom: 10},
-    'Bored Apes Red' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_red.png', width: 28, height: 28, default_zoom: 10},
-    'Bored Apes Neon Glow' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_neon_glow.png', width: 28, height: 28, default_zoom: 10},
-    'Bored Apes Stars and Stripes' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_stars_and_stripes.png', width: 28, height: 28, default_zoom: 10},
-    'Bored Apes Acid' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/boredapes_acid.png', width: 28, height: 28, default_zoom: 10},
-    'Cool Cats' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats.png', width: 24, height: 24, default_zoom: 12},
-    'Cool Cats Mohawks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_mohawks.png', width: 24, height: 24, default_zoom: 12},
-    'Cool Cats Ninjas' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_ninjas.png', width: 24, height: 24, default_zoom: 12},
-    'Cool Cats TV Heads' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_tvheads.png', width: 24, height: 24, default_zoom: 12},
-    'Cool Cats Pirates' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_pirates.png', width: 24, height: 24, default_zoom: 12},
-    'Cool Cats Unicorns' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_unicorns.png', width: 24, height: 24, default_zoom: 12},
-    'Cool Cats Dragons' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_dragons.png', width: 24, height: 24, default_zoom: 12},
-    'Cool Cats Frogs' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/coolcats_frogs.png', width: 24, height: 24, default_zoom: 12},
-    'Pudgy Penguins' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/pudgypenguins.png', width: 24, height: 24, default_zoom: 12},
-    'Dodge' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/dodge.png', width: 24, height: 24, default_zoom: 12},
-    'Rocks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/rocks.png', width: 24, height: 24, default_zoom: 12},
-    'Punk Rocks' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/punkrocks.png', width: 24, height: 24, default_zoom: 12},
-    'Tulips' => {url: 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/tulips.png', width: 24, height: 24, default_zoom: 12},
-  }
+  COLLECTIONS_YAML_URL = 'https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/cryptopunks-collections.yml'
+  COLLECTIONS_YAML_PATH = File.expand_path('../cryptopunks-collections.yml', __dir__)
   
   attr_accessor :collection, :image_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror
   
   def initialize
     initialize_punk_directory
+    initialize_collections_map
     initialize_collection
     load_config
     initialize_defaults
@@ -68,7 +31,7 @@ class CryptopunksGui
   end
   
   def collection_options
-    COLLECTION_URL_MAP.keys
+    @collections_map.keys
   end
   
   def palette_options
@@ -84,12 +47,28 @@ class CryptopunksGui
     FileUtils.mkdir_p(@punk_directory)
   end
   
+  def initialize_collections_map
+    begin
+      http_response = Net::HTTP.get_response(URI(COLLECTIONS_YAML_URL))
+      if http_response.is_a?(Net::HTTPSuccess)
+        @collections_map = YAML.load(http_response.body)
+      else
+        raise "code: #{http_response.code} message: #{http_response.message}"
+      end
+    rescue StandardError, SocketError => e
+      puts "Failed to utilize collection YAML from: #{COLLECTIONS_YAML_URL}"
+      puts e.full_message
+      puts "Utilizing local collection YAML instead: #{COLLECTIONS_YAML_PATH}"
+      @collections_map = YAML.load(File.read(COLLECTIONS_YAML_PATH))
+    end
+  end
+  
   def initialize_collection
     return if @collection && @collection == @last_collection
-    @collection ||= COLLECTION_URL_MAP.keys.first
-    url = COLLECTION_URL_MAP[@collection][:url]
-    width = COLLECTION_URL_MAP[@collection][:width]
-    height = COLLECTION_URL_MAP[@collection][:height]
+    @collection ||= @collections_map.keys.first
+    url = @collections_map[@collection][:url]
+    width = @collections_map[@collection][:width]
+    height = @collections_map[@collection][:height]
     @punk_file = File.join(@punk_config_directory, File.basename(url, '.png'))
     File.write(@punk_file, Net::HTTP.get(URI(url))) unless File.exist?(@punk_file)
     @images ||= {}
@@ -111,7 +90,7 @@ class CryptopunksGui
   end
   
   def initialize_defaults
-    @collection = COLLECTION_URL_MAP.keys.first
+    @collection = @collections_map.keys.first
     @zoom = 12
     @palette = PALETTES.first
     @style = STYLES.first
@@ -144,8 +123,8 @@ class CryptopunksGui
     selected_punk = @images[@collection][@image_index.to_i]
     selected_punk = selected_punk.change_palette8bit(Palette8bit.const_get(@palette.gsub(' ', '_').upcase.to_sym)) if @palette != PALETTES.first
     @original_zoom = @zoom
-    if @previous_collection && @collection != @previous_collection && COLLECTION_URL_MAP[@collection][:width] != COLLECTION_URL_MAP[@previous_collection][:width]
-      @zoom = COLLECTION_URL_MAP[@collection][:default_zoom]
+    if @previous_collection && @collection != @previous_collection && @collections_map[@collection][:width] != @collections_map[@previous_collection][:width]
+      @zoom = @collections_map[@collection][:default_zoom]
     end
     if @style != STYLES.first
       style_options = {}

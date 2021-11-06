@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.11
+
+- Support configuring default collections through a web hosted yaml file at: https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/cryptopunks-collections.yml
+
 ## 0.0.10
 
 - Fix issue with cryptopunks GUI erroring when cancelling selection of a new output location (or getting blocked by OS for security reasons)

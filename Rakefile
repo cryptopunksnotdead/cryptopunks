@@ -21,7 +21,7 @@ Juwelier::Tasks.new do |gem|
   gem.email = "andy.am@gmail.com"
   gem.authors = ["Andy Maleh"]
   gem.executables = ['cryptopunks-gui']
-  gem.files = ['README.md', 'CHANGELOG.md', 'VERSION', 'LICENSE.txt', 'cryptopunks-gui.gemspec', 'bin/**/*', 'app/**/*', 'icons/**/*']
+  gem.files = ['README.md', 'CHANGELOG.md', 'VERSION', 'LICENSE.txt', 'cryptopunks-gui.gemspec', 'cryptopunks-collections.yaml', 'bin/**/*', 'app/**/*', 'icons/**/*']
   gem.require_paths = ['app']
   gem.post_install_message = "To launch CryptoPunks GUI, run command: cryptopunks-gui"
 
