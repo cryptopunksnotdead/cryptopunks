@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.10
+# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.11
 ## Simplified Minting
 [![Gem Version](https://badge.fury.io/rb/cryptopunks-gui.svg)](http://badge.fury.io/rb/cryptopunks-gui)
 
@@ -25,7 +25,7 @@ You can use CryptoPunks GUI via gem or via cloning repository.
 Run:
 
 ```
-gem install cryptopunks-gui -v0.0.10
+gem install cryptopunks-gui -v0.0.11
 ```
 
 Afterwards, run app via:
@@ -73,7 +73,13 @@ ruby app/cryptopunks_gui.rb
 
 Change collection to pick a different collection of images.
 
-There are currently 38 available collections (from https://github.com/cryptopunksnotdead/awesome-24px):
+![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-zombies.png)
+
+Image collections are configured in [cryptopunks-collections.yml](/cryptopunks-collections.yml).
+
+If you cloned the project locally, you may edit [cryptopunks-collections.yml](/cryptopunks-collections.yml) to add/remove collections.
+
+There are 41 available collections (mostly from https://github.com/cryptopunksnotdead/awesome-24px):
 - [Punks](https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/punks-strip.png)
 - [Mohawks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/mohawks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/mohawks-strip.png)
 - [Blondies](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/blondies.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/blondies-strip.png)
@@ -81,6 +87,9 @@ There are currently 38 available collections (from https://github.com/cryptopunk
 - [Apes](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/apes.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/apes-strip.png)
 - [Aliens](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/aliens.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/aliens-strip.png)
 - [Golden Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/goldenpunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/goldenpunks-strip.png)
+- [Green Punks](https://i.redd.it/uwrsn2lrr3o71.png)
+- [Clown Punks](https://i.redd.it/ut0kk25heex71.png)
+- [Bubble Gum Punks](https://i.redd.it/hjddd1s8ydx71.png)
 - [Halloween Punks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/halloweenpunks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/halloweenpunks-strip.png)
 - [Scream Punks](https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks/master/halloween/i/screampunks%402x.png)
 - [Jack 'O' Lantern Punks](https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks/master/halloween/i/jackpunks%402x.png)
@@ -112,8 +121,6 @@ There are currently 38 available collections (from https://github.com/cryptopunk
 - [Rocks](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/rocks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/rocks-strip.png)
 - [Punk Rocks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/punkrocks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/punkrocks-strip.png)
 - [Tulips](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/tulips.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/tulips-strip.png)
-
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-zombies.png)
 
 ![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-apes.png)
 

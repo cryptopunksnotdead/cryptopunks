@@ -3,6 +3,7 @@
 ## 0.0.11
 
 - Support configuring default collections through a web hosted yaml file at: https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/cryptopunks-collections.yml
+- New Green Punks, Clown Punks, and Bubble Gum Punks collections
 
 ## 0.0.10
 
