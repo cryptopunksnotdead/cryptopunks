@@ -320,6 +320,12 @@ class CryptopunksGui
       end
     }
   end
+  
+  def show_preferences_dialog
+    toplevel(@root) { |tl|
+      title 'Preferences'
+    }
+  end
 end
 
 CryptopunksGui.new.launch
