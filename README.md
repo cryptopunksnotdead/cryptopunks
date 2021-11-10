@@ -2,7 +2,7 @@
 ## Simplified Minting
 [![Gem Version](https://badge.fury.io/rb/cryptopunks-gui.svg)](http://badge.fury.io/rb/cryptopunks-gui)
 
-This is a Graphical User Interface for the famous [cryptopunks Ruby gem](https://github.com/cryptopunksnotdead/cryptopunks/tree/master/cryptopunks).
+This is a Graphical User Interface for the [cryptopunks Ruby gem](https://github.com/cryptopunksnotdead/cryptopunks/tree/master/cryptopunks).
 
 It automatically downloads image collection sprites on first use (e.g. `punks.png` from https://github.com/larvalabs/cryptopunks).
 
