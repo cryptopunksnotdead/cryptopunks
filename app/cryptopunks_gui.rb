@@ -401,6 +401,20 @@ class CryptopunksGui
   def show_preferences_dialog
     toplevel(@root) { |tl|
       title 'Preferences'
+      
+      frame {
+        @collections_map.each_with_index do |pair, index|
+          collection_name, collection_options = pair
+          label {
+            grid row: index, column: 0, column_weight: 0
+            text collection_name
+          }
+          entry {
+            grid row: index, column: 1, column_weight: index == 0 ? 1 : 0
+            text collection_options[:url]
+          }
+        end
+      }
     }
   end
   
