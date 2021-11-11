@@ -15,6 +15,7 @@ class CryptopunksGui
   STYLES = ['Normal', 'Led', 'Sketch']
   COLLECTIONS_YAML_URL = 'https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/cryptopunks-collections.yml'
   COLLECTIONS_YAML_PATH = File.expand_path('../cryptopunks-collections.yml', __dir__)
+  OUTPUT_LOCATION_DEFAULT = File.join(Dir.home, 'cryptopunks')
   
   attr_accessor :collection, :image_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror
   
@@ -43,7 +44,7 @@ class CryptopunksGui
   end
   
   def initialize_punk_directory
-    @punk_directory = @punk_config_directory = File.join(Dir.home, 'cryptopunks')
+    @punk_directory = @punk_config_directory = OUTPUT_LOCATION_DEFAULT
     FileUtils.mkdir_p(@punk_directory)
   end
   
@@ -153,6 +154,31 @@ class CryptopunksGui
       title 'CryptoPunks GUI'
       iconphoto File.expand_path('../icons/cryptopunks-gui.png', __dir__)
       
+      menu {
+        if OS.mac?
+          menu(:application) {
+            menu_item(:preferences) {
+              on('command') do
+                show_preferences_dialog
+              end
+            }
+          }
+        end
+        
+        menu(label: 'File', underline: 0) {
+          menu_item(label: 'Change Output Location...', underline: 7) {
+            on('command') do
+              change_output_location
+            end
+          }
+          menu_item(label: 'Reset Output Location', underline: 0) {
+            on('command') do
+              reset_output_location
+            end
+          }
+        }
+      }
+      
       frame {
         label {
           text 'Collection:'
@@ -247,13 +273,7 @@ class CryptopunksGui
             width 1.1
             
             on('command') do
-              new_punk_directory = choose_directory(parent: @root)
-              unless new_punk_directory.to_s.empty?
-                @punk_directory = new_punk_directory
-                @punk_config[:punk_directory] = @punk_directory
-                save_config
-                generate_image
-              end
+              change_output_location
             end
           }
         }
@@ -319,6 +339,23 @@ class CryptopunksGui
         }
       end
     }
+  end
+  
+  def change_output_location
+    new_punk_directory = choose_directory(parent: @root)
+    unless new_punk_directory.to_s.empty?
+      @punk_directory = new_punk_directory
+      @punk_config[:punk_directory] = @punk_directory
+      save_config
+      generate_image
+    end
+  end
+  
+  def reset_output_location
+    @punk_directory = OUTPUT_LOCATION_DEFAULT
+    @punk_config[:punk_directory] = @punk_directory
+    save_config
+    generate_image
   end
   
   def show_preferences_dialog

@@ -3,6 +3,7 @@
 ## Next
 
 - Support configuring new collections through preferences (including their dimensions like 28x28)
+- Refactor code to extract Models, Views, and Presenters
 
 ## App Features
 
