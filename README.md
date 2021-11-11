@@ -236,7 +236,7 @@ You may select a new output location by clicking on the `...` button.
 
 [MIT](LICENSE.txt)
 
-Copyright (c) 2021 - Cryptopunks GUI by [Andy Maleh](https://github.com/AndyObtiva)
+Copyright (c) 2021 - Cryptopunks GUI by [Crypto Punk's Not Dead](https://github.com/cryptopunksnotdead)
 
 --
 

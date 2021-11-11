@@ -157,6 +157,14 @@ class CryptopunksGui
       menu {
         if OS.mac?
           menu(:application) {
+            menu_item(:about, label: 'About') {
+              accelerator 'Command+A'
+              
+              on('command') do
+                show_about_dialog
+              end
+            }
+            
             menu_item(:preferences) {
               on('command') do
                 show_preferences_dialog
@@ -171,12 +179,15 @@ class CryptopunksGui
               change_output_location
             end
           }
+          
           menu_item(label: 'Reset Output Location', underline: 0) {
             on('command') do
               reset_output_location
             end
           }
         }
+        
+        menu(label: 'Help')
       }
       
       frame {
@@ -356,6 +367,10 @@ class CryptopunksGui
     @punk_config[:punk_directory] = @punk_directory
     save_config
     generate_image
+  end
+  
+  def show_about_dialog
+    message_box('CryptoPunks GUI', "Copyright (c) 2021 Crypto Punk's Not Dead")
   end
   
   def show_preferences_dialog
