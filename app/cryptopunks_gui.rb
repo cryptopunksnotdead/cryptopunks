@@ -188,7 +188,19 @@ class CryptopunksGui
           }
         }
         
-        menu(label: 'Help')
+        menu(label: 'Help') {
+          menu_item(:help) {
+            on('command') do
+              toplevel(@root) {
+                title 'README.md'
+                
+                text {
+                  value File.read(File.expand_path('../README.md', __dir__))
+                }
+              }
+            end
+          }
+        }
       }
       
       frame {
