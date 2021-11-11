@@ -177,6 +177,8 @@ class CryptopunksGui
         
         menu(label: 'File', underline: 0) {
           menu_item(label: 'Change Output Location...', underline: 7) {
+            accelerator 'Command+O'
+            
             on('command') do
               change_output_location
             end
@@ -185,6 +187,14 @@ class CryptopunksGui
           menu_item(label: 'Reset Output Location', underline: 0) {
             on('command') do
               reset_output_location
+            end
+          }
+          
+          menu_item(:separator)
+          
+          menu_item(label: 'Exit', underline: 1) {
+            on('command') do
+              exit(0)
             end
           }
         }
