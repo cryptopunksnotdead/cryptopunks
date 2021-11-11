@@ -16,7 +16,8 @@ class CryptopunksGui
   COLLECTIONS_YAML_URL = 'https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/cryptopunks-collections.yml'
   COLLECTIONS_YAML_PATH = File.expand_path('../cryptopunks-collections.yml', __dir__)
   OUTPUT_LOCATION_DEFAULT = File.join(Dir.home, 'cryptopunks')
-  LICENSE = File.read(File.expand_path('../LICENSE.txt', __dir__))
+  LICENSE = File.expand_path('../LICENSE.txt', __dir__)
+  HELP = File.expand_path('../README.md', __dir__)
   
   attr_accessor :collection, :image_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror
   
@@ -193,9 +194,10 @@ class CryptopunksGui
             on('command') do
               toplevel(@root) {
                 title 'README.md'
+                escapable true
                 
                 text {
-                  value File.read(File.expand_path('../README.md', __dir__))
+                  value help
                 }
               }
             end
@@ -383,13 +385,21 @@ class CryptopunksGui
   end
   
   def show_about_dialog
-    message_box(parent: @root, title: 'CryptoPunks GUI', message: "CryptoPunks GUI\n\n#{LICENSE}")
+    message_box(parent: @root, title: 'CryptoPunks GUI', message: "CryptoPunks GUI\n\n#{license}")
   end
   
   def show_preferences_dialog
     toplevel(@root) { |tl|
       title 'Preferences'
     }
+  end
+  
+  def license
+    @license ||= File.read(LICENSE)
+  end
+  
+  def help
+    @help ||= File.read(HELP)
   end
 end
 
