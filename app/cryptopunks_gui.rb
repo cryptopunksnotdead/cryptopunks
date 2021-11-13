@@ -192,6 +192,14 @@ class CryptopunksGui
           
           menu_item(:separator)
           
+          menu_item(label: 'Preferences...', underline: 0) {
+            on('command') do
+              show_preferences_dialog
+            end
+          }
+        
+          menu_item(:separator)
+          
           menu_item(label: 'Exit', underline: 1) {
             on('command') do
               exit(0)
@@ -202,14 +210,7 @@ class CryptopunksGui
         menu(label: 'Help') {
           menu_item(:help) {
             on('command') do
-              toplevel(@root) {
-                title 'README.md'
-                escapable true
-                
-                text {
-                  value help
-                }
-              }
+              show_help_dialog
             end
           }
         }
@@ -401,20 +402,52 @@ class CryptopunksGui
   def show_preferences_dialog
     toplevel(@root) { |tl|
       title 'Preferences'
+      width 1030
+      height 700
+      escapable true
       
-      frame {
+      scrollbar_frame {
         @collections_map.each_with_index do |pair, index|
           collection_name, collection_options = pair
+          
           label {
-            grid row: index, column: 0, column_weight: 0
+            grid row: index, column: 0, column_weight: 1
             text collection_name
           }
+          
           entry {
             grid row: index, column: 1, column_weight: index == 0 ? 1 : 0
             text collection_options[:url]
+            width 90
           }
         end
       }
+    }
+  end
+  
+  def show_help_dialog
+    toplevel(@root) {
+      title 'CryptoPunks GUI README.md'
+      escapable true
+      width 800
+      height 600
+      
+      help_dialog = text {
+        grid row: 0, column: 0, row_weight: 1, column_weight: 1
+        value help
+      }
+      
+      help_dialog_yscrollbar = scrollbar {
+        grid row: 0, column: 1
+        orient 'vertical'
+      }
+      help_dialog.yscrollbar help_dialog_yscrollbar.tk
+      
+      help_dialog_xscrollbar = scrollbar {
+        grid row: 1, column: 0, column_span: 2
+        orient 'horizontal'
+      }
+      help_dialog.xscrollbar help_dialog_xscrollbar.tk
     }
   end
   

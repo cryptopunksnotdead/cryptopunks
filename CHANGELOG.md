@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.12
+
+- Upgrade to glimmer-dsl-tk 0.0.41
+
 ## 0.0.11
 
 - Support configuring default collections through a web hosted yaml file at: https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/cryptopunks-collections.yml
