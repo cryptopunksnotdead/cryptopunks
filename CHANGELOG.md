@@ -3,6 +3,7 @@
 ## 0.0.12
 
 - Upgrade to glimmer-dsl-tk 0.0.41
+- Add 'Mirror', 'Flip', 'Led' and 'Sketch' details (e.g. spacing or line) to output file name (e.g. '...-mirror.png')
 
 ## 0.0.11
 

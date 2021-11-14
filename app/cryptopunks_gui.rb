@@ -10,10 +10,12 @@ require 'puts_debuggerer'
 
 require_relative 'model/image'
 require_relative 'view/menu_bar'
+require_relative 'view/style_options_frame'
 
 class CryptopunksGui
   include Glimmer
   include View::MenuBar
+  include View::StyleOptionsFrame
   
   def initialize
     @image = Model::Image.new
@@ -86,7 +88,7 @@ class CryptopunksGui
           text <=> [@image, :style, after_write: ->(val) {add_style_options}]
         }
         
-        @style_options_frame = frame {
+        @style_options_container_frame = frame {
           padding 0
         }
         
@@ -102,7 +104,7 @@ class CryptopunksGui
             text 'Mirror'
             
             on('Button-1') do
-              self.mirror = !mirror
+              @image.mirror = !@image.mirror
             end
           }
           
@@ -115,7 +117,7 @@ class CryptopunksGui
             text 'Flip'
             
             on('Button-1') do
-              self.flip = !flip
+              @image.flip = !@image.flip
             end
           }
         }
@@ -150,57 +152,15 @@ class CryptopunksGui
   end
   
   def add_style_options
-    @style_options_frame.content {
-      @style_options_frame.children.each(&:destroy)
-      if @style == 'Led'
-        frame {
-          padding 0
-          
-          label {
-            grid row: 0, column: 0, column_weight: 0
-            text 'Spacing:'
-          }
-          spinbox {
-            grid row: 0, column: 1
-            from 1
-            to 72
-            text <=> [@image, :led_spacing]
-          }
-          
-          checkbutton {
-            grid row: 0, column: 2
-            variable <=> [@image, :led_round_corner]
-          }
-          label {
-            grid row: 0, column: 3
-            text 'Round Corner'
-            
-            on('Button-1') do
-              self.led_round_corner = !led_round_corner
-            end
-          }
-        }
-      elsif @style == 'Sketch'
-        frame {
-          padding 0
-          
-          label {
-            grid row: 0, column: 0, column_weight: 0
-            text 'Line:'
-          }
-          spinbox {
-            grid row: 0, column: 1
-            from 1
-            to 72
-            text <=> [@image, :sketch_line]
-          }
-        }
+    @style_options_container_frame.children.each(&:destroy)
+    @style_options_container_frame.content {
+      case @image.style
+      when 'Led'
+        led_style_options_frame
+      when 'Sketch'
+        sketch_style_options_frame
       else
-        frame { # filler
-          padding 0
-          height 0
-          width 0
-        }
+        no_style_options_frame
       end
     }
   end

@@ -106,8 +106,8 @@ class CryptopunksGui
       def generate_image
         initialize_collection
         return if @image_index.to_i > @images[@collection].size
-        self.image_location = File.join(@punk_directory, "#{@collection.gsub(' ', '').downcase}-#{@image_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}.png")
-        puts "Writing punk image to #{@image_location}"
+        new_image_location = File.join(@punk_directory, "#{@collection.gsub(' ', '').downcase}-#{@image_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}#{"-spacing#{@led_spacing.to_i}" if @style == 'Led'}#{'-round-corner' if @style == 'Led' && @led_round_corner}#{"-line#{@sketch_line.to_i}" if @style == 'Sketch'}#{'-mirror' if @mirror}#{'-flip' if @flip}.png")
+        puts "Writing punk image to #{new_image_location}"
         selected_punk = @images[@collection][@image_index.to_i]
         selected_punk = selected_punk.change_palette8bit(Palette8bit.const_get(@palette.gsub(' ', '_').upcase.to_sym)) if @palette != PALETTES.first
         @original_zoom = @zoom
@@ -128,10 +128,11 @@ class CryptopunksGui
         selected_punk = selected_punk.mirror if @mirror
         selected_punk = selected_punk.flip if @flip
         selected_punk = selected_punk.zoom(@zoom.to_i) if @style == STYLES.first
-        selected_punk.save(@image_location)
+        selected_punk.save(new_image_location)
+        self.image_location = new_image_location
+        notify_observers(:zoom) if @zoom != @original_zoom
         @previous_style = @style
         @previous_collection = @collection
-        notify_observers(:zoom) if @zoom != @original_zoom
       end
       
       def change_output_location(new_punk_directory)
