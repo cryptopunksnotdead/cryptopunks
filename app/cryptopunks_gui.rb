@@ -7,148 +7,51 @@ require 'uri'
 require 'glimmer/data_binding/observer'
 require 'yaml'
 require 'puts_debuggerer'
+require_relative 'model/image'
 
 class CryptopunksGui
   include Glimmer
   
-  PALETTES = ['Standard'] + (Palette8bit.constants).map(&:name).map {|palette| palette.split('_').map(&:capitalize).join(' ')}.reject { |palette| palette.include?(' ') }.sort
-  STYLES = ['Normal', 'Led', 'Sketch']
-  COLLECTIONS_YAML_URL = 'https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/cryptopunks-collections.yml'
-  COLLECTIONS_YAML_PATH = File.expand_path('../cryptopunks-collections.yml', __dir__)
-  OUTPUT_LOCATION_DEFAULT = File.join(Dir.home, 'cryptopunks')
   LICENSE = File.expand_path('../LICENSE.txt', __dir__)
   HELP = File.expand_path('../README.md', __dir__)
   
-  attr_accessor :collection, :image_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror
-  
   def initialize
-    initialize_punk_directory
-    initialize_collections_map
-    initialize_collection
-    load_config
-    initialize_defaults
-    observe_image_attribute_changes
+    @image = Model::Image.new
     create_gui
-    self.image_index = 0
+    register_observers
+    @image.image_index = 0
+  end
+  
+  def launch
     @root.open
   end
   
-  def collection_options
-    @collections_map.keys
+  def register_observers
+    observe_image_attribute_changes
+    
+    Glimmer::DataBinding::Observer.proc do
+      @image_label.image = @output_location_entry.text = @image.image_location
+    end.observe(@image, :image_location)
+    
+    Glimmer::DataBinding::Observer.proc do
+      @image_index_spinbox.to = @image.images[@image.collection].size - 1 if @image_index_spinbox
+    end.observe(@image, :images)
   end
-  
-  def palette_options
-    PALETTES
-  end
-  
-  def style_options
-    STYLES
-  end
-  
-  def initialize_punk_directory
-    @punk_directory = @punk_config_directory = OUTPUT_LOCATION_DEFAULT
-    FileUtils.mkdir_p(@punk_directory)
-  end
-  
-  def initialize_collections_map
-    begin
-      http_response = Net::HTTP.get_response(URI(COLLECTIONS_YAML_URL))
-      if http_response.is_a?(Net::HTTPSuccess)
-        @collections_map = YAML.load(http_response.body)
-      else
-        raise "code: #{http_response.code} message: #{http_response.message}"
-      end
-    rescue StandardError, SocketError => e
-      puts "Failed to utilize collection YAML from: #{COLLECTIONS_YAML_URL}"
-      puts e.full_message
-      puts "Utilizing local collection YAML instead: #{COLLECTIONS_YAML_PATH}"
-      @collections_map = YAML.load(File.read(COLLECTIONS_YAML_PATH))
-    end
-  end
-  
-  def initialize_collection
-    return if @collection && @collection == @last_collection
-    @collection ||= @collections_map.keys.first
-    url = @collections_map[@collection][:url]
-    width = @collections_map[@collection][:width]
-    height = @collections_map[@collection][:height]
-    @punk_file = File.join(@punk_config_directory, File.basename(url, '.png'))
-    File.write(@punk_file, Net::HTTP.get(URI(url))) unless File.exist?(@punk_file)
-    @images ||= {}
-    @images[@collection] ||= Punks::Image::Composite.read(@punk_file, width: width, height: height)
-    @last_collection = @collection
-    self.image_index = 0
-    @image_index_spinbox.to = @images[@collection].size - 1 if @image_index_spinbox
-  end
-  
-  def load_config
-    @punk_config_file = File.join(@punk_config_directory, 'cryptopunks.yml')
-    FileUtils.touch(@punk_config_file)
-    @punk_config = YAML.load(File.read(@punk_config_file)) || {punk_directory: @punk_directory}
-    @punk_directory = @punk_config[:punk_directory]
-  end
-  
-  def save_config
-    File.write(@punk_config_file, YAML.dump(@punk_config))
-  end
-  
-  def initialize_defaults
-    @collection = @collections_map.keys.first
-    @zoom = 12
-    @palette = PALETTES.first
-    @style = STYLES.first
-    @led_spacing = 2
-    @led_round_corner = false
-    @sketch_line = 1
-    @mirror = false
-    @flip = false
-  end
-  
+
   def observe_image_attribute_changes
-    observer = Glimmer::DataBinding::Observer.proc { generate_image }
-    observer.observe(self, :collection)
-    observer.observe(self, :image_index)
-    observer.observe(self, :zoom)
-    observer.observe(self, :palette)
-    observer.observe(self, :style)
-    observer.observe(self, :led_spacing)
-    observer.observe(self, :led_round_corner)
-    observer.observe(self, :sketch_line)
-    observer.observe(self, :mirror)
-    observer.observe(self, :flip)
-  end
-  
-  def generate_image
-    initialize_collection
-    return if @image_index.to_i > @images[@collection].size
-    image_location = File.join(@punk_directory, "#{@collection.gsub(' ', '').downcase}-#{@image_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}.png")
-    puts "Writing punk image to #{image_location}"
-    selected_punk = @images[@collection][@image_index.to_i]
-    selected_punk = selected_punk.change_palette8bit(Palette8bit.const_get(@palette.gsub(' ', '_').upcase.to_sym)) if @palette != PALETTES.first
-    @original_zoom = @zoom
-    if @previous_collection && @collection != @previous_collection && @collections_map[@collection][:width] != @collections_map[@previous_collection][:width]
-      @zoom = @collections_map[@collection][:default_zoom]
+    observer = Glimmer::DataBinding::Observer.proc do
+      @image.generate_image
     end
-    if @style != STYLES.first
-      style_options = {}
-      if @style == 'Led'
-        style_options[:spacing] = @led_spacing.to_i
-        style_options[:round_corner] = @led_round_corner
-      end
-      if @style == 'Sketch'
-        style_options[:line] = @sketch_line.to_i
-      end
-      selected_punk = selected_punk.send(@style.underscore, @zoom.to_i, **style_options)
-    end
-    selected_punk = selected_punk.mirror if @mirror
-    selected_punk = selected_punk.flip if @flip
-    selected_punk = selected_punk.zoom(@zoom.to_i) if @style == STYLES.first
-    selected_punk.save(image_location)
-    @image_label.image = image_location
-    @output_location_entry.text = image_location
-    @previous_style = @style
-    @previous_collection = @collection
-    notify_observers(:zoom) if @zoom != @original_zoom
+    observer.observe(@image, :collection)
+    observer.observe(@image, :image_index)
+    observer.observe(@image, :zoom)
+    observer.observe(@image, :palette)
+    observer.observe(@image, :style)
+    observer.observe(@image, :led_spacing)
+    observer.observe(@image, :led_round_corner)
+    observer.observe(@image, :sketch_line)
+    observer.observe(@image, :mirror)
+    observer.observe(@image, :flip)
   end
   
   def create_gui
@@ -160,7 +63,7 @@ class CryptopunksGui
         if OS.mac?
           menu(:application) {
             menu_item(:about, label: 'About') {
-              accelerator 'Command+A'
+              accelerator OS.mac? ? 'Command+Shift+A' : 'Control+Alt+A'
               
               on('command') do
                 show_about_dialog
@@ -177,7 +80,7 @@ class CryptopunksGui
         
         menu(label: 'File', underline: 0) {
           menu_item(label: 'Change Output Location...', underline: 7) {
-            accelerator 'Command+O'
+            accelerator OS.mac? ? 'Command+O' : 'Control+O'
             
             on('command') do
               change_output_location
@@ -222,7 +125,7 @@ class CryptopunksGui
         }
         combobox {
           readonly true
-          text <=> [self, :collection]
+          text <=> [@image, :collection]
         }
         
         label {
@@ -230,8 +133,8 @@ class CryptopunksGui
         }
         @image_index_spinbox = spinbox {
           from 0
-          to @images[@collection].size - 1
-          text <=> [self, :image_index]
+          to @image.images[@image.collection].size - 1
+          text <=> [@image, :image_index]
         }
         
         label {
@@ -240,7 +143,7 @@ class CryptopunksGui
         spinbox {
           from 1
           to 72
-          text <=> [self, :zoom]
+          text <=> [@image, :zoom]
         }
         
         label {
@@ -248,7 +151,7 @@ class CryptopunksGui
         }
         combobox {
           readonly true
-          text <=> [self, :palette]
+          text <=> [@image, :palette]
         }
         
         label {
@@ -256,7 +159,7 @@ class CryptopunksGui
         }
         combobox {
           readonly true
-          text <=> [self, :style, after_write: ->(val) {add_style_options}]
+          text <=> [@image, :style, after_write: ->(val) {add_style_options}]
         }
         
         @style_options_frame = frame {
@@ -268,7 +171,7 @@ class CryptopunksGui
           
           checkbutton {
             grid row: 0, column: 0, column_weight: 0
-            variable <=> [self, :mirror]
+            variable <=> [@image, :mirror]
           }
           label {
             grid row: 0, column: 1
@@ -281,7 +184,7 @@ class CryptopunksGui
           
           checkbutton {
             grid row: 0, column: 2
-            variable <=> [self, :flip]
+            variable <=> [@image, :flip]
           }
           label {
             grid row: 0, column: 3
@@ -337,12 +240,12 @@ class CryptopunksGui
             grid row: 0, column: 1
             from 1
             to 72
-            text <=> [self, :led_spacing]
+            text <=> [@image, :led_spacing]
           }
           
           checkbutton {
             grid row: 0, column: 2
-            variable <=> [self, :led_round_corner]
+            variable <=> [@image, :led_round_corner]
           }
           label {
             grid row: 0, column: 3
@@ -365,7 +268,7 @@ class CryptopunksGui
             grid row: 0, column: 1
             from 1
             to 72
-            text <=> [self, :sketch_line]
+            text <=> [@image, :sketch_line]
           }
         }
       else
@@ -377,24 +280,16 @@ class CryptopunksGui
       end
     }
   end
-  
+
   def change_output_location
     new_punk_directory = choose_directory(parent: @root)
-    unless new_punk_directory.to_s.empty?
-      @punk_directory = new_punk_directory
-      @punk_config[:punk_directory] = @punk_directory
-      save_config
-      generate_image
-    end
+    @image.change_output_location(new_punk_directory) unless new_punk_directory.to_s.empty?
   end
-  
+          
   def reset_output_location
-    @punk_directory = OUTPUT_LOCATION_DEFAULT
-    @punk_config[:punk_directory] = @punk_directory
-    save_config
-    generate_image
+    @image.reset_output_location
   end
-  
+
   def show_about_dialog
     message_box(parent: @root, title: 'CryptoPunks GUI', message: "CryptoPunks GUI\n\n#{license}")
   end
@@ -407,7 +302,7 @@ class CryptopunksGui
       escapable true
       
       scrollbar_frame {
-        @collections_map.each_with_index do |pair, index|
+        @image.collections_map.each_with_index do |pair, index|
           collection_name, collection_options = pair
           
           label {
