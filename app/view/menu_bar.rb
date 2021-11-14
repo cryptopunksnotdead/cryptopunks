@@ -29,7 +29,7 @@ class CryptopunksGui
               accelerator OS.mac? ? 'Command+O' : 'Control+O'
               
               on('command') do
-                change_output_location(root: root, image: image)
+                change_output_location(root: root, image: image) # assumes View::ImageFrame is mixed in
               end
             }
             

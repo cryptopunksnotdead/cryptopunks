@@ -1,10 +1,10 @@
 require 'glimmer-dsl-tk'
+require 'glimmer/data_binding/observer'
 require 'cryptopunks'
 require 'facets'
 require 'fileutils'
 require 'net/http'
 require 'uri'
-require 'glimmer/data_binding/observer'
 require 'yaml'
 require 'puts_debuggerer'
 
@@ -38,11 +38,6 @@ class CryptopunksGui
       
       image_frame(root: root_proxy, image: @image)
     }
-  end
-  
-  def change_output_location(root: , image: )
-    new_punk_directory = choose_directory(parent: root)
-    image.change_output_location(new_punk_directory) unless new_punk_directory.to_s.empty?
   end
 end
 
