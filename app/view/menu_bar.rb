@@ -43,7 +43,7 @@ class CryptopunksGui
             
             menu_item(label: 'Preferences...', underline: 0) {
               on('command') do
-                show_preferences_dialog
+                show_preferences_dialog(root: root, image: image)
               end
             }
           

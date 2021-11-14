@@ -2,6 +2,16 @@ class CryptopunksGui
   module View
     module ImageFrame
       def image_frame(root: , image: )
+        image_label = output_location_entry = image_index_spinbox = style_options_container_frame = nil
+        
+        Glimmer::DataBinding::Observer.proc do
+          image_label.image = output_location_entry.text = image.image_location
+        end.observe(image, :image_location)
+        
+        Glimmer::DataBinding::Observer.proc do
+          image_index_spinbox.to = image.images[image.collection].size - 1
+        end.observe(image, :images)
+        
         frame {
           label {
             text 'Collection:'
@@ -14,9 +24,9 @@ class CryptopunksGui
           label {
             text 'Image Index:'
           }
-          @image_index_spinbox = spinbox {
+          image_index_spinbox = spinbox {
             from 0
-            to @image.images[image.collection].size - 1
+            to image.images[image.collection].size - 1
             text <=> [image, :image_index]
           }
           
@@ -42,10 +52,10 @@ class CryptopunksGui
           }
           combobox {
             readonly true
-            text <=> [image, :style, after_write: ->(val) {add_style_options(image: image)}]
+            text <=> [image, :style, after_write: ->(val) {add_style_options(style_options_container_frame: style_options_container_frame, image: image)}]
           }
           
-          @style_options_container_frame = frame {
+          style_options_container_frame = frame {
             padding 0
           }
           
@@ -85,7 +95,7 @@ class CryptopunksGui
           frame {
             padding 0
             
-            @output_location_entry = entry {
+            output_location_entry = entry {
               grid row: 0, column: 0
               readonly true
               width 47
@@ -96,20 +106,20 @@ class CryptopunksGui
               width 1.1
               
               on('command') do
-                change_output_location
+                change_output_location(root: root, image: image)
               end
             }
           }
           
-          @image_label = label {
+          image_label = label {
             grid row_weight: 1
           }
         }
       end
       
-      def add_style_options(image: )
-        @style_options_container_frame.children.each(&:destroy)
-        @style_options_container_frame.content {
+      def add_style_options(style_options_container_frame: , image: )
+        style_options_container_frame.children.each(&:destroy)
+        style_options_container_frame.content {
           case image.style
           when 'Led'
             led_style_options_frame(image: image)

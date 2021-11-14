@@ -22,7 +22,6 @@ class CryptopunksGui
   def initialize
     @image = Model::Image.new
     create_gui
-    register_observers
     @image.image_index = 0
   end
   
@@ -30,16 +29,6 @@ class CryptopunksGui
     @root.open
   end
   
-  def register_observers
-    Glimmer::DataBinding::Observer.proc do
-      @image_label.image = @output_location_entry.text = @image.image_location
-    end.observe(@image, :image_location)
-    
-    Glimmer::DataBinding::Observer.proc do
-      @image_index_spinbox.to = @image.images[@image.collection].size - 1 if @image_index_spinbox
-    end.observe(@image, :images)
-  end
-
   def create_gui
     @root = root { |root_proxy|
       title 'CryptoPunks GUI'

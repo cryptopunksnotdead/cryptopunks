@@ -105,7 +105,7 @@ class CryptopunksGui
       
       def generate_image
         initialize_collection
-        return if @image_index.to_i > @images[@collection].size
+        return if @image_index.to_i >= @images[@collection].size
         new_image_location = File.join(@punk_directory, "#{@collection.gsub(' ', '').downcase}-#{@image_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}#{"-spacing#{@led_spacing.to_i}" if @style == 'Led'}#{'-round-corner' if @style == 'Led' && @led_round_corner}#{"-line#{@sketch_line.to_i}" if @style == 'Sketch'}#{'-mirror' if @mirror}#{'-flip' if @flip}.png")
         puts "Writing punk image to #{new_image_location}"
         selected_punk = @images[@collection][@image_index.to_i]
