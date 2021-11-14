@@ -1,7 +1,7 @@
 class CryptopunksGui
   module View
     module StyleOptionsFrame
-      def led_style_options_frame
+      def led_style_options_frame(image: )
         frame {
           padding 0
           
@@ -13,25 +13,25 @@ class CryptopunksGui
             grid row: 0, column: 1
             from 1
             to 72
-            text <=> [@image, :led_spacing]
+            text <=> [image, :led_spacing]
           }
           
           checkbutton {
             grid row: 0, column: 2
-            variable <=> [@image, :led_round_corner]
+            variable <=> [image, :led_round_corner]
           }
           label {
             grid row: 0, column: 3
             text 'Round Corner'
             
             on('Button-1') do
-              @image.led_round_corner = !@image.led_round_corner
+              image.led_round_corner = !image.led_round_corner
             end
           }
         }
       end
       
-      def sketch_style_options_frame
+      def sketch_style_options_frame(image: )
         frame {
           padding 0
           
@@ -43,7 +43,7 @@ class CryptopunksGui
             grid row: 0, column: 1
             from 1
             to 72
-            text <=> [@image, :sketch_line]
+            text <=> [image, :sketch_line]
           }
         }
       end

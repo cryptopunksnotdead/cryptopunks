@@ -4,7 +4,7 @@ class CryptopunksGui
       LICENSE = File.expand_path('../../LICENSE.txt', __dir__)
       HELP = File.expand_path('../../README.md', __dir__)
     
-      def cryptopunks_gui_menu_bar
+      def cryptopunks_gui_menu_bar(root: , image: )
         menu {
           if OS.mac?
             menu(:application) {
@@ -12,13 +12,13 @@ class CryptopunksGui
                 accelerator OS.mac? ? 'Command+Shift+A' : 'Control+Alt+A'
                 
                 on('command') do
-                  show_about_dialog
+                  show_about_dialog(root: root)
                 end
               }
               
               menu_item(:preferences) {
                 on('command') do
-                  show_preferences_dialog
+                  show_preferences_dialog(root: root, image: image)
                 end
               }
             }
@@ -29,13 +29,13 @@ class CryptopunksGui
               accelerator OS.mac? ? 'Command+O' : 'Control+O'
               
               on('command') do
-                change_output_location
+                change_output_location(root: root, image: image)
               end
             }
             
             menu_item(label: 'Reset Output Location', underline: 0) {
               on('command') do
-                reset_output_location
+                image.reset_output_location
               end
             }
             
@@ -59,30 +59,26 @@ class CryptopunksGui
           menu(label: 'Help') {
             menu_item(:help) {
               on('command') do
-                show_help_dialog
+                show_help_dialog(root: root)
               end
             }
           }
         }
       end
           
-      def reset_output_location
-        @image.reset_output_location
-      end
-    
-      def show_about_dialog
-        message_box(parent: @root, title: 'CryptoPunks GUI', message: "CryptoPunks GUI\n\n#{license}")
+      def show_about_dialog(root: )
+        message_box(parent: root, title: 'CryptoPunks GUI', message: "CryptoPunks GUI\n\n#{license}")
       end
       
-      def show_preferences_dialog
-        toplevel(@root) { |tl|
+      def show_preferences_dialog(root: , image: )
+        toplevel(root) { |tl|
           title 'Preferences'
           width 1030
           height 700
           escapable true
           
           scrollbar_frame {
-            @image.collections_map.each_with_index do |pair, index|
+            image.collections_map.each_with_index do |pair, index|
               collection_name, collection_options = pair
               
               label {
@@ -100,8 +96,8 @@ class CryptopunksGui
         }
       end
       
-      def show_help_dialog
-        toplevel(@root) {
+      def show_help_dialog(root: )
+        toplevel(root) {
           title 'CryptoPunks GUI README.md'
           escapable true
           width 800
