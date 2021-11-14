@@ -7,8 +7,8 @@ class CryptopunksGui
       COLLECTIONS_YAML_PATH = File.expand_path('../../cryptopunks-collections.yml', __dir__)
       OUTPUT_LOCATION_DEFAULT = File.join(Dir.home, 'cryptopunks')
       
-      attr_accessor :collection, :collection_size, :image_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror,
-                    :images, :image_location, :punk_directory, :punk_config
+      attr_accessor :collection, :image_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror,
+                    :collection_size, :collections_map, :images, :image_location, :punk_directory, :punk_config
       
       def initialize
         initialize_punk_directory
@@ -16,6 +16,7 @@ class CryptopunksGui
         initialize_collection
         load_config
         initialize_defaults
+        observe_image_attribute_changes
       end
           
       def collection_options
@@ -86,6 +87,20 @@ class CryptopunksGui
         @sketch_line = 1
         @mirror = false
         @flip = false
+      end
+      
+      def observe_image_attribute_changes
+        observer = Glimmer::DataBinding::Observer.proc { generate_image }
+        observer.observe(self, :collection)
+        observer.observe(self, :image_index)
+        observer.observe(self, :zoom)
+        observer.observe(self, :palette)
+        observer.observe(self, :style)
+        observer.observe(self, :led_spacing)
+        observer.observe(self, :led_round_corner)
+        observer.observe(self, :sketch_line)
+        observer.observe(self, :mirror)
+        observer.observe(self, :flip)
       end
       
       def generate_image
