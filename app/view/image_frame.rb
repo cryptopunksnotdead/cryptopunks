@@ -4,14 +4,6 @@ class CryptopunksGui
       def image_frame(root: , image: )
         image_label = output_location_entry = image_index_spinbox = style_options_container_frame = nil
         
-        Glimmer::DataBinding::Observer.proc do
-          image_label.image = output_location_entry.text = image.image_location
-        end.observe(image, :image_location)
-        
-        Glimmer::DataBinding::Observer.proc do
-          image_index_spinbox.to = image.images[image.collection].size - 1
-        end.observe(image, :images)
-        
         frame {
           label {
             text 'Collection:'
@@ -115,6 +107,18 @@ class CryptopunksGui
             grid row_weight: 1
           }
         }
+        
+        register_image_frame_observers(image_label: image_label, output_location_entry: output_location_entry, image_index_spinbox: image_index_spinbox, image: image)
+      end
+      
+      def register_image_frame_observers(image_label: , output_location_entry: , image_index_spinbox: , image: )
+        Glimmer::DataBinding::Observer.proc do
+          image_label.image = output_location_entry.text = image.image_location
+        end.observe(image, :image_location)
+        
+        Glimmer::DataBinding::Observer.proc do
+          image_index_spinbox.to = image.images[image.collection].size - 1
+        end.observe(image, :images)
       end
       
       def add_style_options(style_options_container_frame: , image: )
