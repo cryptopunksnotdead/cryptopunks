@@ -5,6 +5,7 @@ class CryptopunksGui
       STYLES = ['Normal', 'Led', 'Sketch']
       OUTPUT_LOCATION_DEFAULT = File.join(Dir.home, 'cryptopunks')
       CONFIG_FILE = File.join(OUTPUT_LOCATION_DEFAULT, 'cryptopunks.yml')
+      COLLECTIONS_YAML_PATH = File.join(OUTPUT_LOCATION_DEFAULT, 'cryptopunks-collections.yml')
       COLLECTIONS_YAML_URL = 'https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks-gui/master/cryptopunks-collections.yml'
       COLLECTIONS_YAML_REPO_PATH = File.expand_path('../../cryptopunks-collections.yml', __dir__)
       
@@ -37,11 +38,14 @@ class CryptopunksGui
         FileUtils.mkdir_p(@output_location)
       end
       
-      def initialize_collections_map
+      def initialize_collections_map(reset: false)
+        FileUtils.touch(COLLECTIONS_YAML_PATH)
+        @collections_map = reset ? {} : (YAML.load(File.read(COLLECTIONS_YAML_PATH)) || {})
+        new_collections_map = {}
         begin
           http_response = Net::HTTP.get_response(URI(COLLECTIONS_YAML_URL))
           if http_response.is_a?(Net::HTTPSuccess)
-            @collections_map = YAML.load(http_response.body)
+            new_collections_map = YAML.load(http_response.body)
           else
             raise "code: #{http_response.code} message: #{http_response.message}"
           end
@@ -49,8 +53,17 @@ class CryptopunksGui
           puts "Failed to utilize collection YAML from: #{COLLECTIONS_YAML_URL}"
           puts e.full_message
           puts "Utilizing local collection YAML instead: #{COLLECTIONS_YAML_REPO_PATH}"
-          @collections_map = YAML.load(File.read(COLLECTIONS_YAML_REPO_PATH))
+          new_collections_map = YAML.load(File.read(COLLECTIONS_YAML_REPO_PATH)) rescue {}
         end
+        new_collections_map.each do |collection_name, collection_options|
+          @collections_map[collection_name] = collection_options.merge(@collections_map[collection_name].to_h)
+          @collections_map[collection_name][:enabled] = true unless @collections_map[collection_name].has_key?(:enabled)
+        end
+        save_collections_map
+      end
+      
+      def save_collections_map
+        File.write(COLLECTIONS_YAML_PATH, YAML.dump(@collections_map))
       end
       
       def initialize_collection

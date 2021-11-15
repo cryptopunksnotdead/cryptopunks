@@ -54,7 +54,7 @@ class CryptopunksGui
               
               checkbutton {
                 grid row: row, column: 0
-                
+                variable collection_options[:enabled]
               }
               
               entry {
@@ -155,6 +155,10 @@ class CryptopunksGui
           frame {
             button {
               text 'Reset'
+              
+              on('command') do
+                image.initialize_collections_map(reset: true)
+              end
             }
           }
         }
