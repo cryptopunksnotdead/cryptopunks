@@ -52,9 +52,13 @@ class CryptopunksGui
               collection_name, collection_options = pair
               row = index + 1
               
-              checkbutton {
+              checkbutton { |cb|
                 grid row: row, column: 0
                 variable collection_options[:enabled]
+                
+                on('command') do
+                  collection_options[:enabled] = cb.variable
+                end
               }
               
               entry {
@@ -72,7 +76,7 @@ class CryptopunksGui
                 grid row: row, column: 3
                 from 1
                 to 512
-                text '24'
+                text collection_options[:width]
                 width 3
               }
               
@@ -80,7 +84,7 @@ class CryptopunksGui
                 grid row: row, column: 4
                 from 1
                 to 512
-                text '24'
+                text collection_options[:height]
                 width 3
               }
               
@@ -88,7 +92,7 @@ class CryptopunksGui
                 grid row: row, column: 5
                 from 1
                 to 72
-                text '12'
+                text collection_options[:default_zoom]
                 width 3
               }
               

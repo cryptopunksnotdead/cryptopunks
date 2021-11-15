@@ -22,7 +22,7 @@ class CryptopunksGui
       end
           
       def collection_options
-        @collections_map.keys
+        @collections_map.keys.select {|collection_name| @collections_map[collection_name][:enabled]}
       end
       
       def palette_options
@@ -55,10 +55,27 @@ class CryptopunksGui
           puts "Utilizing local collection YAML instead: #{COLLECTIONS_YAML_REPO_PATH}"
           new_collections_map = YAML.load(File.read(COLLECTIONS_YAML_REPO_PATH)) rescue {}
         end
+        @collections_map_observers ||= {}
         new_collections_map.each do |collection_name, collection_options|
-          @collections_map[collection_name] = collection_options.merge(@collections_map[collection_name].to_h)
+          @collections_map[collection_name] ||= {}
+          @collections_map[collection_name].reverse_merge!(collection_options)
           @collections_map[collection_name][:enabled] = true unless @collections_map[collection_name].has_key?(:enabled)
+          @collections_map_observers[collection_name] ||= Glimmer::DataBinding::Observer.proc { |value, key|
+            if key == :enabled
+              self.collection = @collections_map.find { |name, options| options[:enabled] }.first if key == :enabled && value == false && @collection == collection_name
+              notify_observers(:collection_options)
+            end
+            save_collections_map
+          }.tap {|o| o.observe(@collections_map[collection_name])}
         end
+        @collections_map_observer ||= Glimmer::DataBinding::Observer.proc { |collection_options, collection_name|
+          if collection_options.nil?
+            self.collection = @collections_map.find { |name, options| options[:enabled] }.first if @collection == collection_name
+            self.collection = collection_name if @collections_map.select { |name, options| options[:enabled] }.count == 0
+          end
+          notify_observers(:collection_options)
+          save_collections_map
+        }.tap {|o| o.observe(@collections_map)}
         save_collections_map
       end
       

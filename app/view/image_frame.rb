@@ -10,6 +10,7 @@ class CryptopunksGui
           }
           combobox {
             readonly true
+            values <= [image, :collection_options]
             text <=> [image, :collection]
           }
           
