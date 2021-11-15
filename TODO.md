@@ -12,6 +12,9 @@
 - Change skin tone
 - Ability to build pixel art from scratch by mouse-toggling pixels in a pixel grid (a GUI improvement over ascii approach: https://github.com/cryptopunksnotdead/pixelart-howto/tree/master/adam-1bit)
 - Neon Style: https://github.com/cryptopunksnotdead/pixelart-howto/blob/master/neon/neon.rb
+- Play Image Reel (cycles through images in a collection with a small time delay)
+- Mint All Images (mints all images in a collection)
+- Mint All Collections (mints all images in all collections)
 
 ## Support
 
