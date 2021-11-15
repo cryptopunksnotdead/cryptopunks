@@ -136,8 +136,8 @@ class CryptopunksGui
       end
       
       def change_output_location(root: , image: )
-        new_punk_directory = choose_directory(parent: root)
-        image.change_output_location(new_punk_directory) unless new_punk_directory.to_s.empty?
+        new_output_location = choose_directory(parent: root)
+        image.change_output_location(new_output_location) unless new_output_location.to_s.empty?
       end
     end
   end

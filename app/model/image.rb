@@ -6,12 +6,13 @@ class CryptopunksGui
       COLLECTIONS_YAML_URL = 'https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks-gui/master/cryptopunks-collections.yml'
       COLLECTIONS_YAML_PATH = File.expand_path('../../cryptopunks-collections.yml', __dir__)
       OUTPUT_LOCATION_DEFAULT = File.join(Dir.home, 'cryptopunks')
+      CONFIG_FILE = File.join(OUTPUT_LOCATION_DEFAULT, 'cryptopunks.yml')
       
       attr_accessor :collection, :image_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror,
-                    :collection_size, :collections_map, :images, :image_location, :punk_directory, :punk_config
+                    :collection_size, :collections_map, :images, :image_location, :output_location, :config
       
       def initialize
-        initialize_punk_directory
+        initialize_output_location
         initialize_collections_map
         initialize_collection
         load_config
@@ -31,9 +32,9 @@ class CryptopunksGui
         STYLES
       end
       
-      def initialize_punk_directory
-        @punk_directory = @punk_config_directory = OUTPUT_LOCATION_DEFAULT
-        FileUtils.mkdir_p(@punk_directory)
+      def initialize_output_location
+        @output_location = OUTPUT_LOCATION_DEFAULT
+        FileUtils.mkdir_p(@output_location)
       end
       
       def initialize_collections_map
@@ -58,23 +59,23 @@ class CryptopunksGui
         url = @collections_map[@collection][:url]
         width = @collections_map[@collection][:width]
         height = @collections_map[@collection][:height]
-        @punk_file = File.join(@punk_config_directory, File.basename(url, '.png'))
-        File.write(@punk_file, Net::HTTP.get(URI(url))) unless File.exist?(@punk_file)
+        @image_file = File.join(OUTPUT_LOCATION_DEFAULT, File.basename(url, '.png'))
+        File.write(@image_file, Net::HTTP.get(URI(url))) unless File.exist?(@image_file)
         @images ||= {}
-        @images[@collection] ||= Punks::Image::Composite.read(@punk_file, width: width, height: height)
+        @images[@collection] ||= Punks::Image::Composite.read(@image_file, width: width, height: height)
         @last_collection = @collection
         self.image_index = 0
       end
       
       def load_config
-        @punk_config_file = File.join(@punk_config_directory, 'cryptopunks.yml')
-        FileUtils.touch(@punk_config_file)
-        @punk_config = YAML.load(File.read(@punk_config_file)) || {punk_directory: @punk_directory}
-        @punk_directory = @punk_config[:punk_directory]
+        FileUtils.touch(CONFIG_FILE)
+        @config = YAML.load(File.read(CONFIG_FILE)) || {}
+        @output_location = @config[:output_location]
+        @config[:output_location] = @output_location = OUTPUT_LOCATION_DEFAULT if @output_location.nil?
       end
       
       def save_config
-        File.write(@punk_config_file, YAML.dump(@punk_config))
+        File.write(CONFIG_FILE, YAML.dump(@config))
       end
       
       def initialize_defaults
@@ -106,7 +107,7 @@ class CryptopunksGui
       def generate_image
         initialize_collection
         return if @image_index.to_i >= @images[@collection].size
-        new_image_location = File.join(@punk_directory, "#{@collection.gsub(' ', '').downcase}-#{@image_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}#{"-spacing#{@led_spacing.to_i}" if @style == 'Led'}#{'-round-corner' if @style == 'Led' && @led_round_corner}#{"-line#{@sketch_line.to_i}" if @style == 'Sketch'}#{'-mirror' if @mirror}#{'-flip' if @flip}.png")
+        new_image_location = File.join(@output_location, "#{@collection.gsub(' ', '').downcase}-#{@image_index}#{"x#{@zoom}" if @zoom.to_i > 1}#{"-#{@palette.underscore}" if @palette != PALETTES.first}#{"-#{@style.underscore}" if @style != STYLES.first}#{"-spacing#{@led_spacing.to_i}" if @style == 'Led'}#{'-round-corner' if @style == 'Led' && @led_round_corner}#{"-line#{@sketch_line.to_i}" if @style == 'Sketch'}#{'-mirror' if @mirror}#{'-flip' if @flip}.png")
         puts "Writing punk image to #{new_image_location}"
         selected_punk = @images[@collection][@image_index.to_i]
         selected_punk = selected_punk.change_palette8bit(Palette8bit.const_get(@palette.gsub(' ', '_').upcase.to_sym)) if @palette != PALETTES.first
@@ -135,16 +136,16 @@ class CryptopunksGui
         @previous_collection = @collection
       end
       
-      def change_output_location(new_punk_directory)
-        @punk_directory = new_punk_directory
-        @punk_config[:punk_directory] = @punk_directory # TODO rename to something else
+      def change_output_location(new_output_location)
+        @output_location = new_output_location
+        @config[:output_location] = @output_location
         save_config
         generate_image
       end
       
       def reset_output_location
-        @punk_directory = OUTPUT_LOCATION_DEFAULT
-        @punk_config[:punk_directory] = @punk_directory
+        @output_location = OUTPUT_LOCATION_DEFAULT
+        @config[:output_location] = @output_location
         save_config
         generate_image
       end
