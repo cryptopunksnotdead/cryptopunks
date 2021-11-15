@@ -3,7 +3,7 @@ class CryptopunksGui
     class Image
       PALETTES = ['Standard'] + (Palette8bit.constants).map(&:name).map {|palette| palette.split('_').map(&:capitalize).join(' ')}.reject { |palette| palette.include?(' ') }.sort
       STYLES = ['Normal', 'Led', 'Sketch']
-      COLLECTIONS_YAML_URL = 'https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/cryptopunks-collections.yml'
+      COLLECTIONS_YAML_URL = 'https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks-gui/master/cryptopunks-collections.yml'
       COLLECTIONS_YAML_PATH = File.expand_path('../../cryptopunks-collections.yml', __dir__)
       OUTPUT_LOCATION_DEFAULT = File.join(Dir.home, 'cryptopunks')
       
