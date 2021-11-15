@@ -3,10 +3,10 @@ class CryptopunksGui
     class Image
       PALETTES = ['Standard'] + (Palette8bit.constants).map(&:name).map {|palette| palette.split('_').map(&:capitalize).join(' ')}.reject { |palette| palette.include?(' ') }.sort
       STYLES = ['Normal', 'Led', 'Sketch']
-      COLLECTIONS_YAML_URL = 'https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks-gui/master/cryptopunks-collections.yml'
-      COLLECTIONS_YAML_PATH = File.expand_path('../../cryptopunks-collections.yml', __dir__)
       OUTPUT_LOCATION_DEFAULT = File.join(Dir.home, 'cryptopunks')
       CONFIG_FILE = File.join(OUTPUT_LOCATION_DEFAULT, 'cryptopunks.yml')
+      COLLECTIONS_YAML_URL = 'https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks-gui/master/cryptopunks-collections.yml'
+      COLLECTIONS_YAML_REPO_PATH = File.expand_path('../../cryptopunks-collections.yml', __dir__)
       
       attr_accessor :collection, :image_index, :zoom, :palette, :style, :led_spacing, :led_round_corner, :sketch_line, :flip, :mirror,
                     :collection_size, :collections_map, :images, :image_location, :output_location, :config
@@ -48,8 +48,8 @@ class CryptopunksGui
         rescue StandardError, SocketError => e
           puts "Failed to utilize collection YAML from: #{COLLECTIONS_YAML_URL}"
           puts e.full_message
-          puts "Utilizing local collection YAML instead: #{COLLECTIONS_YAML_PATH}"
-          @collections_map = YAML.load(File.read(COLLECTIONS_YAML_PATH))
+          puts "Utilizing local collection YAML instead: #{COLLECTIONS_YAML_REPO_PATH}"
+          @collections_map = YAML.load(File.read(COLLECTIONS_YAML_REPO_PATH))
         end
       end
       
