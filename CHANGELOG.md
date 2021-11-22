@@ -2,10 +2,13 @@
 
 ## 0.0.12
 
-- Upgrade to glimmer-dsl-tk 0.0.41
+- Upgrade to glimmer-dsl-tk 0.0.46
+- File & Help Menus
 - Update COLLECTIONS_YAML_URL to point to cryptopunksnotdead repository (recently moved there)
 - Add 'Mirror', 'Flip', 'Led' and 'Sketch' details (e.g. spacing or line) to output file name (e.g. '...-mirror.png')
 - Fix issue with allowing out of bounds image index when entering index that is equal to count of images in a collection (off by 1 error)
+- Fix written file name for downloaded sprites (was excluding .png before)
+- Fix issue with @punk_directory mistakenly referenced after being removed through refactoring
 
 ## 0.0.11
 

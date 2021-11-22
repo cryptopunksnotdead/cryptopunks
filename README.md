@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.11
+# <img src="https://raw.githubusercontent.com/AndyObtiva/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.12
 ## Simplified Minting
 [![Gem Version](https://badge.fury.io/rb/cryptopunks-gui.svg)](http://badge.fury.io/rb/cryptopunks-gui)
 
@@ -18,14 +18,14 @@ Minted cryptopunks are stored at `~/cryptopunks/` by default ([output location c
 
 ## Setup
 
-You can use CryptoPunks GUI via gem or via cloning repository.
+You can use CryptoPunks GUI via gem or via cloning repository (if you encounter any issues, please try older versions of the gem and report the issues encountered).
 
 ### Gem
 
 Run:
 
 ```
-gem install cryptopunks-gui -v0.0.11
+gem install cryptopunks-gui -v0.0.12
 ```
 
 Afterwards, run app via:

@@ -1,10 +1,10 @@
-require_relative 'preferences_dialog'
+# require_relative 'preferences_dialog'
 require_relative 'help_dialog'
 
 class CryptopunksGui
   module View
     module MenuBar
-      include View::PreferencesDialog
+#       include View::PreferencesDialog
       include View::HelpDialog
       
       LICENSE = File.expand_path('../../LICENSE.txt', __dir__)
@@ -22,11 +22,11 @@ class CryptopunksGui
                 end
               }
               
-              menu_item(:preferences) {
-                on('command') do
-                  preferences_dialog(root: root, image: image)
-                end
-              }
+#               menu_item(:preferences) {
+#                 on('command') do
+#                   preferences_dialog(root: root, image: image)
+#                 end
+#               }
             }
           end
           
@@ -47,11 +47,11 @@ class CryptopunksGui
             
             menu_item(:separator)
             
-            menu_item(label: 'Preferences...', underline: 0) {
-              on('command') do
-                preferences_dialog(root: root, image: image)
-              end
-            }
+#             menu_item(label: 'Preferences...', underline: 0) {
+#               on('command') do
+#                 preferences_dialog(root: root, image: image)
+#               end
+#             }
           
             menu_item(:separator)
             

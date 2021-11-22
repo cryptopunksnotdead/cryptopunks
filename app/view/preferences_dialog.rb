@@ -54,7 +54,8 @@ class CryptopunksGui
               
               checkbutton { |cb|
                 grid row: row, column: 0
-                variable collection_options[:enabled]
+                # TODO consider using hash_proxy object to bind more effectively
+                variable <= [image.collections_map[collection_name], :enabled]
                 
                 on('command') do
                   collection_options[:enabled] = cb.variable
@@ -162,6 +163,7 @@ class CryptopunksGui
               
               on('command') do
                 image.initialize_collections_map(reset: true)
+                # TODO cause an update to all collections
               end
             }
           }

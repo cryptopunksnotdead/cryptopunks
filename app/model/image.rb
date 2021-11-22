@@ -58,6 +58,8 @@ class CryptopunksGui
         @collections_map_observers ||= {}
         new_collections_map.each do |collection_name, collection_options|
           @collections_map[collection_name] ||= {}
+          original_collections_map_for_collection = @collections_map[collection_name]
+          @collections_map[collection_name] = @collections_map[collection_name]
           @collections_map[collection_name].reverse_merge!(collection_options)
           @collections_map[collection_name][:enabled] = true unless @collections_map[collection_name].has_key?(:enabled)
           @collections_map_observers[collection_name] ||= Glimmer::DataBinding::Observer.proc { |value, key|
@@ -66,7 +68,7 @@ class CryptopunksGui
               notify_observers(:collection_options)
             end
             save_collections_map
-          }.tap {|o| o.observe(@collections_map[collection_name])}
+          }.tap {|o| o.observe(original_collections_map_for_collection)}
         end
         @collections_map_observer ||= Glimmer::DataBinding::Observer.proc { |collection_options, collection_name|
           if collection_options.nil?
@@ -80,7 +82,8 @@ class CryptopunksGui
       end
       
       def save_collections_map
-        File.write(COLLECTIONS_YAML_PATH, YAML.dump(@collections_map))
+        normalized_collections_map = Hash[@collections_map.map {|k,v| [k, v.to_h]}]
+        File.write(COLLECTIONS_YAML_PATH, YAML.dump(normalized_collections_map))
       end
       
       def initialize_collection
@@ -89,7 +92,7 @@ class CryptopunksGui
         url = @collections_map[@collection][:url]
         width = @collections_map[@collection][:width]
         height = @collections_map[@collection][:height]
-        @image_file = File.join(OUTPUT_LOCATION_DEFAULT, File.basename(url, '.png'))
+        @image_file = File.join(OUTPUT_LOCATION_DEFAULT, File.basename(url))
         File.write(@image_file, Net::HTTP.get(URI(url))) unless File.exist?(@image_file)
         @images ||= {}
         @images[@collection] ||= Punks::Image::Composite.read(@image_file, width: width, height: height)
