@@ -1,7 +1,7 @@
 class CryptopunksGui
   module Model
     class Image
-      PALETTES = ['Standard'] + (Palette8bit.constants).map(&:name).map {|palette| palette.split('_').map(&:capitalize).join(' ')}.reject { |palette| palette.include?(' ') }.sort
+      PALETTES = ['Standard'] + (Palette8bit.constants).map(&:to_s).map {|palette| palette.split('_').map(&:capitalize).join(' ')}.reject { |palette| palette.include?(' ') }.sort
       STYLES = ['Normal', 'Led', 'Sketch']
       OUTPUT_LOCATION_DEFAULT = File.join(Dir.home, 'cryptopunks')
       CONFIG_FILE = File.join(OUTPUT_LOCATION_DEFAULT, 'cryptopunks.yml')

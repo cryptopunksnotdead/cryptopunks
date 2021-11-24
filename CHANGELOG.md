@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.13
+
+- Support older Ruby versions down to 2.7.2 by fixing an issue with not having `#name` method on `Symbol`
+
 ## 0.0.12
 
 - Upgrade to glimmer-dsl-tk 0.0.46
