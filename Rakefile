@@ -14,12 +14,12 @@ require 'juwelier'
 Juwelier::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "cryptopunks-gui"
-  gem.homepage = "http://github.com/AndyObtiva/cryptopunks-gui"
+  gem.homepage = "http://github.com/cryptopunksnotdead/cryptopunks-gui"
   gem.license = "MIT"
   gem.summary = %Q{CryptoPunks GUI for Simplified Minting}
   gem.description = %Q{CryptoPunks GUI for Simplified Minting - Built with Glimmer DSL for Tk (requires ActiveTcl to run cryptopunks-gui command)}
   gem.email = "andy.am@gmail.com"
-  gem.authors = ["Andy Maleh"]
+  gem.authors = ["andy_maleh", "geraldbauer"]
   gem.executables = ['cryptopunks-gui']
   gem.files = ['README.md', 'CHANGELOG.md', 'VERSION', 'LICENSE.txt', 'cryptopunks-gui.gemspec', 'cryptopunks-collections.yaml', 'bin/**/*', 'app/**/*', 'icons/**/*']
   gem.require_paths = ['app']
