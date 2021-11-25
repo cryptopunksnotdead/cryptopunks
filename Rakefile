@@ -19,7 +19,7 @@ Juwelier::Tasks.new do |gem|
   gem.summary = %Q{CryptoPunks GUI for Simplified Minting}
   gem.description = %Q{CryptoPunks GUI for Simplified Minting - Built with Glimmer DSL for Tk (requires ActiveTcl to run cryptopunks-gui command)}
   gem.email = "andy.am@gmail.com"
-  gem.authors = ["andy_maleh", "geraldbauer"]
+  gem.authors = ["Andy Maleh", "Gerald Bauer"]
   gem.executables = ['cryptopunks-gui']
   gem.files = ['README.md', 'CHANGELOG.md', 'VERSION', 'LICENSE.txt', 'cryptopunks-gui.gemspec', 'cryptopunks-collections.yaml', 'bin/**/*', 'app/**/*', 'icons/**/*']
   gem.require_paths = ['app']
