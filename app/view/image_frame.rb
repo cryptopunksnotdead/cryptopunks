@@ -119,7 +119,7 @@ class CryptopunksGui
         
         Glimmer::DataBinding::Observer.proc do
           image_index_spinbox.to = image.images[image.collection].size - 1
-        end.observe(image, :images)
+        end.observe(image, :collection)
       end
       
       def add_style_options(style_options_container_frame: , image: )

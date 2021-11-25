@@ -3,6 +3,7 @@
 ## 0.0.14
 
 - Fix PNG signature not found issue on Windows by writing images as binary files (`chunky_png-1.4.0/lib/chunky_png/datastream.rb:107:in verify_signature!': PNG signature not found, found "\\x89PNG\\r\\r\\n\\x1A" instead of "\\x89PNG\\r\\n\\x1A\\n"! (ChunkyPNG::SignatureMismatch)`)
+- Fix regression issue with image index allowed out of bounds when changing to a collection with less images than current collection
 
 ## 0.0.13
 
