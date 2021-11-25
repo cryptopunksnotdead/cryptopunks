@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.14
+
+- Fix PNG signature not found issue on Windows by writing images as binary files (`chunky_png-1.4.0/lib/chunky_png/datastream.rb:107:in verify_signature!': PNG signature not found, found "\\x89PNG\\r\\r\\n\\x1A" instead of "\\x89PNG\\r\\n\\x1A\\n"! (ChunkyPNG::SignatureMismatch)`)
+
 ## 0.0.13
 
 - Support older Ruby versions down to 2.7.2 by fixing an issue with not having `#name` method on `Symbol`

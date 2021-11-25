@@ -93,7 +93,7 @@ class CryptopunksGui
         width = @collections_map[@collection][:width]
         height = @collections_map[@collection][:height]
         @image_file = File.join(OUTPUT_LOCATION_DEFAULT, File.basename(url))
-        File.write(@image_file, Net::HTTP.get(URI(url))) unless File.exist?(@image_file)
+        File.binwrite(@image_file, Net::HTTP.get(URI(url))) unless File.exist?(@image_file)
         @images ||= {}
         @images[@collection] ||= Punks::Image::Composite.read(@image_file, width: width, height: height)
         @last_collection = @collection
