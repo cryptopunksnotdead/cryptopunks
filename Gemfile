@@ -3,7 +3,7 @@ source "https://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
-gem 'glimmer-dsl-tk', '0.0.47'
+gem 'glimmer-dsl-tk', '0.0.49'
 gem 'cryptopunks', '~> 2.0.1'
 
 # Add dependencies to develop your gem here.

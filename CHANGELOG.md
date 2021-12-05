@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.15
+
+- Upgrade to glimmer-dsl-tk 0.0.49
+
 ## 0.0.14
 
 - Fix PNG signature not found issue on Windows by writing images as binary files (`chunky_png-1.4.0/lib/chunky_png/datastream.rb:107:in verify_signature!': PNG signature not found, found "\\x89PNG\\r\\r\\n\\x1A" instead of "\\x89PNG\\r\\n\\x1A\\n"! (ChunkyPNG::SignatureMismatch)`)

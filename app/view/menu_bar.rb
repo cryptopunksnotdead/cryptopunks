@@ -11,7 +11,7 @@ class CryptopunksGui
       HELP = File.expand_path('../../README.md', __dir__)
     
       def cryptopunks_gui_menu_bar(root: , image: )
-        menu {
+        menu_bar {
           if OS.mac?
             menu(:application) {
               menu_item(:about, label: 'About') {
