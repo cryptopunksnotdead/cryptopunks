@@ -12,9 +12,32 @@ Minted cryptopunks are stored at `~/cryptopunks/` by default ([output location c
 
 ## Prerequities
 
-- [Tcl/Tk (ActiveTcl)](https://tkdocs.com/tutorial/install.html)
+- [Tcl/Tk (ActiveTcl 8.6)](https://tkdocs.com/tutorial/install.html)
 - [RVM](https://rvm.io/) (unless you are on Windows)
 - [Ruby 3.0.2 compiled with RVM for Tk](https://rvm.io/integration/tk#tk) (unless you are on Windows for which Tcl/Tk instructions include installation of Ruby [get v3.0.2])
+
+Here are more detailed instructions for installing the prerequisites on every platform:
+
+**Mac:**
+- Install the ActiveTcl 8.6 Mac package from [ActiveState.com](https://activestate.com)
+- Install [RVM](https://rvm.io/) by running `\curl -sSL https://get.rvm.io | bash -s stable` (and run `curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -` if needed for mentioned security reasons)
+- Run: `rvm install 3.0.2 --enable-shared --enable-pthread --with-tk --with-tcl`
+- Run: `gem install tk -v0.4.0`
+
+**Windows:**
+- Install Ruby+Devkit (including MSYS/MINGW toolchains) through Windows Installer: https://rubyinstaller.org/downloads/
+- Install the ActiveTcl 8.6 Windows package from [ActiveState.com](https://activestate.com)
+- Follow this instruction: "First, Ruby needs to find the tcl86t.dll and tk86t.dll shared libraries. These are located in C:\ActiveTcl\bin. Make a copy of them somewhere Ruby can find them, e.g. C:\Ruby26\bin."
+- Setup environment variables TCL_LIBRARY=C:\ActiveTcl\lib\tcl8.6 & TK_LIBRARY=C:\ActiveTcl\lib\tk8.6
+- Run: `gem install tk -v0.4.0`
+
+**Linux:**
+- Download the ActiveTcl 8.6 Linux package from [ActiveState.com](https://activestate.com)
+- Extract the tar gz file using command `tar zxvf ActiveTcl-version-number.tar.gz`
+- Run included install shell script `./ActiveTcl-version-number/install.sh`
+- Install [RVM](https://rvm.io/) by running `\curl -sSL https://get.rvm.io | bash -s stable` (and run `curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -` if needed for mentioned security reasons)
+- Run: `rvm install 3.0.2 --enable-shared --enable-pthread --with-tk --with-tcl`
+- Run: `gem install tk -v0.4.0`
 
 ## Setup
 
