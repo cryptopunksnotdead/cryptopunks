@@ -2,6 +2,7 @@
 
 ## Next
 
+- Support removing collections locally if they are removed from the remote yml file
 - Support configuring new collections through preferences (including their dimensions like 28x28)
 
 ## App Features
