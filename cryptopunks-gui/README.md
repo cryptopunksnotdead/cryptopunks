@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks-gui/master/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.15
+# <img src="https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks/master/cryptopunks-gui/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.15
 
 
 ## Simplified Minting
@@ -11,7 +11,7 @@ It automatically downloads image collection sprites on first use (e.g. `punks.pn
 
 Minted cryptopunks are stored at `~/cryptopunks/` by default ([output location can be changed](#output-location)).
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot.png)
 
 ## Prerequities
 
