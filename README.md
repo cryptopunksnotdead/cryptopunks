@@ -15,15 +15,15 @@ More / Experimental
 
 
 
+## License
+
+The `cryptopunks` scripts are dedicated to the public domain.
+Use it as you please with no restrictions whatsoever.
+
 
 
 ## Questions? Comments?
 
 Post them on the [CryptoPunksDev reddit](https://old.reddit.com/r/CryptoPunksDev). Thanks.
 
-
-## License
-
-The `cryptopunks` scripts are dedicated to the public domain.
-Use it as you please with no restrictions whatsoever.
 
