@@ -51,13 +51,13 @@ You can use CryptoPunks GUI via gem or via cloning repository (if you encounter 
 Run:
 
 ```
-gem install cryptopunks-gui -v0.0.15
+$ gem install cryptopunks-gui -v0.0.15
 ```
 
 Afterwards, run app via:
 
 ```
-cryptopunks-gui
+$ cryptopunks-gui
 ```
 
 ### Repository
@@ -65,32 +65,32 @@ cryptopunks-gui
 Clone repository:
 
 ```
-git clone https://github.com/cryptopunksnotdead/cryptopunks-gui.git
+$ git clone https://github.com/cryptopunksnotdead/cryptopunks-gui.git
 ```
 
 Enter directory:
 
 ```
-cd cryptopunks-gui
+$ cd cryptopunks-gui
 ```
 
 Run:
 
 ```
-gem install bundler
-bundle
+$ gem install bundler
+$ bundle
 ```
 
 Afterwards, run app via:
 
 ```
-bin/cryptopunks-gui
+$ bin/cryptopunks-gui
 ```
 
 Alternatively, run app manually via:
 
 ```
-ruby app/cryptopunks_gui.rb
+$ ruby app/cryptopunks_gui.rb
 ```
 
 ## Instructions
@@ -99,11 +99,11 @@ ruby app/cryptopunks_gui.rb
 
 Change collection to pick a different collection of images.
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-zombies.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-collection-zombies.png)
 
-Image collections are configured in [cryptopunks-collections.yml](/cryptopunks-collections.yml).
+Image collections are configured in [cryptopunks-collections.yml](cryptopunks-collections.yml).
 
-If you cloned the project locally, you may edit [cryptopunks-collections.yml](/cryptopunks-collections.yml) to add/remove collections.
+If you cloned the project locally, you may edit [cryptopunks-collections.yml](cryptopunks-collections.yml) to add/remove collections.
 
 There are 41 available collections (mostly from https://github.com/cryptopunksnotdead/awesome-24px):
 - [Punks](https://raw.githubusercontent.com/larvalabs/cryptopunks/master/punks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/punks-strip.png)
@@ -148,49 +148,49 @@ There are 41 available collections (mostly from https://github.com/cryptopunksno
 - [Punk Rocks](https://raw.githubusercontent.com/cryptopunksnotdead/programming-cryptopunks/master/i/punkrocks.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/punkrocks-strip.png)
 - [Tulips](https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/tulips.png) ![image examples](https://github.com/cryptopunksnotdead/awesome-24px/raw/master/i/tulips-strip.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-apes.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-collection-apes.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-scream-punks.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-collection-scream-punks.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-jack-o-lantern-punks.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-collection-jack-o-lantern-punks.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-joker-punks.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-collection-joker-punks.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-frankenstein-punks.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-collection-frankenstein-punks.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-alien-clan.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-collection-alien-clan.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-bored-apes-stars-and-stripes.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-collection-bored-apes-stars-and-stripes.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-cool-cats-ninjas.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-collection-cool-cats-ninjas.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-collection-dodge.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-collection-dodge.png)
 
 ### Image Index
 
 Change image index to pick a different image.
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-different-punk-index.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-different-punk-index.png)
 
 ### Zoom
 
 Change zoom to enlarge punk to your liking.
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-different-zoom.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-different-zoom.png)
 
 ### Palette
 
 Change palette to get different punk colors.
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-palette-standard.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-palette-standard.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-palette-sepia.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-palette-sepia.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-palette-blue.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-palette-blue.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-palette-false.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-palette-false.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-palette-grayscale.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-palette-grayscale.png)
 
 ### Style
 
@@ -198,47 +198,48 @@ Change style to get different punk looks.
 
 #### Normal Style
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-normal.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-style-normal.png)
 
 #### Led Style
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-led.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-style-led.png)
 
 ##### Led Spacing
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-led-spacing.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-style-led-spacing.png)
 
 ##### Led Round Corner
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-led-round-corner.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-style-led-round-corner.png)
 
 #### Sketch Style
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-sketch.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-style-sketch.png)
 
 ##### Sketch Line
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-style-sketch-line.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-style-sketch-line.png)
 
 ### Mirror/Flip
 
 Check mirror and/or flip to apply punk transformations. Can be combined with different palettes and styles.
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-no-mirror-no-flip.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-no-mirror-no-flip.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-mirror.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-mirror.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-flip.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-flip.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-mirror-flip.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-mirror-flip.png)
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-palette-false-style-led-mirror-flip.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-palette-false-style-led-mirror-flip.png)
+
 
 ### Output Location
 
 You may select a new output location by clicking on the `...` button.
 
-![Screenshot](/screenshots/cryptopunks-gui-screenshot-output-location.png)
+![Screenshot](screenshots/cryptopunks-gui-screenshot-output-location.png)
 
 ## TODO
 
