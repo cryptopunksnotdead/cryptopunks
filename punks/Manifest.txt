@@ -1,0 +1,8 @@
+CHANGELOG.md
+Manifest.txt
+README.md
+Rakefile
+config/punks_xl-32x32.csv
+config/punks_xl-32x32.png
+lib/punks.rb
+lib/punks/version.rb
