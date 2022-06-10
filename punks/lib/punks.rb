@@ -1,7 +1,7 @@
 ## 3rd party
 require 'pixelart/base'
 require 'backgrounds/base'
-require 'artfactory'    ### todo/fix: change to artfactory/base
+require 'artfactory/base'
 
 
 ## our own code
@@ -35,13 +35,12 @@ module Punkxl
 
   class Image  <  Pixelart::Image
     def self.generator
-      @generator ||= Artfactory.use( Punkxl::Sheet.builtin )
+      @generator ||= Artfactory.use( Punkxl::Sheet.builtin,
+                                     image_class: Image )
     end
     def self.generate( *names )
-      img =  generator.generate( *names )
-       ## note: unwrap inner image before passing on to c'tor (requires ChunkyPNG image for now)
-       new( 32, 32, img.image )
-     end # method Image.generate
+      generator.generate( *names )
+    end
   end # class Image
 
 
@@ -52,6 +51,12 @@ end #  module Punkxl
 PunkXL = Punkxl
 PunkXl = Punkxl
 
+
+
+
+###
+# note: for convenience auto include Pixelart namespace!!! - why? why not?
+include Pixelart
 
 
 

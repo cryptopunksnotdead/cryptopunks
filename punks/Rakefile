@@ -26,9 +26,9 @@ Hoe.spec 'punks' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['pixelart', '>= 1.3.1'],
+    ['pixelart', '>= 1.3.2'],
     ['backgrounds', '>= 0.2.0'],
-    ['artfactory', '>= 0.1.0'],
+    ['artfactory', '>= 0.2.0'],
   ]
 
   self.licenses = ['Public Domain']
