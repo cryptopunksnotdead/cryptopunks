@@ -348,7 +348,7 @@ _Get punk characters via image tiles from all-in-one punk series composite (`./p
 
 
 
-Step 0 -  Download the True Official Genuine CryptoPunks™ composite image
+Step 0 -  Download the True Official Genuine Matt & John's® Punks composite image
 
 One time / first time only - Download the True Official Genuine Matt & John's® Punks composite
 housing all 10 000 Punks
@@ -644,7 +644,7 @@ And so on.
 Yes, you can generate punks in your own scripts
 and much more.
 See the
-[**Programming CryptoPunks & Copypastas Step-by-Step Booklet / Guide »**](https://github.com/cryptopunksnotdead/programming-cryptopunks)
+[**Programming (Crypto) Punk (Pixel) Profile Pictures & (Generative) Art - Step-by-Step Booklet / Guide »**](https://github.com/cryptopunksnotdead/programming-cryptopunks)
 
 
 
