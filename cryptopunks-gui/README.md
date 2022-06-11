@@ -1,7 +1,7 @@
 # <img src="https://raw.githubusercontent.com/cryptopunksnotdead/cryptopunks/master/cryptopunks-gui/icons/cryptopunks-gui.png" height=85 /> CryptoPunks GUI 0.0.15
 
 
-## Simplified Minting
+## Simplified Image Generation
 
 [![Gem Version](https://badge.fury.io/rb/cryptopunks-gui.svg)](http://badge.fury.io/rb/cryptopunks-gui)
 
@@ -9,7 +9,7 @@ This is a Graphical User Interface for the [cryptopunks Ruby gem](https://github
 
 It automatically downloads image collection sprites on first use (e.g. `punks.png` from https://github.com/larvalabs/cryptopunks).
 
-Minted cryptopunks are stored at `~/cryptopunks/` by default ([output location can be changed](#output-location)).
+Generated cryptopunks are stored at `~/cryptopunks/` by default ([output location can be changed](#output-location)).
 
 ![Screenshot](screenshots/cryptopunks-gui-screenshot.png)
 
