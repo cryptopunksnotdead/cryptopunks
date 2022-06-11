@@ -1,6 +1,6 @@
 ###
 #  to run use
-#     ruby -I ./lib sandbox/test_generate_xl.rb
+#     ruby -I ./lib sandbox/test_punks.rb
 
 
 require 'punks'
@@ -49,19 +49,38 @@ TXT
 
 
 punks.each_with_index do |attributes, i|
-  base = PunkXL::Image.generate( *attributes )
+  base = Punk::Image.generate( *attributes )
 
   punk = base
-  punk.save( "./tmp/punkxl#{i}.png" )
-  punk.zoom(4).save( "./tmp/punkxl#{i}@4x.png" )
+  punk.save( "./tmp/punk#{i}.png" )
+  punk.zoom(4).save( "./tmp/punk#{i}@4x.png" )
 
-  punk = base.background( 'Metropolis 2' )
-  punk.save( "./tmp/punkxl#{i}b.png" )
-  punk.zoom(8).save( "./tmp/punkxl#{i}b@8x.png" )
+  punk = base.background( 'Matrix 1' )
+  punk.save( "./tmp/punk#{i}b.png" )
+  punk.zoom(8).save( "./tmp/punk#{i}b@8x.png" )
 
   punk = base.background( 'Ukraine' )
-  punk.save( "./tmp/punkxl#{i}c.png" )
-  punk.zoom(4).save( "./tmp/punkxl#{i}c@4x.png" )
+  punk.save( "./tmp/punk#{i}c.png" )
+  punk.zoom(4).save( "./tmp/punk#{i}c@4x.png" )
+end
+
+
+####################
+### try (left-looking) phunks
+punks.each_with_index do |attributes, i|
+  base = Phunk::Image.generate( *attributes )
+
+  punk = base
+  punk.save( "./tmp/phunk#{i}.png" )
+  punk.zoom(4).save( "./tmp/phunk#{i}@4x.png" )
+
+  punk = base.background( 'Matrix 1' )
+  punk.save( "./tmp/phunk#{i}b.png" )
+  punk.zoom(8).save( "./tmp/phunk#{i}b@8x.png" )
+
+  punk = base.background( 'Ukraine' )
+  punk.save( "./tmp/phunk#{i}c.png" )
+  punk.zoom(4).save( "./tmp/phunk#{i}c@4x.png" )
 end
 
 

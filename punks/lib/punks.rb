@@ -7,50 +7,42 @@ require 'artfactory/base'
 ## our own code
 require 'punks/version'    # note: let version always go first
 
+require 'punks/generator'
 
 
-###
-## add convenience pre-configurated generatored with build-in spritesheet (see config)
-
-module Punkxl
-
-  class Spritesheet
-    def self.builtin
-      @builtin ||= Pixelart::Spritesheet.read(  "#{Pixelart::Module::Punks.root}/config/punks_xl-32x32.png",
-                                                "#{Pixelart::Module::Punks.root}/config/punks_xl-32x32.csv",
-                                                width:  32,
-                                                height: 32 )
-    end
-
-    ## note: for now class used for "namespace" only
-    def self.find_by( name: )  ## return archetype/attribute image by name
-       builtin.find_by( name: name )
-    end
-  end  # class Spritesheet
-  ## add convenience (alternate spelling) alias - why? why not?
-  SpriteSheet = Spritesheet
-  Sheet       = Spritesheet
-  Sprite      = Spritesheet
+## --- 24x24 series
+require 'punks/punks'
+require 'punks/phunks'
+require 'punks/marilyns'
+require 'punks/philips'
+## --- 32x32 series
+require 'punks/punks_xl'
 
 
-  class Image  <  Pixelart::Image
-    def self.generator
-      @generator ||= Artfactory.use( Punkxl::Sheet.builtin,
-                                     image_class: Image )
-    end
-    def self.generate( *names )
-      generator.generate( *names )
-    end
-  end # class Image
 
 
-end #  module Punkxl
+
+### add some convenience shortcuts
+Cryptopunks = Punk
+CryptoPunks = Punk
+Punks       = Punk
+## add singular too -why? why not?
+Cryptopunk  = Punk
+CryptoPunk  = Punk
 
 
 ### add some convenience shortcuts / alternate spelling variants
 PunkXL = Punkxl
 PunkXl = Punkxl
 
+### add some convenience shortcuts / alternate spelling variants
+Phunks  = Phunk
+
+### add some convenience shortcuts / alternate spelling variants
+Philips = Philip
+
+### add some convenience shortcuts / alternate spelling variants
+Marilyns = Marilyn
 
 
 

@@ -2,7 +2,16 @@ CHANGELOG.md
 Manifest.txt
 README.md
 Rakefile
+config/philip-24x24.png
+config/punks-24x24.csv
+config/punks-24x24.png
 config/punks_xl-32x32.csv
 config/punks_xl-32x32.png
 lib/punks.rb
+lib/punks/generator.rb
+lib/punks/marilyns.rb
+lib/punks/philips.rb
+lib/punks/phunks.rb
+lib/punks/punks.rb
+lib/punks/punks_xl.rb
 lib/punks/version.rb

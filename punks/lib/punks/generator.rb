@@ -1,5 +1,5 @@
 
-module Cryptopunks
+module Punk
 
   class Metadata
     ### todo/fix:
@@ -79,8 +79,6 @@ module Cryptopunks
 
 
 
-
-
  def build_attributes_by_name( recs )
     h = {}
     recs.each_with_index do |rec|
@@ -147,8 +145,13 @@ module Cryptopunks
 
 
  def initialize( image_path="./spritesheet.png",
-                 meta_path="./spritesheet.csv" )
-    @sheet = Pixelart::ImageComposite.read( image_path )
+                 meta_path="./spritesheet.csv",
+                 image_class: )
+    @image_class  = image_class
+
+    @sheet = Pixelart::ImageComposite.read( image_path,
+                                              width: 24,
+                                              height: 24 )
     recs  = CsvHash.read( meta_path )
 
     @recs = build_recs( recs )
@@ -280,24 +283,14 @@ module Cryptopunks
 
 
 
- def generate_image( *values, style: nil,
-                              background: nil )
+ def generate_image( *values, style: nil )
 
-    ids = if values[0].is_a?( Integer )  ## assume integer number (indexes)
-              values
-          else ## assume strings (names)
-              to_recs( *values, style: style ).map { |rec| rec.id }
-          end
+    recs = to_recs( *values, style: style )
 
+    punk = @image_class.new( 24, 24 )
 
-    punk = Pixelart::Image.new( 24, 24 )
-
-    if background    ## for now assume background is (simply) color
-       punk.compose!( Pixelart::Image.new( 24, 24, background ) )
-    end
-
-    ids.each do |id|
-      punk.compose!( @sheet[ id ] )
+    recs.each do |rec|
+      punk.compose!( @sheet[ rec.id ] )
     end
 
     punk
@@ -306,4 +299,4 @@ module Cryptopunks
 
  end # class Generator
 
-end # module Cryptopunks
+end # module Punk
