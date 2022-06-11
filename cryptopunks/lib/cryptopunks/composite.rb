@@ -1,4 +1,4 @@
-module Cryptopunks
+module Punk
    ## note: was Image::Composite
   class ImageComposite  < Pixelart::ImageComposite
 
@@ -19,9 +19,9 @@ module Cryptopunks
       hexdigest = sha256( data )   ## check sha256 checksum
       if hexdigest == PUNK_HASH
          puts "     >#{hexdigest}< SHA256 hash matching"
-         puts "         ✓ True Official Genuine CryptoPunks™ verified"
+         puts "         ✓ True Official Genuine Matt & John's® Punks verified"
       else
-         puts "         ✓ True Official Genuine Yes, You Can! Punks Not Dead™ verified"
+         puts "         ✓ True Official Genuine Yes, You Can! Punk's Not Dead® verified"
       end
 
       img = ChunkyPNG::Image.from_blob( data )
@@ -35,4 +35,4 @@ module Cryptopunks
     end
 
   end ## class ImageComposite
-end ## module Cryptopunks
+end ## module Punk

@@ -4,8 +4,6 @@ README.md
 Rakefile
 bin/cryptopunk
 bin/punk
-config/spritesheet.csv
-config/spritesheet.png
 lib/cryptopunks.rb
 lib/cryptopunks/attributes.rb
 lib/cryptopunks/colors.rb
@@ -14,7 +12,6 @@ lib/cryptopunks/contract/punksdata-assets.rb
 lib/cryptopunks/contract/punksdata-contract.rb
 lib/cryptopunks/contract/punksdata-meta.rb
 lib/cryptopunks/dataset.rb
-lib/cryptopunks/generator.rb
 lib/cryptopunks/image.rb
 lib/cryptopunks/structs.rb
 lib/cryptopunks/tool.rb

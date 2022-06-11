@@ -9,23 +9,23 @@ require 'cryptopunks'
 pp ARGV
 
 =begin
-args = ['--file', './more-punks-1.png',
+args = ['--file', './morepunks.png',
         '--offset', '10000',
-        '--dir', './i',
-        '0', '18', '40', '88'
+        '--dir', './tmp',
+        'tile', '0', '18', '40', '88'
        ]
 =end
 
-args = ['--file', './more-punks-2.png',
-        '--offset', '10100',
-        '--dir', './i',
-        '0', '79', '80', '90'
+args = ['--file', './morepunks.png',
+        '--offset', '10000',
+        '--dir', './tmp',
+        'tile', '100', '179', '180', '190'
        ]
 
 args += ['--zoom', '4']  if ARGV[0] == 'zoom'
 
 
 
-Punks.main( args )
+Punk.main( args )
 
 puts "bye"

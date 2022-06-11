@@ -13,6 +13,6 @@ args = ['--dir', './tmp',
         'flip',
        ]
 
-Punks.main( args )
+Punk.main( args )
 
 puts "bye"

@@ -1,4 +1,4 @@
-module Cryptopunks
+module Punk
 
 ##################
 ## 5 punk types
@@ -144,4 +144,4 @@ ACCESSORY_TYPES = [
 ]
 
 
-end # module Cryptopunks
+end # module Punk

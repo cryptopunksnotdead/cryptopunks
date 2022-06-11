@@ -1,5 +1,5 @@
 
-module Cryptopunks
+module Punk
 ### wrap metadata (e.g. punk types, accessories, etc.
 ##     in structs for easy/easier access)
 
@@ -158,4 +158,4 @@ end  ## (nested) class Accessory
   alias_method :include?, :has_attribute?
 end # class Metadata
 
-end  # module Cryptopunks
+end  # module Punk

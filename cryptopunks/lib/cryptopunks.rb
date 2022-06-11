@@ -1,6 +1,5 @@
 ## 3rd party
-require 'pixelart/base'
-require 'csvreader'
+require 'punks'
 
 
 
@@ -21,7 +20,7 @@ require 'cryptopunks/composite'
 
 
 ## add old backwards compatible alias
-module Punks
+module Punk
    class Image
       Composite = ImageComposite
    end
@@ -33,8 +32,6 @@ require 'cryptopunks/dataset'
 
 require 'cryptopunks/colors'
 require 'cryptopunks/image'
-
-require 'cryptopunks/generator'
 
 
 ####
@@ -52,9 +49,9 @@ PunksData       = CryptopunksData
 require 'cryptopunks/tool'
 
 ### add tool convenience helper
-module Cryptopunks
+module Punk
   def self.main( args=ARGV ) Tool.new.run( args ); end
-end ## module Cryptopunks
+end ## module Punk
 
 
 
@@ -66,4 +63,4 @@ include Pixelart
 
 
 
-puts Cryptopunks.banner    # say hello
+puts Pixelart::Module::Cryptopunks.banner    # say hello

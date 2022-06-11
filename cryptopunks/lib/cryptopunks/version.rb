@@ -1,9 +1,11 @@
 
 
+module Pixelart
+module Module
 module Cryptopunks
 
-  MAJOR = 2
-  MINOR = 1
+  MAJOR = 3
+  MINOR = 0
   PATCH = 0
   VERSION = [MAJOR,MINOR,PATCH].join('.')
 
@@ -20,4 +22,6 @@ module Cryptopunks
   end
 
 end # module Cryptopunks
+end # module Module
+end # module Pixelart
 

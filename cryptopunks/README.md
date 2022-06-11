@@ -1,4 +1,4 @@
-> Someday, owning a CryptoPunk might signify just how early of an
+> Someday, owning a Matt & John's® Punk might signify just how early of an
 > adopter you were into the world of blockchain and its thriving digital
 > art scene. Or, they could just be a bunch of [24×24 pixel] images.
 >
@@ -9,14 +9,14 @@
 > in the digital realm [to "flex" how rich and stupid I am].
 > What could be more desirable than a small [24×24]
 > pixelated [knitted cap-wearing ape] face?
-> CryptoPunk artwork [![](i/punk-8219.png) [#8219](https://www.larvalabs.com/cryptopunks/details/8219)] just sold for $176,000.
+> Matt & John's® Punk artwork [![](i/punk-8219.png) [#8219](https://www.larvalabs.com/cryptopunks/details/8219)] just sold for $176,000.
 >
 > -- [January 2021](https://decrypt.co/53519/an-ethereum-based-cryptopunk-artwork-just-sold-for-176000)
 >
 >
-> Ultra-rare alien [24×24 pixel] CryptoPunk
+> Ultra-rare alien [24×24 pixel] Matt & John's® Punk
 > sells for 605 ETH, or $750,000.
-> The investment thesis. "Aliens are the rarest form of CryptoPunk and
+> The investment thesis. "Aliens are the rarest form of Matt & John's® Punk and
 > we believe that the acquired Alien [![](i/punk-2890.png) [#2890](https://www.larvalabs.com/cryptopunks/details/2890), one of nine]
 > will be prized by collectors over
 > time and mature into an iconic digital art piece."
@@ -24,15 +24,16 @@
 > -- [January 2021](https://cointelegraph.com/news/ultra-rare-alien-cryptopunk-nft-sells-for-605-eth-or-750-000)
 >
 >
-> The [CryptoPunksMarket] contract now holds 4,095 ETH (~$5.4M USD) in open bids and pending withdrawals.
+> The Matt & John's® [CryptoPunksMarket] contract now holds 4,095 ETH (~$5.4M USD) in open bids and pending withdrawals.
 >
 > -- [January 2021](https://twitter.com/larvalabs/status/1353915659453870080)
 
 
 
+
 # Crypto Punks
 
-cryptopunks - mint your own 24×24 pixel punk images off chain from the True Official Genuine CryptoPunks™ sha256-verified original 10 000 unique character collection; incl. 2x/4x/8x zoom for bigger sizes
+cryptopunks - generate your own 24×24 pixel punk images (off-chain) from the True Official Matt & John's® Punks sha256-verified original 10 000 unique character collection; incl. 2x/4x/8x zoom for bigger sizes
 
 * home  :: [github.com/cryptopunksnotdead/cryptopunks](https://github.com/cryptopunksnotdead/cryptopunks)
 * bugs  :: [github.com/cryptopunksnotdead/cryptopunks/issues](https://github.com/cryptopunksnotdead/cryptopunks/issues)
@@ -63,12 +64,12 @@ SYNOPSIS
     punk [global options] command [command options] [arguments...]
 
 VERSION
-    2.1.0
+    3.0.0
 
 GLOBAL OPTIONS
     -d, --dir,
     -o, --out, --outdir=DIR - Output directory (default: .)
-    -f, --file=FILE         - True Official Genuine CryptoPunks™ all-in-one
+    -f, --file=FILE         - All-in-one
                               composite image (default: ./punks.png)
     --offset=NUM            - Start counting at offset (default: 0)
     --seed=NUM              - Seed for random number generation /
@@ -349,8 +350,8 @@ _Get punk characters via image tiles from all-in-one punk series composite (`./p
 
 Step 0 -  Download the True Official Genuine CryptoPunks™ composite image
 
-One time / first time only - Download the True Official Genuine CryptoPunks™ composite
-housing all 10 000 CryptoPunks
+One time / first time only - Download the True Official Genuine Matt & John's® Punks composite
+housing all 10 000 Punks
 in a single 2400×2400 image (~830 kb) for free.
 See [`punks.png` »](https://github.com/larvalabs/cryptopunks/blob/master/punks.png)
 
@@ -371,7 +372,7 @@ printing:
 ```
 ==> reading >./punks.png<...
      >ac39af4793119ee46bbff351d8cb6b5f23da60222126add4268e261199a2921b< SHA256 hash matching
-         ✓ True Official Genuine CryptoPunks™ verified
+         ✓ True Official Genuine Matt & John's® Punks verified
 ==> (1/3) saving punk #0 to >./punk-0000.png<...
 ==> (2/3) saving punk #2890 to >./punk-2890.png<...
 ==> (3/3) saving punk #8219 to >./punk-8219.png<...
@@ -400,7 +401,7 @@ printing:
 ```
 ==> reading >./punks.png<...
      >ac39af4793119ee46bbff351d8cb6b5f23da60222126add4268e261199a2921b< SHA256 hash matching
-         ✓ True Official Genuine CryptoPunks™ verified
+         ✓ True Official Genuine Matt & John's® Punks verified
     setting zoom to 2x
 ==> (1/3) saving punk #0 to >punk-0000@2x.png<...
 ==> (2/3) saving punk #2890 to >punk-2890@2x.png<...
@@ -557,7 +558,7 @@ printing:
 ```
 ==> reading >./punks.png<...
      >ac39af4793119ee46bbff351d8cb6b5f23da60222126add4268e261199a2921b< SHA256 hash matching
-         ✓ True Official Genuine CryptoPunks™ verified
+         ✓ True Official Genuine Matt & John's® Punks verified
    (1/10000) philip the intern flipping punk #0...
    (2/10000) philip the intern flipping punk #1...
    ...
@@ -597,7 +598,7 @@ printing:
 ```
 ==> reading >./punks.png<...
      >ac39af4793119ee46bbff351d8cb6b5f23da60222126add4268e261199a2921b< SHA256 hash matching
-         ✓ True Official Genuine CryptoPunks™ verified
+         ✓ True Official Genuine Matt & John's® Punks verified
    using random generation number seed >4142< for shuffle
      #1369 now #0
      #590  now #1

@@ -6,7 +6,7 @@
 require 'cryptopunks'
 
 
-punks = Punks::ImageComposite.read( './punks.png' )
+punks = Punk::ImageComposite.read( './punks.png' )
 
 pp punks.size  #=> 10000
 

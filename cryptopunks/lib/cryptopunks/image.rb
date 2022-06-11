@@ -1,4 +1,4 @@
-module Cryptopunks
+module Punk
 
 
 
@@ -10,6 +10,8 @@ def self.read( path )   ## convenience helper
 end
 
 
+
+=begin
 
 ### keep design & colors keyword args in c'tor here
 ##     or use parse() like in pixelart - why? why not?
@@ -26,8 +28,8 @@ def initialize( initial=nil, design: nil,
 
     super( img.width, img.height, img )
 end
-
+=end
 
 
 end  # class Image
-end  # module Cryptopunks
+end  # module Punk

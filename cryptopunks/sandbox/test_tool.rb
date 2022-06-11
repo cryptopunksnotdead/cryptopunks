@@ -6,6 +6,6 @@
 require 'cryptopunks'
 
 
-Punks.main
+Punk.main
 
 puts "bye"

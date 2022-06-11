@@ -14,6 +14,6 @@ args = ['--dir', './tmp',
         'shuffle',
        ]
 
-Punks.main( args )
+Punk.main( args )
 
 puts "bye"

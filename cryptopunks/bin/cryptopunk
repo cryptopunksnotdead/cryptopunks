@@ -14,4 +14,4 @@
 
 require 'cryptopunks'
 
-Cryptopunks.main
+Punk.main

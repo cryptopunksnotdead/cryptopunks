@@ -13,7 +13,7 @@ Hoe.spec 'punks' do
 
   self.version = Pixelart::Module::Punks::VERSION
 
-  self.summary = "punks - generate your own 24×24 or 32×32 punk (pixel) avatar / character images (off chain) from text attributes (via built-in spritesheet); incl. 2x/4x/8x zoom for bigger sizes and more"
+  self.summary = "punks - generate your own 24×24 (or 32×32) punk, phunk, philip, marilyn 'n' more (pixel) avatar / character images (off chain) from text attributes (via built-in spritesheet); incl. 2x/4x/8x zoom for bigger sizes and more"
   self.description = summary
 
   self.urls    = { home: 'https://github.com/cryptopunksnotdead/cryptopunks' }

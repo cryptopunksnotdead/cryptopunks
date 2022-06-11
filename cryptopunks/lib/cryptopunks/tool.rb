@@ -1,5 +1,5 @@
 
-module Cryptopunks
+module Punk
 
 
 class Tool
@@ -67,7 +67,7 @@ class Toolii
 
 program_desc 'punk (or cryptopunk) command line tool'
 
-version Cryptopunks::VERSION
+version Pixelart::Module::Cryptopunks::VERSION
 
 
 desc "Zoom factor x2, x4, x8, etc."
@@ -96,7 +96,8 @@ flag [:d, :dir,
 
 
 ### todo/check: move option to -t/--tile command only - why? why not?
-desc "True Official Genuine CryptoPunks™ all-in-one composite image"
+# desc "True Official Genuine CryptoPunks™ all-in-one composite image"
+desc "All-in-one composite image"
 arg_name 'FILE'
 default_value opts.file
 flag [:f, :file], type: String
@@ -300,7 +301,7 @@ desc 'List all punk archetype and attribute names from builtin punk spritesheet'
 command [:l, :ls, :list] do |c|
   c.action do |g,o,args|
 
-    generator = Cryptopunks.generator
+    generator = Image.generator
 
     puts "==> Archetypes"
     generator.meta.each do |rec|
@@ -376,6 +377,6 @@ end
 
 ### exit run(ARGV)  ## note: use Toolii.run( ARGV ) outside of class
 end   # class Toolii
-end # module Cryptopunks
+end # module Punk
 
 

@@ -1,6 +1,6 @@
 
 
-module Cryptopunks
+module Punk
   module Dataset
 
     def self.read( path='./datasets/punks/*.csv' )
@@ -62,6 +62,6 @@ module Cryptopunks
       punks
     end
   end  # module Dataset
-end  # module Cryptopunks
+end  # module Punk
 
 
