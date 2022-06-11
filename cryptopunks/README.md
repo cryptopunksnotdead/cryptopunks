@@ -9,7 +9,7 @@
 > in the digital realm [to "flex" how rich and stupid I am].
 > What could be more desirable than a small [24×24]
 > pixelated [knitted cap-wearing ape] face?
-> Matt & John's® Punk artwork [![](i/punk-8219.png) [#8219](https://www.larvalabs.com/cryptopunks/details/8219)] just sold for $176,000.
+> Matt & John's® Punk artwork [![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-8219.png) [#8219](https://www.larvalabs.com/cryptopunks/details/8219)] just sold for $176,000.
 >
 > -- [January 2021](https://decrypt.co/53519/an-ethereum-based-cryptopunk-artwork-just-sold-for-176000)
 >
@@ -17,7 +17,7 @@
 > Ultra-rare alien [24×24 pixel] Matt & John's® Punk
 > sells for 605 ETH, or $750,000.
 > The investment thesis. "Aliens are the rarest form of Matt & John's® Punk and
-> we believe that the acquired Alien [![](i/punk-2890.png) [#2890](https://www.larvalabs.com/cryptopunks/details/2890), one of nine]
+> we believe that the acquired Alien [![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-2890.png) [#2890](https://www.larvalabs.com/cryptopunks/details/2890), one of nine]
 > will be prized by collectors over
 > time and mature into an iconic digital art piece."
 >
@@ -112,7 +112,7 @@ $ punk generate female_2 earring blonde_bob green_eye_shadow
 
 resulting in:
 
-![](i/punk-0000.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-0000.png)
 
 Let's try  the `-z/--zoom` factor 2x, 4x, 8x, etc.:
 
@@ -124,9 +124,9 @@ $ punk -z2 g female_2 earring blonde_bob green_eye_shadow
 
 resulting in:
 
-2x ![](i/punk-0000x2.png)
-4x ![](i/punk-0000x4.png)
-8x ![](i/punk-0000x8.png)
+2x ![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-0000x2.png)
+4x ![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-0000x4.png)
+8x ![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/punk-0000x8.png)
 
 
 Let's try never-before-seen super-rare punks:
@@ -138,8 +138,8 @@ $ punk generate vampire_female wild_hair
 
 resulting in:
 
-![](i/demon.png)
-![](i/vampire-female.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/demon.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/cryptopunks/i/vampire-female.png)
 
 
 
