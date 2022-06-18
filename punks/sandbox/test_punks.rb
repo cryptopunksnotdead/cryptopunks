@@ -84,5 +84,37 @@ punks.each_with_index do |attributes, i|
 end
 
 
+### try with inline image and "patch" lookup
+
+
+INVISIBLE   = Pixelart::Image.new( 24, 24 )
+
+CHOKER      = Pixelart::Image.read( "../../punks.blocks/basic/m/choker.png" )
+CHOKER2     = Pixelart::Image.read( "../../punks.blocks/basic/m/choker2.png" )
+TASSLE_HAT  = Pixelart::Image.read( "../../punks.blocks/basic/m/tasslehat.png" )
+TASSLE_HAT2 = Pixelart::Image.read( "../../punks.blocks/basic/m/tasslehat2.png" )
+
+punk = Punk::Image.generate( "Male 3", CHOKER2, TASSLE_HAT, "3D Glasses" )
+punk.zoom( 4 ).save( "./tmp/punk_inline1a@4x.png" )
+
+punk = Punk::Image.generate( INVISIBLE, CHOKER, TASSLE_HAT2, "Pipe" )
+punk.zoom( 4 ).save( "./tmp/punk_inline1b@4x.png" )
+
+
+patch = { 'invisible' => INVISIBLE,
+          'choker'   => CHOKER,
+          'choker2'   => CHOKER2,
+          'tasslehat' => TASSLE_HAT,
+          'tasslehat2' => TASSLE_HAT2,
+         }
+punk = Punk::Image.generate( "Male 1", "Choker 2", "Tassle Hat", "3D Glasses",
+                                patch: patch )
+punk.zoom( 4 ).save( "./tmp/punk_patch1a@4x.png" )
+
+punk = Punk::Image.generate( "Invisible", "Choker", "Tassle Hat 2", "Pipe",
+                                patch: patch )
+punk.zoom( 4 ).save( "./tmp/punk_patch1b@4x.png" )
+
+
 
 puts "bye"

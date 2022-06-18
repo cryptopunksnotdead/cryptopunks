@@ -169,8 +169,6 @@ module Punk
  alias_method :meta, :records
 
 
-
-
  def find_meta( q, gender: nil,
                    size: nil,
                    style: nil )   ## note: gender (m/f) required for attributes!!!
@@ -247,34 +245,55 @@ module Punk
 
 
 
- def to_recs( *values, style: nil )
+ def to_recs( *values, style: nil, patch: nil )
       archetype_name  = values[0]
 
-      ### todo/fix:  check for nil/not found!!!!
-      ## todo/check/fix:  assert meta record returned is archetype NOT attribute!!!!
-      archetype  = find_meta( archetype_name )
-      if archetype.nil?
-        puts "!! ERROR -  archetype >#{archetype}< not found; sorry"
-        exit 1
+      if archetype_name.is_a?( Pixelart::Image )
+         archetype = archetype_name
+      elsif patch && img=patch[ normalize_key(archetype_name) ]
+         archetype = img
+      else ## assume it's a string
+        ### todo/fix:  check for nil/not found!!!!
+        ## todo/check/fix:  assert meta record returned is archetype NOT attribute!!!!
+        archetype  = find_meta( archetype_name )
+        if archetype.nil?
+          puts "!! ERROR -  archetype >#{archetype}< not found; sorry"
+          exit 1
+        end
       end
 
       recs       = [archetype]
 
-      attribute_names  = values[1..-1]
       ## note: attribute lookup requires gender from archetype!!!!
-      attribute_gender = archetype.gender
-      attribute_size   = archetype.size
+      if archetype.is_a?( Pixelart::Image )
+         ### for now assume (support only)
+         ##    large & unisex (u&u) for "inline/patch" archetypes - why? why not?
+         attribute_gender = 'u'
+         attribute_size   = 'l'
+      else
+         attribute_gender = archetype.gender
+         attribute_size   = archetype.size
+      end
 
+      attribute_names  = values[1..-1]
       attribute_names.each do |attribute_name|
-        attribute = find_meta( attribute_name,
-                               gender: attribute_gender,
-                               size:   attribute_size,
-                               style:  style )
-        if attribute.nil?
-           puts "!! ERROR - attribute >#{attribute_name}< for (#{attribute_gender}+#{attribute_size}) not found; sorry"
-           exit 1
-        end
-        recs << attribute
+         ## note: quick hack - allow "inline" raw images for now - why? why not?
+         ##         pass through as-is
+        if attribute_name.is_a?( Pixelart::Image )
+          recs << attribute_name
+        elsif patch && img=patch[ normalize_key(attribute_name) ]
+          recs << img
+        else
+          rec = find_meta( attribute_name,
+                           gender: attribute_gender,
+                           size:   attribute_size,
+                           style:  style )
+          if rec.nil?
+            puts "!! ERROR - attribute >#{attribute_name}< for (#{attribute_gender}+#{attribute_size}) not found; sorry"
+            exit 1
+          end
+          recs << rec
+         end
       end
 
       recs
@@ -283,14 +302,22 @@ module Punk
 
 
 
- def generate_image( *values, style: nil )
+ def generate_image( *values, style: nil, patch: nil )
+   ## check: rename patch to more/extras/foreign or ... - why? why not?
 
-    recs = to_recs( *values, style: style )
+    recs = to_recs( *values, style: style, patch: patch )
 
     punk = @image_class.new( 24, 24 )
 
     recs.each do |rec|
-      punk.compose!( @sheet[ rec.id ] )
+      ## note: quick hack - allow "inline" raw images for now - why? why not?
+      ##         pass through as-is
+      img = if rec.is_a?( Pixelart::Image )
+              rec
+            else
+              @sheet[ rec.id ]
+            end
+      punk.compose!( img )
     end
 
     punk
