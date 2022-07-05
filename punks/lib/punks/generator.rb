@@ -267,8 +267,9 @@ module Punk
       ## note: attribute lookup requires gender from archetype!!!!
       if archetype.is_a?( Pixelart::Image )
          ### for now assume (support only)
-         ##    large & unisex (u&u) for "inline/patch" archetypes - why? why not?
-         attribute_gender = 'u'
+         ##    large & male (l/m) for "inline/patch" archetypes - why? why not?
+         ##    change male to unisex - why? why not?  (note: for now unisex is not doing a backup lookup using male/female)
+         attribute_gender = 'm'
          attribute_size   = 'l'
       else
          attribute_gender = archetype.gender
