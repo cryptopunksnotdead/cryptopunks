@@ -15,6 +15,7 @@ require 'punks/punks'
 require 'punks/phunks'
 require 'punks/marilyns'
 require 'punks/philips'
+require 'punks/saudis'
 ## --- 32x32 series
 require 'punks/punks_xl'
 
@@ -44,6 +45,10 @@ Philips = Philip
 ### add some convenience shortcuts / alternate spelling variants
 Marilyns = Marilyn
 
+### add some convenience shortcuts / alternate spelling variants
+Saudis   = Saudi
+Sheiks   = Saudi
+Sheik    = Saudi
 
 
 ###

@@ -7,6 +7,8 @@ config/punks-24x24.csv
 config/punks-24x24.png
 config/punks_xl-32x32.csv
 config/punks_xl-32x32.png
+config/saudis-24x24.csv
+config/saudis-24x24.png
 lib/punks.rb
 lib/punks/generator.rb
 lib/punks/marilyns.rb
@@ -14,4 +16,5 @@ lib/punks/philips.rb
 lib/punks/phunks.rb
 lib/punks/punks.rb
 lib/punks/punks_xl.rb
+lib/punks/saudis.rb
 lib/punks/version.rb
