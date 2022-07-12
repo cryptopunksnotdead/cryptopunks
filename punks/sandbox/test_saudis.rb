@@ -26,7 +26,7 @@ punks = Csv.parse( <<TXT )
   Light 1, Red Shemagh,  Nerd Glasses, Shadowless Cigarette
   Light 2, Short White Beard, Red Shemagh & Agal, Stylish Nerd Glasses
   Light 2, Normal Brown Beard & Mustache, White Shemagh & Agal
-  Darker 2, Stylish Mustache, Red Shemagh
+  Dark 2,  Stylish Mustache, Red Shemagh
 TXT
 
 
