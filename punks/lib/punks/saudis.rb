@@ -24,7 +24,21 @@ module Saudi
       @generator ||= Artfactory.use( Saudi::Sheet.builtin,
                                      image_class: Image )
     end
+
+
+    # note: remove/delete empyty attributes (n/a - not applicables)
+    ##      (e.g. "None" in Eyewear/Mouse Prop and
+    ##            "Clean Shaven" in Beard )
+    ##  future:  make n/a values configurable that you can pass in
+    ##            e.g.   nas: [] or such - why? why not?
+    NA = [
+      'cleanshaven',
+      'none'
+    ]
+
     def self.generate( *names )
+      names = names.filter { |name| !NA.include?( Pixelart::Spritesheet.normalize_key( name )) }
+
       generator.generate( *names )
     end
   end # class Image

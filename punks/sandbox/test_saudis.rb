@@ -16,6 +16,7 @@ punks = Csv.parse( <<TXT )
   Male 06, Short White Beard, Red Shemagh & Agal, Stylish Nerd Glasses
   Male 07, Normal Brown Beard & Mustache, White Shemagh & Agal
   Male 08, Stylish Mustache, Red Shemagh
+  Male 09, Clean Shaven, Red Shemagh, None, None
 
 
   Dark 1, Stylish Mustache, White Shemagh & Gold Agal, MAX BIDDING, Rosewood Pipe
