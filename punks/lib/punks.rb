@@ -7,7 +7,9 @@ require 'artfactory/base'
 ## our own code
 require 'punks/version'    # note: let version always go first
 
-require 'punks/generator'
+
+require 'punks/pixelart/spritesheet'
+require 'punks/pixelart/generator'
 
 
 ## --- 24x24 series
@@ -18,7 +20,9 @@ require 'punks/philips'
 require 'punks/saudis'
 ## --- 32x32 series
 require 'punks/punks_xl'
-
+require 'punks/bodies_32'
+## --- 40x40 series
+require 'punks/bodies_40'
 
 
 

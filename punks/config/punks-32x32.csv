@@ -1,0 +1,27 @@
+id, name, gender, size, type, more_names
+0, Human 1, m, l, Archetype - Human, Human Male 1 | Human 1 ♂ | Male 1
+1, Human 2, m, l, Archetype - Human, Human Male 2 | Human 2 ♂ | Male 2
+2, Human 3, m, l, Archetype - Human, Human Male 3 | Human 3 ♂ | Male 3
+3, Human Mid 1, m, l, Archetype - Human, Human Male Mid 1 | Human Mid 1 ♂ | Male Mid 1
+4, Human Mid 2, m, l, Archetype - Human, Human Male Mid 2 | Human Mid 2 ♂ | Male Mid 2
+5, Human Mid 3, m, l, Archetype - Human, Human Male Mid 3 | Human Mid 3 ♂ | Male Mid 3
+6, Human Female 1, f, s, Archetype - Human, Human 1 ♀ | Female 1
+7, Human Female 1A, f, s, Archetype - Human, Human 1A ♀ | Female 1A
+8, Human Female 2, f, s, Archetype - Human, Human 2 ♀ | Female 2
+9, Human Female 3, f, s, Archetype - Human, Human 3 ♀ | Female 3
+10, Human Female 3A, f, s, Archetype - Human, Human 3A ♀ | Female 3A
+11, Human Female Big 1, f, s, Archetype - Human, Human Big 1 ♀ | Female Big 1
+12, Human Female Big 2, f, s, Archetype - Human, Human Big 2 ♀ | Female Big 2
+13, Human Female Big 3, f, s, Archetype - Human, Human Big 3 ♀ | Female Big 3
+14, Human Female Big 3A, f, s, Archetype - Human, Human Big 3A ♀ | Female Big 3A
+15, Zombie, m, l, Archetype - Zombie, Zombie Male | Zombie ♂
+16, Ape, m, l, Archetype - Ape, Ape Male | Ape ♂
+17, Alien, m, l, Archetype - Alien, Alien Male | Alien ♂
+18, Zombie Female, f, s, Archetype - Zombie, Zombie ♀
+19, Zombie Female A, f, s, Archetype - Zombie, Zombie A ♀
+20, Zombie Female Big, f, s, Archetype - Zombie, Zombie Big ♀
+21, Ape Female, f, s, Archetype - Ape, Ape ♀
+22, Ape Female Big, f, s, Archetype - Ape, Ape Big ♀
+23, Alien Female, f, s, Archetype - Alien, Alien ♀
+24, Alien Female A, f, s, Archetype - Alien, Alien A ♀
+25, Alien Female Big, f, s, Archetype - Alien, Alien Big ♀

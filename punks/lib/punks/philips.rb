@@ -8,7 +8,7 @@ module Philip
     PHILIP = Pixelart::Image.read( "#{Pixelart::Module::Punks.root}/config/philip-24x24.png" )
 
     def self.generate( *values )
-        punk = Image.new( 24, 24 )
+        punk = new( 24, 24 )
         punk.compose!( PHILIP )
 
         values.each do |name|
