@@ -1,27 +1,36 @@
 id, name, gender, size, type, more_names
-0, Human 1, m, l, Archetype - Human, Human Male 1 | Human 1 ♂ | Male 1
-1, Human 2, m, l, Archetype - Human, Human Male 2 | Human 2 ♂ | Male 2
-2, Human 3, m, l, Archetype - Human, Human Male 3 | Human 3 ♂ | Male 3
-3, Human Mid 1, m, l, Archetype - Human, Human Male Mid 1 | Human Mid 1 ♂ | Male Mid 1
-4, Human Mid 2, m, l, Archetype - Human, Human Male Mid 2 | Human Mid 2 ♂ | Male Mid 2
-5, Human Mid 3, m, l, Archetype - Human, Human Male Mid 3 | Human Mid 3 ♂ | Male Mid 3
-6, Human Female 1, f, s, Archetype - Human, Human 1 ♀ | Female 1
-7, Human Female 1A, f, s, Archetype - Human, Human 1A ♀ | Female 1A
-8, Human Female 2, f, s, Archetype - Human, Human 2 ♀ | Female 2
-9, Human Female 3, f, s, Archetype - Human, Human 3 ♀ | Female 3
-10, Human Female 3A, f, s, Archetype - Human, Human 3A ♀ | Female 3A
-11, Human Female Big 1, f, s, Archetype - Human, Human Big 1 ♀ | Female Big 1
-12, Human Female Big 2, f, s, Archetype - Human, Human Big 2 ♀ | Female Big 2
-13, Human Female Big 3, f, s, Archetype - Human, Human Big 3 ♀ | Female Big 3
-14, Human Female Big 3A, f, s, Archetype - Human, Human Big 3A ♀ | Female Big 3A
-15, Zombie, m, l, Archetype - Zombie, Zombie Male | Zombie ♂
-16, Ape, m, l, Archetype - Ape, Ape Male | Ape ♂
-17, Alien, m, l, Archetype - Alien, Alien Male | Alien ♂
-18, Zombie Female, f, s, Archetype - Zombie, Zombie ♀
-19, Zombie Female A, f, s, Archetype - Zombie, Zombie A ♀
-20, Zombie Female Big, f, s, Archetype - Zombie, Zombie Big ♀
-21, Ape Female, f, s, Archetype - Ape, Ape ♀
-22, Ape Female Big, f, s, Archetype - Ape, Ape Big ♀
-23, Alien Female, f, s, Archetype - Alien, Alien ♀
-24, Alien Female A, f, s, Archetype - Alien, Alien A ♀
-25, Alien Female Big, f, s, Archetype - Alien, Alien Big ♀
+0, Human XS 1, m, l, Archetype - Human, Human Male XS 1 | Human XS 1 ♂ | Male XS 1
+1, Human XS 2, m, l, Archetype - Human, Human Male XS 2 | Human XS 2 ♂ | Male XS 2
+2, Human XS 3, m, l, Archetype - Human, Human Male XS 3 | Human XS 3 ♂ | Male XS 3
+3, Human M 1, m, l, Archetype - Human, Human Male M 1 | Human M 1 ♂ | Human Mid 1 | Human Male Mid 1 | Human Mid 1 ♂ | Male M 1 | Male Mid 1
+4, Human M 2, m, l, Archetype - Human, Human Male M 2 | Human M 2 ♂ | Human Mid 2 | Human Male Mid 2 | Human Mid 2 ♂ | Male M 2 | Male Mid 2
+5, Human M 3, m, l, Archetype - Human, Human Male M 3 | Human M 3 ♂ | Human Mid 3 | Human Male Mid 3 | Human Mid 3 ♂ | Male M 3 | Male Mid 3
+6, Human Female M 1, f, s, Archetype - Human, Human M 1 ♀ | Human Female Mid 1 | Human Mid 1 ♀ | Female M 1 | Female Mid 1
+7, Human Female M 2, f, s, Archetype - Human, Human M 2 ♀ | Human Female Mid 2 | Human Mid 2 ♀ | Female M 2 | Female Mid 2
+8, Human Female M 3, f, s, Archetype - Human, Human M 3 ♀ | Human Female Mid 3 | Human Mid 3 ♀ | Female M 3 | Female Mid 3
+9, Human Female L 1, f, s, Archetype - Human, Human L 1 ♀ | Female L 1
+10, Human Female L 1A, f, s, Archetype - Human, Human L 1A ♀ | Female L 1A
+11, Human Female L 2, f, s, Archetype - Human, Human L 2 ♀ | Female L 2
+12, Human Female L 3, f, s, Archetype - Human, Human L 3 ♀ | Female L 3
+13, Human Female L 3A, f, s, Archetype - Human, Human L 3A ♀ | Female L 3A
+14, Human Female XXL 1, f, s, Archetype - Human, Human XXL 1 ♀ | Human Female Big 1 | Human Big 1 ♀ | Female XXL 1 | Female Big 1
+15, Human Female XXL 2, f, s, Archetype - Human, Human XXL 2 ♀ | Human Female Big 2 | Human Big 2 ♀ | Female XXL 2 | Female Big 2
+16, Human Female XXL 3, f, s, Archetype - Human, Human XXL 3 ♀ | Human Female Big 3 | Human Big 3 ♀ | Female XXL 3 | Female Big 3
+17, Human Female XXL 3A, f, s, Archetype - Human, Human XXL 3A ♀ | Human Female Big 3A | Human Big 3A ♀ | Female XXL 3A | Female Big 3A
+18, Zombie XS, m, l, Archetype - Zombie, Zombie Male XS | Zombie XS ♂
+19, Zombie M, m, l, Archetype - Zombie, Zombie Male M | Zombie M ♂ | Zombie Mid | Zombie Male Mid | Zombie Mid ♂
+20, Zombie Female M, f, s, Archetype - Zombie, Zombie M ♀ | Zombie Female Mid | Zombie Mid ♀
+21, Zombie Female L, f, s, Archetype - Zombie, Zombie L ♀
+22, Zombie Female L A, f, s, Archetype - Zombie, Zombie L A ♀
+23, Zombie Female XXL, f, s, Archetype - Zombie, Zombie XXL ♀ | Zombie Female Big | Zombie Big ♀
+24, Ape XS, m, l, Archetype - Ape, Ape Male XS | Ape XS ♂
+25, Ape M, m, l, Archetype - Ape, Ape Male M | Ape M ♂ | Ape Mid | Ape Male Mid | Ape Mid ♂
+26, Ape Female M, f, s, Archetype - Ape, Ape M ♀ | Ape Female Mid | Ape Mid ♀
+27, Ape Female L, f, s, Archetype - Ape, Ape L ♀
+28, Ape Female XXL, f, s, Archetype - Ape, Ape XXL ♀ | Ape Female Big | Ape Big ♀
+29, Alien XS, m, l, Archetype - Alien, Alien Male XS | Alien XS ♂
+30, Alien M, m, l, Archetype - Alien, Alien Male M | Alien M ♂ | Alien Mid | Alien Male Mid | Alien Mid ♂
+31, Alien Female M, f, s, Archetype - Alien, Alien M ♀ | Alien Female Mid | Alien Mid ♀
+32, Alien Female L, f, s, Archetype - Alien, Alien L ♀
+33, Alien Female L A, f, s, Archetype - Alien, Alien L A ♀
+34, Alien Female XXL, f, s, Archetype - Alien, Alien XXL ♀ | Alien Female Big | Alien Big ♀
