@@ -38,8 +38,8 @@ module Pixelart
 
       ## todo/check - find better names for type attribute/archetypes?
       ##     use (alternate name/alias) base or face  for archetypes? any others?
-      def attribute?()  @type.downcase.start_with?( 'attribute' ); end
-      def archetype?()  @type.downcase.start_with?( 'archetype' ); end
+      def archetype?()  @type.downcase.index( 'archetype' ); end
+      def attribute?()  !archetype?;  end
 
       def small?()     @size == 's'; end
       def large?()     @size == 'l'; end
@@ -263,7 +263,7 @@ def _build_attributes_by_name( recs )
       key << "_(#{rec.gender}+#{rec.size})"  if rec.attribute?
 
       if h[ key ]
-        puts "!!! ERROR - attribute name is not unique:"
+        puts "!!! ERROR - attribute with key >#{key}< is not unique:"
         pp rec
         puts "duplicate:"
         pp h[key]

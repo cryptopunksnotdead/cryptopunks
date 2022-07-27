@@ -7,41 +7,41 @@ require 'punks'
 
 
 punks = Csv.parse( <<TXT )
-  Female 1
-  Female 1A
-  Female 2
-  Female 3
-  Female 3A
-  Female Big 1
-  Female Big 2
-  Female Big 3
-  Male 1
-  Male 2
-  Male 3
+  Female L 1
+  Female L 1A
+  Female L 2
+  Female L 3
+  Female L 3A
+  Female XXL 1
+  Female XXL 2
+  Female XXL 3
+  Male XS 1
+  Male XS 2
+  Male XS 3
   Male Mid 1
   Male Mid 2
   Male Mid 3
 
 
 
-  Female 2, Blonde Bob, Green Eye Shadow, Hot Lipstick
-  Male 1, Mohawk
-  Female 3, Wild Hair, Hot Lipstick
-  Male 1, Wild Hair, Nerd Glasses, Pipe
-  Male 2, Goat, Earring, Wild Hair, Big Shades
-  Female 2, Earring, Purple Eye Shadow, Half Shaved, Hot Lipstick
+  Female Mid 2, Blonde Bob, Green Eye Shadow, Hot Lipstick
+  Male Mid 1, Mohawk
+  Female Mid 3, Wild Hair, Hot Lipstick
+  Male Mid 1, Wild Hair, Nerd Glasses, Pipe
+  Male Mid 2, Goat, Earring, Wild Hair, Big Shades
+  Female Mid 2, Earring, Purple Eye Shadow, Half Shaved, Hot Lipstick
 
-  Zombie Female, Blonde Bob, Bubble Gum
-  Zombie Female Big, Blonde Bob, Bubble Gum
-  Ape Female, Blonde Bob, Bubble Gum
-  Ape Female Big, Blonde Bob, Bubble Gum
-  Alien Female,  Blonde Bob, Bubble Gum
-  Alien Female Big,  Blonde Bob, Bubble Gum
+  Zombie Female L, Blonde Bob, Bubble Gum
+  Zombie Female XXL, Blonde Bob, Bubble Gum
+  Ape Female L, Blonde Bob, Bubble Gum
+  Ape Female XXL, Blonde Bob, Bubble Gum
+  Alien Female L,  Blonde Bob, Bubble Gum
+  Alien Female XXL,  Blonde Bob, Bubble Gum
 
-  Zombie, Crazy Hair, Bubble Gum
-  Ape,   Crazy Hair, Bubble Gum
-  Alien, Crazy Hair, Bubble Gum
-  Alien, Cap Forward, Small Shades, Pipe
+  Zombie Mid, Crazy Hair, Bubble Gum
+  Ape Mid,   Crazy Hair, Bubble Gum
+  Alien Mid, Crazy Hair, Bubble Gum
+  Alien Mid, Cap Forward, Small Shades, Pipe
 TXT
 
 

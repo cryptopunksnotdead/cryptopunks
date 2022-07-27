@@ -18,6 +18,7 @@ require 'punks/phunks'
 require 'punks/marilyns'
 require 'punks/philips'
 require 'punks/saudis'
+require 'punks/ye_olde_punks_2017'
 ## --- 32x32 series
 require 'punks/punks_xl'
 require 'punks/bodies_32'
@@ -53,6 +54,18 @@ Marilyns = Marilyn
 Saudis   = Saudi
 Sheiks   = Saudi
 Sheik    = Saudi
+
+
+## add some convience shortcuts / alternate spelling variants
+YeOldePunk2017 = YeOldePunkAnno2017
+Yeoldepunk2017 = YeOldePunkAnno2017
+YeOldePunk     = YeOldePunkAnno2017
+Yeoldepunk     = YeOldePunkAnno2017
+Punk2017   = YeOldePunkAnno2017
+PunkV1     = YeOldePunkAnno2017
+Punkv1     = YeOldePunkAnno2017
+PunkV2     = YeOldePunkAnno2017
+Punkv2     = YeOldePunkAnno2017
 
 
 ###
