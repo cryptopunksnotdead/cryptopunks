@@ -18,6 +18,7 @@ require 'punks/phunks'
 require 'punks/marilyns'
 require 'punks/philips'
 require 'punks/saudis'
+require 'punks/marcs'
 require 'punks/ye_olde_punks_2017'
 ## --- 32x32 series
 require 'punks/punks_xl'

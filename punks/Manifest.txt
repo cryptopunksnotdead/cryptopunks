@@ -2,6 +2,8 @@ CHANGELOG.md
 Manifest.txt
 README.md
 Rakefile
+config/marcs-24x24.csv
+config/marcs-24x24.png
 config/philip-24x24.png
 config/punks-24x24.csv
 config/punks-24x24.png
@@ -16,6 +18,7 @@ config/saudis-24x24.png
 lib/punks.rb
 lib/punks/bodies_32.rb
 lib/punks/bodies_40.rb
+lib/punks/marcs.rb
 lib/punks/marilyns.rb
 lib/punks/philips.rb
 lib/punks/phunks.rb
