@@ -26,6 +26,11 @@ module Punkxl
       @generator ||= Artfactory.use( Punkxl::Sheet.builtin,
                                      image_class: Image )
     end
+
+
+    NAMES = ['punkxl', 'punksxl']
+    DEFAULT_ATTRIBUTES = ['Male 2']
+
     def self.generate( *names )
       generator.generate( *names )
     end

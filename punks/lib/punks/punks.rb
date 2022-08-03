@@ -40,6 +40,12 @@ module Punk
       @generator ||= GeneratorEx.use( Sheet.builtin, image_class: Image )
     end
 
+
+
+
+    NAMES = ['punk', 'punks']
+    DEFAULT_ATTRIBUTES = ['Male 2']
+
     def self.generate( *values, style: nil, patch: nil )
 
      if values[0].is_a?( String )

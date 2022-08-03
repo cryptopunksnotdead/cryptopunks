@@ -7,6 +7,8 @@ module Marilyn
     MARILYN_ATTRIBUTES = ['Female 3', 'Wild Blonde', 'Mole',
                           'Blue Eye Shadow']
 
+    NAMES = ['marilyn', 'marilyns']
+
     def self.generate( *values, style: nil )
         punk = Punk::Image.generate( *MARILYN_ATTRIBUTES,
                                      *values, style: style )

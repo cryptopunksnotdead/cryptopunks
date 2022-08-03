@@ -3,6 +3,9 @@ module Phunk
 
   class Image < Pixelart::Image
 
+    NAMES = ['phunk', 'phunks']
+    DEFAULT_ATTRIBUTES = ['Male 2']
+
     def self.generate( *values, style: nil )
         punk = Punk::Image.generate( *values, style: style )
         phunk = punk.mirror

@@ -33,6 +33,13 @@ module YeOldePunkAnno2017
       @generator ||= GeneratorEx.use( Sheet.builtin, image_class: Image )
     end
 
+
+    NAMES = ['punkv1', 'punksv1',
+             'punkv2', 'punksv2',
+             'punk2017', 'punks2017',
+             'yeoldepunk', 'yeoldepunks']
+    DEFAULT_ATTRIBUTES = ['Male 2']
+
     def self.generate( *values )
       generator.generate( *values )
     end # method Image.generate

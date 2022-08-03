@@ -7,6 +7,10 @@ module Philip
     ## note: right-looking ("pre-phlipped") philip
     PHILIP = Pixelart::Image.read( "#{Pixelart::Module::Punks.root}/config/philip-24x24.png" )
 
+
+    NAMES = ['philip',  'philips',
+             'philipp', 'philipps' ]
+
     def self.generate( *values )
         punk = new( 24, 24 )
         punk.compose!( PHILIP )

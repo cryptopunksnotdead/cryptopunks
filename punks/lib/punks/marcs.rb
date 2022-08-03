@@ -18,11 +18,16 @@ module Marc
   Sprite      = Spritesheet
 
 
+
   class Image  <  Pixelart::Image
     def self.generator
       @generator ||= Artfactory.use( Sheet.builtin,
                                      image_class: Image )
     end
+
+
+    NAMES = ['marc', 'marcs']
+    DEFAULT_ATTRIBUTES = ['Marc']
 
     def self.generate( *names )
       ## note: return marcs "hand-phlipped" by default as phree phunks

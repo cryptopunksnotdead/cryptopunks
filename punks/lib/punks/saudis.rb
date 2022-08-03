@@ -36,6 +36,11 @@ module Saudi
       'none'
     ]
 
+    NAMES = ['saudi', 'saudis',
+             'sheik', 'sheiks']
+    DEFAULT_ATTRIBUTES = ['Male 05', 'White Shemagh']
+
+
     def self.generate( *names )
       names = names.filter { |name| !NA.include?( Pixelart::Spritesheet.normalize_key( name )) }
 

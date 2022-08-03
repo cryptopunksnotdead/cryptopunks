@@ -41,6 +41,9 @@ module Punk32
 
   class Image < Pixelart::Image
 
+    NAMES = ['punk32', 'punks32']
+    DEFAULT_ATTRIBUTES = ['Male Mid 2']
+
     def self.generate( *values, patch: nil )
 
       attributes = []   ## collect all attribute images (32x32, 24x24, etc.) to merge/paste here
