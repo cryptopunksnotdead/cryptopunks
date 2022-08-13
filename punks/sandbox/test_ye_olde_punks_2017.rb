@@ -45,6 +45,16 @@ punks = Csv.parse( <<TXT )
   Alien, Knitted Cap, Earring, Medical Mask
   Alien, Headband
   Alien, Cap Forward, Small Shades, Pipe
+
+  Bot
+  Bot Female
+  Bot,  Antenna
+  Bot Female, Antenna
+
+  Male Mid, Blonde Short
+  Male Dark, Orange Side
+  Female Mid, Hoodie
+  Female Dark, Cowboy Hat
 TXT
 
 

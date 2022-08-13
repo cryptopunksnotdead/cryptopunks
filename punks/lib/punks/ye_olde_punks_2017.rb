@@ -3,8 +3,8 @@ module YeOldePunkAnno2017
 
   class Spritesheet
     def self.builtin
-      @builtin ||= Pixelart::SpritesheetEx.read( "#{Pixelart::Module::Punks.root}/config/punks_2017-24x24.png",
-                                                 "#{Pixelart::Module::Punks.root}/config/punks_2017-24x24.csv",
+      @builtin ||= Pixelart::SpritesheetEx.read( "#{Pixelart::Module::Punks.root}/config/yeoldepunks-24x24.png",
+                                                 "#{Pixelart::Module::Punks.root}/config/yeoldepunks-24x24.csv",
                                                  width:  24,
                                                  height: 24 )
     end

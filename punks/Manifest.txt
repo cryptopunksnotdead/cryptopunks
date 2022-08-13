@@ -9,12 +9,12 @@ config/punks-24x24.csv
 config/punks-24x24.png
 config/punks-32x32.csv
 config/punks-32x32.png
-config/punks_2017-24x24.csv
-config/punks_2017-24x24.png
 config/punks_xl-32x32.csv
 config/punks_xl-32x32.png
 config/saudis-24x24.csv
 config/saudis-24x24.png
+config/yeoldepunks-24x24.csv
+config/yeoldepunks-24x24.png
 lib/punks.rb
 lib/punks/bodies_32.rb
 lib/punks/bodies_40.rb
