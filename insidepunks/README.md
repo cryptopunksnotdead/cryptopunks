@@ -1,17 +1,8 @@
 # Technologieplauscherl LXXVII Talk Notes - Inside the Billion Dollar $$$ (Crypto) Punk Pixel Heads
 
 
-##  The Most Expensive Artwork of the 20th Century (Ever Sold) - Art (Market) Trivia Quiz
 
-
-> [Artist's] ______ [Portrait of] ______ Sells for US$ _______ Million
->
-> Sets Record for 20th Century Work of Art
->
-> -- [**Christie's Auction House Press Release**](https://www.christies.com/about-us/press-archive/details?PressReleaseID=10485), New York - May 9th, 2022
-
-![](i/christies.png)
-
+##  Art (Market) Trivia Quiz - The Most Expensive Artwork of the 20th Century (Ever Sold)
 
 - Q: What's the name of the (american) blonde (sex) bombshell (who killed herself in 1962)?
 
@@ -21,11 +12,23 @@
 
 - Q: What's the auction price tag (sold by Christie's in New York)?
 
-
 - Q: What's the name or the art "genre"?  What year / epoch?
 
-- Q: Bonus: Is the artwork a 1 of 1 original? Is it a copy (of a photograph)?
-               Is it a painting? Is it a photograph?
+- Q: Bonus: Is the artwork a 1 of 1 original? Is it a copy (of a photograph)? Is it a painting? Is it a photograph?
+
+
+
+![](i/christies.png)
+
+
+<details>
+<summary>  Show / Hide Answers </summary>
+
+> [Andy] Warhol's [Portrait of] Marilyn [Monroe (Anno 1964)]   Sells for US$ 195 Million
+>
+> Sets Record for 20th Century Work of Art
+>
+> -- [**Christie's Auction House Press Release**](https://www.christies.com/about-us/press-archive/details?PressReleaseID=10485), New York - May 9th, 2022
 
 
 A:  Marilyn Monroe (1926-1962)
@@ -34,7 +37,7 @@ A:  Andy Warhol (1928-1987)
 
 A:  Shot Sage Blue Marilyn
 
-A:  US$195 Million
+A:  US$ 195 Million
 
 A: Pop Art
 
@@ -55,12 +58,13 @@ A:  The Marilyn, known as "Shot Sage Blue Marilyn,"
   was one of five versions in different color schemes that Warhol "painted" in 1964,
  two years after Marilyn Monroe's death.
 
+</details>
 
 
 
 ##  Art (Market) in 2022 -  What's the New Hotness / "Genre" / Movement?
 
-- A.I. (Artificial Intelligence) Art Generated Via Text Prompts (Specs)
+- A.I. (Artificial Intelligence) Art Generated Via Text Prompts (Specs)    - e.g. DALL·E 2, Midjourney, et al
 - Securitization and "Certificate of Authenticity" Via Blockchain / Crypto Tokens
 
 
@@ -102,8 +106,6 @@ Spec:
 
 
 ##  Marilyn in 2022 (More Text-Prompts To Image) - Punk(ette) 24x24 Pixel Head / Portrait (Cont.)
-
-> Matt & John's® punks are the Warhols® of the digital age. Discuss.
 
 
 Add '3D Glasses'
@@ -156,6 +158,10 @@ And so on.
 
 
 ## History Corner - Matt & John's® (Crypto) Punks - 10 000 "Punk" Pixel Heads / Portraits - SOLD OUT!
+
+> Matt & John's® punks are the Warhols® of the digital age. Discuss.
+
+
 
 First Sold¹ Five Years (starting June 2017)
 
@@ -214,15 +220,33 @@ Source: Search for punks floor price or try:
 <https://nftpricefloor.com/cryptopunks>
 
 
+Triva Quiz:  Million Dollar Homepage - 1px @ US$ 1
+
+The Billion Dollar Punks - 1px @ US$ ___ ?
+
+Hint: 1 Punk Head - 24x24 px = 576 pixels
+
+<details>
+<summary> Show / Hide Answers </summary>
+
+US$ 80 000 / 576 pixels =  1px @ ~US$ 150
+
+US$ 15 000 000 / 576 pixels =  1px @ ~US$ 25 000
+
+</details>
+
+
 
 ##  Inside Punk Pixel Heads - The "Magic" Formula or Spritesheet
 
-The Making of Punk Pixel Heads / Portraits
+The Making of Punk 24x24 Pixel Heads / Portraits
 
 - Hand-Drawn?
 - 1 of 1s (1/1s)?
 - Who's the Artist?
 
+<details>
+<summary> Show / Hide Answers </summary>
 
 A:
 
@@ -230,25 +254,69 @@ A:
 - No 1/1s (All Punk Head / Portrait Images Pasted Together Using 133 Building Block Images e.g. Female Light, Wild Blonde, Hot Lipstick, etc.)
 - No A.I. (Artificial Intelligence "Machine Learning Models")
 
+</details>
+
+
+
 
 
 ##  Inside Punk Pixel Heads - The "Magic" Formula or Spritesheet - 133 Building Block Images ("Assets")
 
 Punks (Male 1/2/3/4 + Zombie/Ape/Alien + 63 Attributes)  - in 2x zoom:
 
-![](cryptopunks-assets_male@2x.png)
+![](i/cryptopunks-assets_male@2x.png)
 
 Punk(ette)s (Female 1/2/3/4 + 59 Attributes)  - in 2x zoom:
 
-![](crcryptopunks-assets_female@2x.png)
+![](i/crcryptopunks-assets_female@2x.png)
+
+
+
+## Marilyn Step-By-Step "Deconstructed"
+
+In "Slow Motion":
+
+- Female 2
+- Mole
+- Wild Blonde
+- Blue Eye Shadow
+- Hot Lipstick
+- Earring
+
+![](i/slowmotionmarilyn.png)
+4x  ![](i/slowmotionmarilyn@4x.png)
+
+**Punk w/ Seven Attributes / Accessories**
+
+In "Slow Motion":
+
+- Male 2
+- Mole
+- Buck Teeth
+- Big Beard
+- Earring
+- Classic Shades
+- Cigarette
+- Top Hat
+
+![](i/slowmotionpunk.png)
+4x  ![](i/slowmotionpunk@4x.png)
+
+
+
+Or try Design Your Own Matt & John's® Ye Olde' Punk (Anno 2017) (24×24) Wizard
+<https://cryptopunksnotdead.github.io/pixelart.js/yeoldepunks/>
+
+
+
 
 
 
 ##  The Billion Dollar Punk Industry or Con-Art Fraud?
 
-In March 2022 the Larva Labs Bros - Matt & John's - sold the
+In March 2022 the Larva Labs (Crypto) Bros - Matt & John's - sold the
 "intellectual property (IP) rights"
-to the Yuga Labs Bros for an undisclosed sum (assumed about ~US$ 300 million)
+to the Yuga Labs (Crypto) Bros for an undisclosed sum (assumed about ~US$ 300 million)
 
 
 The Billion Dollar Question -  Are (Crypto) Punks Copyrightable?
@@ -257,9 +325,37 @@ Or Are Computer-Generated 24x24 Pixel Art Images Copyrightable?
 
 How about the "signature" 3D Glasses?
 
+![](i/3d_glasses.png)
+4x  ![](i/3d_glasses@4x.png)
+
 
 
 Or how about the "clown nose"?
+
+
+![](i/clown_nose.png)
+4x  ![](i/clown_nose@4x.png)
+
+
+**Aside - Color By Number Books**
+
+![](i/color-by-number_book.png)
+
+The blurb of the Color by Number for Kids: Pixel Art Coloring Book for Kids Ages 3 and Up, Colorful Play Paperback ($6.99) - see above the cover with a 28x42 pixel artwork - reads:
+
+> Every page is a surprise.
+> Featuring full-page drawings of space, astronauts, animals,
+> flowers, insects, natures, cars, princess and more!
+> Provides hours of fun and creativity.
+> These fun coloring pages will help children (Ages 3-8) master
+> their numbers and improve their manual dexterity through
+> coloring.
+> Suitable for age 3 and up,
+> Children will have fun matching the colors to the included color
+> key, or making up their own color combinations.
+>
+
+Yes, let's repeat - suitable for age 3 and up!
 
 
 
@@ -290,21 +386,25 @@ The punk image building blocks (133 "assets") are NOT published in the (open) co
 but added one-by-one via public and signed addAsset transactions / function calls.
 Example:
 
+```
 tx id   - function call
 0x8972c6b4a44c972111bf18feccae7cfb26db615be400d1422c0763a1a2b03af5 addAsset     : 18,0x6726f0,Clown Nose
 0x07907f96bb50ae69a7d5308343b52f3389d8a2d907aa44064d733bc533911e2a addAsset     : 34,0x580002,Smile
 0xbb646fa184a1adc45428754f3b425fa89d75e4ebfdd6c447a0e66591f602e99f addAsset     : 72,0x355fd0455f70456080465fb0466040555f505560a0565fa0566050655f70656180665fb0666140755f507561a0765fa0766150855f30865f30,3D Glasses
 ...
+```
 
 e.g.
--  0x6726f0   is the blob for the Clown Nose (m)  . "Asset" No. 18 (of 133)
--  0x580002   is the blob for the Smile (m) - "Asset" No 34 (of 133)
--  0x355fd0455f70456080465fb0466040555f505560a0565fa0566050655f70656180665fb0666140755f507561a0765fa0766150855f30865f30
+-  `0x6726f0`  ![](i/clown_nose.png)   is the blob for the Clown Nose (m)  . "Asset" No. 18 (of 133)
+-  `0x580002`   ![](i/smile.png)  is the blob for the Smile (m) - "Asset" No 34 (of 133)
+-  `0x355fd0455f70456080465fb0466040555f505560a0565fa0566050655f70656180665fb0666140755f507561a0765fa0766150855f30865f30`  ![](i/3d_glasses.png)
    is the blob for the 3D Glasses (m) - "Asset" No 72 (of 133)
 - ...
 
 
 <https://github.com/cryptopunksnotdead/punks.contracts/blob/master/punksdata/transactions.txt>
+
+
 
 
 
@@ -323,7 +423,7 @@ The free white label quick starter edition -
 of the first Matt & John's® 10 000 punks collection (Anno 2017)
 
 
-See <>
+See <https://github.com/cryptopunksnotdead/punks.whitelabel>
 
 
 punks.csv - the "text-prompt to image" 10 000 metadata records in comma-separated values (csv) format:
@@ -348,18 +448,6 @@ Female 2, Black Lipstick, Straight Hair Dark, Clown Eyes Green,,,,
 
 
 
-
-## Marilyn Step-By-Step "Deconstructed"
-
-
-
-
-Or try Design Your Own Matt & John's® Ye Olde' Punk (Anno 2017) (24×24) Wizard
-<https://cryptopunksnotdead.github.io/pixelart.js/yeoldepunks/>
-
-
-
-
 ## What's News? Punk (Pixel) Art Collection In Summer (or Crypto Winter) 2022
 
 Summer 2022 also known as Crypto (Art) Winter 2022
@@ -368,58 +456,137 @@ Or Creative Commons Zero (CC0) Summer of (Crypto) Art ;-)
 
 
 
-## The Saudis - MAX BIDDING! - SOLD OUT!
-
-The artists (& promotors)?     Pseudonymous "crypto bro con-art fraudsters" - Red Flag For Scams
 
 
-Add Saudi::Image.generate()
+## The Saudis - ALHAMDULILLAH!!!-  MAX BIDDING! - SOLD OUT!
+
+The artists (& promotors)?
+
+A: Pseudonymous "crypto bro con-art fraudsters" - Red Flag For Scams
+
+
+All human (all male) 5555 punk series
+
+<https://opensea.io/collection/thesaudis>
+
+
+Right-Click & Save This
+
+[ALHAMDULILLAH!!! - Collect'Em All! 5555 Saudi Sheiks (24x24px) In All-In-One Image Composite (2400x1344px) - Free saudis.png Right-Click & Save Download (~346kb)](https://old.reddit.com/r/RightClickSaveThis/comments/vx8cl6/alhamdulillah_collectem_all_5555_saudi_sheiks/)
+
+
+``` ruby
+saudi =  Saudi::Image.generate( 'Dark 1',
+                                'Stylish Mustache',
+                                'White Shemagh & Gold Agal',
+                                'MAX BIDDING',
+                                'Rosewood Pipe')
+saudi.save( "saudi.png" )
+saudi.zoom(4).save( "saudi@4x.png" )
+```
+
+resulting in:
+
+![](i/saudi.png)
+4x  ![](i/saudi@4x.png)
+
+
+The "magic" formula - spritesheet - 2x zoom:
+
+
+![](i/saudis-spritesheet@2x.png)
 
 
 
-All human (all male) punk series
+Aside - MAX BIDDING - Laser Eyes (Golden)   -  Designed by Yours Truly!
 
-- MAX BIDDING - Laser Eyes (Golden)   -  Designed by Yours Truly!
 See [Inside The Saudis - Fun Fact About the Ulta-Rare $$$ Top-Selling MAX BIDDING Laser Eyes - It All Started on Punk's Not Dead In August 2021! - See DIY (Do-It-Yourself)- Yes, You Can! Make Your Own Punks With Laser Eyes](https://old.reddit.com/r/CryptoPunksDev/comments/vvrlmf/inside_the_saudis_fun_fact_about_the_ultarare/).
 
 
-Add Spritesheet
 
 
-## The Jews - MAX  - SOLD OUT!
+## The Jews - MAX SHALOM! - SOLD OUT!
 
-The Americans, The Europeans, The Nigerians,
+All human (all male) 5555 punk series
+
+<https://opensea.io/collection/thejews-nft>
+
+
+Right-Click & Save This
+
+[MAX SHALOM! - Collect'Em All! 5555 Jews From The Sacred Land (24x24px) In All-In-One Image Composite (2400x1344px) - Free jews.png Right-Click & Save Download (~548kb)](https://old.reddit.com/r/RightClickSaveThis/comments/w28qal/max_shalom_collectem_all_5555_jews_from_the/)
+
+
+And Many More
+
+The Nigerians,
 The Punjabi (Call Center) Indians, The Ancient Greeks,
+The Americans, The Europeans,
 and on and on and on.
 
 
 
-##  The Marcs  - Own The Memes of Production - SOLD OUT!
+
+## The Marcs  - Own The Memes of Production - SOLD OUT!
 
 The artists (& promotors)?  "Doxxed" american two-person team
 
-Add "Old Master" Image
+- All attributes stored "on-blockchain" as .png blobs.
+- Create Commons Zero (CC0) "Licensed" - No Rights Reserved.
 
-Add Spritesheet
+Marc Who?
 
-Add Marc::Image.generate()
+![](i/marc-museum.png)
+
+Marc Andreessen (Crypto Bro Billionaire)  Eggheads (or is that Dickheads?)
 
 
 
-##  More Punk Collections -  By Yours Truly
+Marc Sampling Generated Via `Marc::Image.generate`
+
+![](i/marcs.png)
+
+4x
+
+![](i/marcs@4x.png)
+
+
+
+The "magic" formula - spritesheet - 2x zoom:
+
+![](i/marcs-spritesheet@2x.png)
+
+
+
+
+
+##  More Punk Collections (Upcoming) -  By Yours Truly
 
 -  **Fifty / Fifty**  - 20 000 Punks  - 50% Male / 50% Female, that is, 10 000 Male / 10 000 Female
 incl. Female Apes, Zombies & Aliens.
 
+Preview @ Right-Click & Save This
+
+[10000 Punkettes - All Female (Pixel) Punk Edition Incl. Aliens (9) / Apes (24) / Zombies (88) - Free Composite All-In-One Image Download (2400x2400px) - punkettes.png (~700k)](https://old.reddit.com/r/RightClickSaveThis/comments/vrsk0y/10000_punkettes_all_female_pixel_punk_edition/)
+
+
 -  **20 000 Humans**  - 20 000 All-Human Punks - No Zombies, Apes & Aliens -
-   new & more skin tones (uses Dr.  endorsed by Google Research)
+   new & more skin tones - uses (Dr. Ellis) Monk's Ten Skin Tones endorsed by Google A.I. Research (see <https://skintone.google>)
+
+Preview @ Right-Click & Save This
+
+[Punks x (Human) Skin Tone Research @ Google A.I. - Collect'Em All! 10 000 Punks (24x24px), The All-Human (Dr. Ellis) Monk's Ten Skin Tones Edition - In All-In-One Image Composite (2400x2400px) - Free humans.png Right-Click & Save Download (~1.19MB)](https://old.reddit.com/r/RightClickSaveThis/comments/vss8jw/punks_x_human_skin_tone_research_google_ai/)
+
 
 - **Punk Me**  -  Design Your Own Punk (Eye Color, Hair Color, Hair Style, Skin Tone, etc.)
   to look like you or the "metaverse" you
 
 
 
+
+
 ## Questions? Comments?
+
 
 
 
