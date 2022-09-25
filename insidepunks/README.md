@@ -472,7 +472,7 @@ All human (all male) 5555 punk series
 
 Right-Click & Save This
 
-[ALHAMDULILLAH!!! - Collect'Em All! 5555 Saudi Sheiks (24x24px) In All-In-One Image Composite (2400x1344px) - Free saudis.png Right-Click & Save Download (~346kb)](https://old.reddit.com/r/RightClickSaveThis/comments/vx8cl6/alhamdulillah_collectem_all_5555_saudi_sheiks/)
+See [ALHAMDULILLAH!!! - Collect'Em All! 5555 Saudi Sheiks (24x24px) In All-In-One Image Composite (2400x1344px) - Free saudis.png Right-Click & Save Download (~346kb) »](https://old.reddit.com/r/RightClickSaveThis/comments/vx8cl6/alhamdulillah_collectem_all_5555_saudi_sheiks/)
 
 
 ``` ruby
@@ -501,7 +501,7 @@ The "magic" formula - spritesheet - 2x zoom:
 
 Aside - MAX BIDDING - Laser Eyes (Golden)   -  Designed by Yours Truly!
 
-See [Inside The Saudis - Fun Fact About the Ulta-Rare $$$ Top-Selling MAX BIDDING Laser Eyes - It All Started on Punk's Not Dead In August 2021! - See DIY (Do-It-Yourself)- Yes, You Can! Make Your Own Punks With Laser Eyes](https://old.reddit.com/r/CryptoPunksDev/comments/vvrlmf/inside_the_saudis_fun_fact_about_the_ultarare/).
+See [Inside The Saudis - Fun Fact About the Ulta-Rare $$$ Top-Selling MAX BIDDING Laser Eyes - It All Started on Punk's Not Dead In August 2021! - See DIY (Do-It-Yourself)- Yes, You Can! Make Your Own Punks With Laser Eyes »](https://old.reddit.com/r/CryptoPunksDev/comments/vvrlmf/inside_the_saudis_fun_fact_about_the_ultarare/).
 
 
 
@@ -515,7 +515,7 @@ All human (all male) 5555 punk series
 
 Right-Click & Save This
 
-[MAX SHALOM! - Collect'Em All! 5555 Jews From The Sacred Land (24x24px) In All-In-One Image Composite (2400x1344px) - Free jews.png Right-Click & Save Download (~548kb)](https://old.reddit.com/r/RightClickSaveThis/comments/w28qal/max_shalom_collectem_all_5555_jews_from_the/)
+See [MAX SHALOM! - Collect'Em All! 5555 Jews From The Sacred Land (24x24px) In All-In-One Image Composite (2400x1344px) - Free jews.png Right-Click & Save Download (~548kb) »](https://old.reddit.com/r/RightClickSaveThis/comments/w28qal/max_shalom_collectem_all_5555_jews_from_the/)
 
 
 And Many More
@@ -568,7 +568,7 @@ incl. Female Apes, Zombies & Aliens.
 
 Preview @ Right-Click & Save This
 
-[10000 Punkettes - All Female (Pixel) Punk Edition Incl. Aliens (9) / Apes (24) / Zombies (88) - Free Composite All-In-One Image Download (2400x2400px) - punkettes.png (~700k)](https://old.reddit.com/r/RightClickSaveThis/comments/vrsk0y/10000_punkettes_all_female_pixel_punk_edition/)
+See [10000 Punkettes - All Female (Pixel) Punk Edition Incl. Aliens (9) / Apes (24) / Zombies (88) - Free Composite All-In-One Image Download (2400x2400px) - punkettes.png (~700k) »](https://old.reddit.com/r/RightClickSaveThis/comments/vrsk0y/10000_punkettes_all_female_pixel_punk_edition/)
 
 
 -  **20 000 Humans**  - 20 000 All-Human Punks - No Zombies, Apes & Aliens -
@@ -576,7 +576,7 @@ Preview @ Right-Click & Save This
 
 Preview @ Right-Click & Save This
 
-[Punks x (Human) Skin Tone Research @ Google A.I. - Collect'Em All! 10 000 Punks (24x24px), The All-Human (Dr. Ellis) Monk's Ten Skin Tones Edition - In All-In-One Image Composite (2400x2400px) - Free humans.png Right-Click & Save Download (~1.19MB)](https://old.reddit.com/r/RightClickSaveThis/comments/vss8jw/punks_x_human_skin_tone_research_google_ai/)
+See [Punks x (Human) Skin Tone Research @ Google A.I. - Collect'Em All! 10 000 Punks (24x24px), The All-Human (Dr. Ellis) Monk's Ten Skin Tones Edition - In All-In-One Image Composite (2400x2400px) - Free humans.png Right-Click & Save Download (~1.19MB) »](https://old.reddit.com/r/RightClickSaveThis/comments/vss8jw/punks_x_human_skin_tone_research_google_ai/)
 
 
 - **Punk Me**  -  Design Your Own Punk (Eye Color, Hair Color, Hair Style, Skin Tone, etc.)
@@ -607,14 +607,14 @@ Preview @ Right-Click & Save This
 
 ![](i/dollars@4x.png)
 
-[Pop Art Pixel Art How-To - Punks, The Dollar $$$ Bill Greenback Edition](https://old.reddit.com/r/DIYPopArt/comments/vrsvh6/pop_art_pixel_art_howto_punks_the_dollar_bill/)
+See [Pop Art Pixel Art How-To - Punks, The Dollar $$$ Bill Greenback Edition »](https://old.reddit.com/r/DIYPopArt/comments/vrsvh6/pop_art_pixel_art_howto_punks_the_dollar_bill/)
 
 
 **Punks, The Neon Light Glow Edition**
 
 ![](i/neonpunks_green.png)
 
-[Punks w/ Neon Light Glow Effect - Yes, You Can - Turn Black & White Punk (Pencil Drawing) Sketches into Futuristic Punk Neon Light Signs](https://old.reddit.com/r/DIYPopArt/comments/vrth9o/punks_w_neon_light_glow_effect_yes_you_can_turn/)
+See [Punks w/ Neon Light Glow Effect - Yes, You Can - Turn Black & White Punk (Pencil Drawing) Sketches into Futuristic Punk Neon Light Signs »](https://old.reddit.com/r/DIYPopArt/comments/vrth9o/punks_w_neon_light_glow_effect_yes_you_can_turn/)
 
 
 
@@ -625,6 +625,8 @@ Preview @ Right-Click & Save This
 - Thirty Fridas Is Better Than One (6×5)
 - Forty-Two Fridas Is Better Than One (7×6)
 - Two Hundred Fridas Is Better Than One (20×10)
+
+See [Pop Art Helpers »](https://github.com/pixelartexchange/pixelart/tree/master/popart)
 
 
 And on and on and on. Yes, you can!
