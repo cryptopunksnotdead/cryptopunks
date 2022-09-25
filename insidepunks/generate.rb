@@ -169,6 +169,9 @@ saudi =  Saudi::Image.generate( 'Dark 1',
                                 'White Shemagh & Gold Agal',
                                 'MAX BIDDING',
                                 'Rosewood Pipe')
+
+saudi = saudi.background( '006C35' )  # green-ish saudi flag background
+
 saudi.save( "./tmp/saudi.png" )
 saudi.zoom(4).save( "./tmp/saudi@4x.png" )
 

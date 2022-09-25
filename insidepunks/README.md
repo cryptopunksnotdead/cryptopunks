@@ -268,7 +268,7 @@ Punks (Male 1/2/3/4 + Zombie/Ape/Alien + 63 Attributes)  - in 2x zoom:
 
 Punk(ette)s (Female 1/2/3/4 + 59 Attributes)  - in 2x zoom:
 
-![](i/crcryptopunks-assets_female@2x.png)
+![](i/cryptopunks-assets_female@2x.png)
 
 
 
@@ -339,7 +339,7 @@ Or how about the "clown nose"?
 
 **Aside - Color By Number Books**
 
-![](i/color-by-number_book.png)
+![](i/color-by-number-book.png)
 
 The blurb of the Color by Number for Kids: Pixel Art Coloring Book for Kids Ages 3 and Up, Colorful Play Paperback ($6.99) - see above the cover with a 28x42 pixel artwork - reads:
 
@@ -481,6 +481,7 @@ saudi =  Saudi::Image.generate( 'Dark 1',
                                 'White Shemagh & Gold Agal',
                                 'MAX BIDDING',
                                 'Rosewood Pipe')
+
 saudi.save( "saudi.png" )
 saudi.zoom(4).save( "saudi@4x.png" )
 ```
@@ -591,6 +592,41 @@ Preview @ Right-Click & Save This
 
 
 
-## Bonus: Pop Art Helpers - Free Pop Art
+
+## Bonus:  Free Pop Art - Pop Art How-Tos & Helpers
+
+
+![](i/marilyns-museum.jpg)
+
+
+**Punks, The Dollar $$$ Bill Greenback Edition**
+
+![](i/dollars.png)
+
+4x
+
+![](i/dollars@4x.png)
+
+[Pop Art Pixel Art How-To - Punks, The Dollar $$$ Bill Greenback Edition](https://old.reddit.com/r/DIYPopArt/comments/vrsvh6/pop_art_pixel_art_howto_punks_the_dollar_bill/)
+
+
+**Punks, The Neon Light Glow Edition**
+
+![](i/neonpunks_green.png)
+
+[Punks w/ Neon Light Glow Effect - Yes, You Can - Turn Black & White Punk (Pencil Drawing) Sketches into Futuristic Punk Neon Light Signs](https://old.reddit.com/r/DIYPopArt/comments/vrth9o/punks_w_neon_light_glow_effect_yes_you_can_turn/)
+
+
+
+**Pop Art Helpers**
+
+- Double Frida (2×1)  => Las Dos Fridas :-)
+- Triple Frida (3×1)
+- Thirty Fridas Is Better Than One (6×5)
+- Forty-Two Fridas Is Better Than One (7×6)
+- Two Hundred Fridas Is Better Than One (20×10)
+
+
+And on and on and on. Yes, you can!
 
 
