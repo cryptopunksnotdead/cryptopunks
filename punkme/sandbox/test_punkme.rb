@@ -7,7 +7,7 @@ require 'punkme'
 
 
 
-colors = {
+skintones = {
   orange:   '#F05423',
   warm_red: '#EF483E',
   red:      '#EE3342',
@@ -17,19 +17,19 @@ colors = {
 }
 
 
-colors.each do |color_name, color_hex|
+skintones.each do |skintone_name, skintone_hex|
   punk = Punkme::Image.generate( 'Wild Hair',
-                                 skintone: color_hex,
+                                 skintone: skintone_hex,
                                  gender: 'm' )
-  punk.save( "./tmp/punk_(m)_#{color_name}.png")
-  punk.zoom(8).save( "./tmp/punk_(m)_#{color_name}@8x.png")
+  punk.save( "./tmp/punk_(m)_#{skintone_name}.png")
+  punk.zoom(8).save( "./tmp/punk_(m)_#{skintone_name}@8x.png")
 
 
   punk = Punkme::Image.generate( 'Wild Hair',
-                                 skintone: color_hex,
+                                 skintone: skintone_hex,
                                  gender: 'f' )
-  punk.save( "./tmp/punk_(f)_#{color_name}.png")
-  punk.zoom(8).save( "./tmp/punk_(f)_#{color_name}@8x.png")
+  punk.save( "./tmp/punk_(f)_#{skintone_name}.png")
+  punk.zoom(8).save( "./tmp/punk_(f)_#{skintone_name}@8x.png")
 end
 
 
