@@ -73,7 +73,8 @@ A:  The Marilyn, known as "Shot Sage Blue Marilyn,"
 
 Text-Prompt to Image:
 
-> Female_Light Wild_Blonde Blue_Eye_Shadow Hot_Lipstick Mole
+> Punk • Female Light  • Wild Blonde  • Blue Eye Shadow  • Hot Lipstick  • Mole
+
 
 or using the Punk Image Generation Library / Gem:
 
