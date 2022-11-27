@@ -306,7 +306,7 @@ In "Slow Motion":
 
 
 Or try Design Your Own Matt & John's® Ye Olde' Punk (Anno 2017) (24×24) Wizard
-<https://cryptopunksnotdead.github.io/pixelart.js/yeoldepunks/>
+<https://cryptopunksnotdead.github.io/punks.js/yeoldepunks/>
 
 
 
