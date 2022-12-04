@@ -1,6 +1,19 @@
 #  Query (Read) Crypto Punks Blockchain Contracts / Services via Ethlite
 
 
+## SyntheticPunks by Stephan Cilliers
+
+_CryptoPunks for everyone_
+
+> A unique, fully on-chain CryptoPunk associated with each Ethereum address.
+
+see
+- <https://etherscan.io/address/0xaf9CE4B327A3b690ABEA6F78eCCBfeFFfbEa9FDf>
+- <https://github.com/stephancill/synthetic-punks>
+- <https://opensea.io/collection/synthetic-cryptopunks>
+- <https://syntheticpunks.com>
+
+
 
 
 ## CryptoPunksTokenUri by 0xTycoon
@@ -17,8 +30,9 @@ https://www.larvalabs.com/blog/2021-8-18-18-0/on-chain-cryptopunks
 >
 > Marketplaces, Wallets and contracts can use this convenient contract to fetch metadata about each punk.
 
-see <https://etherscan.io/address/0x4e776fcbb241a0e0ea2904d642baa4c7e171a1e9>
-and <https://github.com/0xTycoon/punks-token-uri>
+see
+- <https://etherscan.io/address/0x4e776fcbb241a0e0ea2904d642baa4c7e171a1e9>
+- <https://github.com/0xTycoon/punks-token-uri>
 
 
 
