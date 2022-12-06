@@ -1,0 +1,39 @@
+require 'hoe'
+require './lib/synthpunks/version.rb'
+
+###
+# hack/ quick fix for broken intuit_values - overwrite with dummy
+class Hoe
+  def intuit_values( input ); end
+end
+
+
+
+Hoe.spec 'synthpunks' do
+
+  self.version = Pixelart::Module::Synthpunks::VERSION
+
+  self.summary = 'synthpunks - (free unlimited) 24×24 pixel punks for everyone - yes, you can - generate / claim your own synth(etic) punks ("off-blockchain") for your own (ethereum) account 40-hexdigit addresses e.g. 0x054f3b6eadc9631ccd60246054fdb0fcfe99b322; incl. 2x/4x/8x zoom for bigger sizes'
+  self.description = summary
+
+  self.urls    = { home: 'https://github.com/cryptopunksnotdead/cryptopunks' }
+
+  self.author  = 'Gerald Bauer'
+  self.email   = 'wwwmake@googlegroups.com'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'CHANGELOG.md'
+
+  self.extra_deps = [
+    ['pixelart', '>= 1.3.6'],
+    ['etherlite', '>= 0.3.1'],
+  ]
+
+  self.licenses = ['Public Domain']
+
+  self.spec_extras = {
+    required_ruby_version: '>= 2.3'
+  }
+
+end
