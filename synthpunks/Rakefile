@@ -26,9 +26,9 @@ Hoe.spec 'synthpunks' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
-    ['pixelart', '>= 1.3.6'],
-    ['backgrounds'],
-    ['etherlite', '>= 0.3.1'],
+    ['pixelart',    '>= 1.3.6'],
+    ['backgrounds', '>= 0.2.1'],
+    ['ethlite',     '>= 0.3.1'],
   ]
 
   self.licenses = ['Public Domain']
