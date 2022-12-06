@@ -11,7 +11,8 @@ synthpunks - (free unlimited) 24×24 pixel punks for everyone - yes, you can - g
 
 
 
-##  What are Synthetic (Crypto) Punks V1?
+
+##  Background - What are "On-Chain" Synthetic (Crypto) Punks V1?
 
 > Fully on-chain (crypto) punks for every ethereum address. Check yours out for free!
 >
@@ -102,15 +103,15 @@ Synthpunks.getAttributeNames( 30311890011735557186986086868537068337617285922 )
 ```
 
 
-Now lookup the minted
+Now look up the minted
 Synthetic (Crypto) Punks V1 on the open sea (secondary)
 market:
 
-[Minted Synthetic Punk for 0xaf9ce4b327a3b690abea6f78eccbfefffbea9fdf
+[Minted Synthetic Punk for 0x054f3b6eadc9631ccd60246054fdb0fcfe99b322
 with Token ID #30311890011735557186986086868537068337617285922 @ Open Sea](https://opensea.io/assets/ethereum/0xaf9ce4b327a3b690abea6f78eccbfefffbea9fdf/30311890011735557186986086868537068337617285922)
 
 Or see
-[Synthetic Punk for 0xaf9ce4b327a3b690abea6f78eccbfefffbea9fdf](https://syntheticpunks.com/#/address/0xaf9ce4b327a3b690abea6f78eccbfefffbea9fdf)
+[Synthetic Punk for 0x054f3b6eadc9631ccd60246054fdb0fcfe99b322](https://syntheticpunks.com/#/address/0x054f3b6eadc9631ccd60246054fdb0fcfe99b322)
 
 
 And spot the differencence - hint: none other
@@ -212,7 +213,7 @@ and so on.
 
 Yes, you can.
 Let's try some more
-the (ethereum) addresses.
+(ethereum) addresses.
 
 ``` ruby
 punk = Synthpunks::Image.generate( '0x7a80ee32044f496a7bfef65af738fdda3a02cf02' )
