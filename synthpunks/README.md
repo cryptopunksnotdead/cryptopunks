@@ -22,7 +22,7 @@ synthpunks - (free unlimited) 24×24 pixel punks for everyone - yes, you can - g
 has put together an open-source blockchain service ( - see [**stephancill/synthetic-punks**](https://github.com/stephancill/synthetic-punks) - )
 to generate for free¹ 24×24 punk pixel heads for every ethereum address (account).
 
-¹: and optionally mint a (non-fungible) token for a 0.02 ether fee.
+¹: and optionally clain / mint a (non-fungible) token for a 0.02 ether fee.
 
 
 The F.A.Q. reads:
@@ -30,7 +30,7 @@ The F.A.Q. reads:
 > Q: What are Synthetic Punks?
 >
 > A: Synthetic Punks is inspired by the historical
-> collection [Anno 2017] of 10 000  Matt & John's® Punks
+> collection of 10 000  Matt & John's® Punks [Anno 2017]
 > by Larva Labs and Synthetic Loot by Dom Hofmann.
 > It generates a unique, fully on-blockchain punk for each Ethereum address.
 >
@@ -38,16 +38,15 @@ The F.A.Q. reads:
 > as an ERC-721 non-fungible token (NFT)
 > for a price of 0.02 ether.
 >
-> Q: Features
->
-> Each Synthetic Punk
+> Features - Each Synthetic Punk
 > - Is generated from assets stored fully on-blockchain
 > - Is uniquely associated with an ethereum wallet address
 > - Supports Ethereum Name Service (ENS) in its metadata
 
 
 
-## Usage
+
+## "Off-Chain" Usage In Your Script
 
 
 Anyways, the synthpunks gem / library is inspired by Synthetic Punks V1
@@ -81,7 +80,8 @@ resulting in:
 
 
 Tip:  Use `Synthpunks.getTokenID( addr )`
-to get the token id from the address (really just converting the hexstring to a decimal (big) integer number). Example:
+to get the "official" token id
+from the address (that really is only a "convenience" helper that converts the 40-digit / 20-byte hexstring to a decimal (big) integer number). Example:
 
 ``` ruby
 Synthpunks.getTokenID('0x054f3b6eadc9631ccd60246054fdb0fcfe99b322' )
@@ -106,7 +106,12 @@ Now lookup the minted
 Synthetic (Crypto) Punks V1 on the open sea (secondary)
 market:
 
-[opensea.io/assets/.../30311890011735557186986086868537068337617285922](https://opensea.io/assets/ethereum/0xaf9ce4b327a3b690abea6f78eccbfefffbea9fdf/30311890011735557186986086868537068337617285922)
+[Minted Synthetic Punk for 0xaf9ce4b327a3b690abea6f78eccbfefffbea9fdf
+with Token ID #30311890011735557186986086868537068337617285922 @ Open Sea](https://opensea.io/assets/ethereum/0xaf9ce4b327a3b690abea6f78eccbfefffbea9fdf/30311890011735557186986086868537068337617285922)
+
+Or see
+[Synthetic Punk for 0xaf9ce4b327a3b690abea6f78eccbfefffbea9fdf](https://syntheticpunks.com/#/address/0xaf9ce4b327a3b690abea6f78eccbfefffbea9fdf)
+
 
 And spot the differencence - hint: none other
 than the "dark / black-ish" background is missing.
@@ -237,7 +242,11 @@ and compare with the "original" with the attributes:
 - VR
 - Shadow Beard
 
-see [Synthetic Punk for 0x7a80Ee32044F496A7bFeF65Af738FddA3a02CF02](https://syntheticpunks.com/#/address/0x7a80Ee32044F496A7bFeF65Af738FddA3a02CF02)
+
+[Minted Synthetic Punk for 0x7a80Ee32044F496A7bFeF65Af738FddA3a02CF02
+with Token ID #699372119169819039191610289391678040975564001026 @ Open Sea](https://opensea.io/assets/ethereum/0xaf9ce4b327a3b690abea6f78eccbfefffbea9fdf/699372119169819039191610289391678040975564001026)
+
+Or see [Synthetic Punk for 0x7a80Ee32044F496A7bFeF65Af738FddA3a02CF02](https://syntheticpunks.com/#/address/0x7a80Ee32044F496A7bFeF65Af738FddA3a02CF02)
 
 and so on.
 
