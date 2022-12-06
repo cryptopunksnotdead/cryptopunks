@@ -1,7 +1,7 @@
 # Synth(etic) Punks  - (Free Unlimited) 24×24 Pixel Punks For Everyone
 
 
-synthpunks - (free unlimited) 24×24 pixel punks for everyone - yes, you can - generate / claim your own synth(etic) punks ("off-blockchain") for your own (ethereum) account 40-hexdigit addresses e.g. 0x054f3b6eadc9631ccd60246054fdb0fcfe99b322; incl. 2x/4x/8x zoom for bigger sizes
+synthpunks - (free unlimited) 24×24 pixel punks for everyone - yes, you can - generate / claim your own synth(etic) punks ("off-blockchain") for your own (ethereum) account 40-hexdigit addresses e.g. 0x054f3b6eadc9631ccd60246054fdb0fcfe99b322; incl. 2x/4x/8x zoom for bigger sizes and more
 
 
 * home  :: [github.com/cryptopunksnotdead/cryptopunks](https://github.com/cryptopunksnotdead/cryptopunks)
@@ -23,7 +23,7 @@ synthpunks - (free unlimited) 24×24 pixel punks for everyone - yes, you can - g
 has put together an open-source blockchain service ( - see [**stephancill/synthetic-punks**](https://github.com/stephancill/synthetic-punks) - )
 to generate for free¹ 24×24 punk pixel heads for every ethereum address (account).
 
-¹: and optionally clain / mint a (non-fungible) token for a 0.02 ether fee.
+¹: and optionally claim / mint a (non-fungible) token for a 0.02 ether fee.
 
 
 The F.A.Q. reads:
