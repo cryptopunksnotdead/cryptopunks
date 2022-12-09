@@ -1,6 +1,6 @@
 require 'pixelart'
 require 'backgrounds'
-require 'ethlite'     ## needed for Digest::Keccak (otherwise no dep for now)
+require 'digest-lite'     ## needed for Digest::Keccak (otherwise no dep for now)
 
 
 ## our own code
