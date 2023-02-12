@@ -48,22 +48,24 @@ is the creator of Ordinal Punks.
 
 ## Timeline
 
+**2022**
+
+December
+
+- December 14th -- Genesis of Ordinals (on Bitcoin); [First Inscription @ #0](https://ordinals.com/inscription/6fb976ab49dcec017f1e201e84395983204ae1a7c2abf7ced0a85d692e442799i0) - 1-Bit Black& White (Pixel Art) Skull
+
 **2023**
 
 January
 
--   -- Genesis of Ordinals (on Bitcoin); [First Inscription @ #1]()
-
-
 -   Flow Stay starts discord (chat) channel and announces Ordinal Punks
 
 -  January 31st -- [Ordinal Punks](https://twitter.com/OrdinalPunks/status/1620230583711576068) writes:
-   > Going to be launching in a couple hours:
-   >
+   > Going to be launching in a couple hours.
    > Come join the discord. We will be giving away two free mints.
 
 
-Feburary
+February
 
 - February 1st -- [Ordinal Punks](https://twitter.com/OrdinalPunks/status/1620605393083990018) writes:
    > Soon ordinal punks will make up 10%
@@ -132,7 +134,7 @@ Feburary
     > Ordinal Punks  have flipped Matt & John's® Punks V2
     > [as the collection with the highest minimum floor price].
     >
-    > Disclosure: [HODLing] 1 [Ordinal Punk]
+    > Disclosure:  [HODLing] 1 [Ordinal Punk ![](i/85.png)]
     >
     >> Bro is that a spreadsheet?!?
     >
