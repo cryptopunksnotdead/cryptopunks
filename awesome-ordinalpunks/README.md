@@ -84,7 +84,7 @@ Feburary
     >  - Punk 12 minted by @Skinned
     >  - Punk 13 minted by @s0up
     >  - Punk 14 minted by @jokie
-    > ...
+    >  - ...
 - February 1st @ 19:27:27 -- [Last Inscription @ #642](https://ordinals.com/inscription/0cc4000a34b8549afd96b48b78a0d491c541618b2b1f2e0364a48f2d9cccc8cei0) (Ordinal Punk #100)  by Flow Stay
     > From the discord minted-punks channel (continued):
     > - ...
@@ -300,7 +300,7 @@ Or in totals: 62 sales - BTC 158.388 - about US$ 3,475,031 / ETH 2263.864
 
 
 
-> The [oridinal punk] floor [minimum] price has risen to 2.2 bitcoin (~$50 000) with a new all-time-high sale of 9.5 bitcoin (~$215 000) today.  -- Feb 9th, 2023
+> The [oridinal punk] floor [minimum] price has risen to 2.2 bitcoin (about $50 000) with a new all-time-high sale of 9.5 bitcoin (about $215 000) today.  -- Feb 9th, 2023
 
 o
 
@@ -386,10 +386,15 @@ February 12th, 2023:
 >
 >  o
 >
-> - Left [[Image](https://twitter.com/seanbonner/status/1623064953543593984)]: Ordinal Punks, minted this week on bitcoin (BTC).
-> - Right [[Image](https://twitter.com/seanbonner/status/1623064953543593984)]: Mutant Punks, minted last year on ethereum (ETH).
+> - Left: Ordinal Punks, minted this week on bitcoin (BTC).
+> - Right: Mutant Punks, minted last year on ethereum (ETH).
+>
+>  ![](i/ordinalpunks-left.png) ![](i/ordinalpunks-right.png)
 >
 > LOL.
+>
+>  <!-- source: https://twitter.com/seanbonner/status/1623064953543593984
+>  -->
 >
 >> It's all from the archive/database "(crypto) punk's not dead" which
 >> has all the [free] assets and traits uploaded ready [for easy (re)use] to be inserted
