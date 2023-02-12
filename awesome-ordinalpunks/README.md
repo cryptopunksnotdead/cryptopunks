@@ -262,7 +262,11 @@ at the [Ordinal Sandbox (& Cache)](https://github.com/pixelartexchange/ordinals.
 ## Market / Trading Data
 
 
-official market data (order book) @ google docs: [Ordinal's Punk Data](https://docs.google.com/spreadsheets/d/1_a690MxZUFGMnvU8VkchH1wLUxUQKdTbJpF9geBpHqI/edit#gid=0)
+official market data (order book) @ google docs: [Ordinal's Punk Data](https://docs.google.com/spreadsheets/d/1_a690MxZUFGMnvU8VkchH1wLUxUQKdTbJpF9geBpHqI/edit)
+
+![](i/ordinalpunks-market.png)
+
+
 
 Example - Bids & Asks on Feburary 12th, 2023:
 
@@ -283,6 +287,14 @@ Example - Bids & Asks on Feburary 12th, 2023:
 USD  Sales Chart of the First 63 Sales (From Feb/1st to Feb/12th, 2023)
 
 ![](i/ordinalpunks-usd-sales-chart.png)
+
+Note: Sale #1 is mint price to make charts look better -
+BTC 0.010 - about US$ 219 / ETH 0.143
+
+Or in totals: 62 sales - BTC 158.388 - about US$ 3,475,031 / ETH 2263.864
+
+
+
 
 
 
