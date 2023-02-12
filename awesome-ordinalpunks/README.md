@@ -425,6 +425,9 @@ February 12th, 2023:
 [Cooley](https://twitter.com/Cooley_NJ/status/1623954217722314754) comments:
 
 > Couple of Fast Food Punks® derivatives in there as well.
+>
+> ![](i/ordinalpunks-fastfood.png)
+
 
 
 
@@ -433,6 +436,30 @@ Hint:  My humble self (Gerald Bauer), yes, I am the creator of the [**punk sprit
 PS:  Read-up on the history of the laser eyes (in punks) - see [**Inside The Saudis - Fun Fact About the Ulta-Rare $$$ Top-Selling MAX BIDDING Laser Eyes - It All Started on Punk's Not Dead In August 2021! - See DIY (Do-It-Yourself) - Yes, You Can! Make Your Own Punks With Laser Eyes**](https://old.reddit.com/r/CryptoPunksDev/comments/vvrlmf/inside_the_saudis_fun_fact_about_the_ultarare/).
 
 Or read-up on the history of the demon, skeleton, vampire, orc & more punk archetypes -  see [**Alpha, Alpha, Alpha - Historic Punk Collection (Anno 2021) - Many Firsts - First Use Of Hair Colors Trait! Incl. New Colors! Periwinkle! Rainbow! And Many More!**](https://old.reddit.com/r/DIYPunkArt/comments/we9k40/alpha_alpha_alpha_historic_punk_collection_anno/).
+
+**Update**  Thanks to Ordinal Punks (Anno 2023)
+the rediscovered [1000 More Punks (Anno 2021)](https://opensea.io/collection/morepunks) are back to life
+and sales are taking off, the (anonymous) [More Punks Founder](https://twitter.com/MorePunks/status/1624761345722748928) writes:
+
+> We're the creators of the original
+> demon, mummy, orc, robot, skeleton and vampire punks [since April 2021].
+>
+> Not ordinal punks, or anyone else.
+>
+> ![](i/morepunks.png)
+>
+>  o
+>
+> We are extremely thankful for all the support [- sales with 10% creater's fee - ka-ching! -]
+> you've shown us over the last several days.
+>
+> Hope you all have a nice weekend!
+>
+> ![](i/morepunks-sales.png)
+
+
+
+
 
 
 
