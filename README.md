@@ -18,16 +18,16 @@ More / Experimental
 
 
 
-# Talk Notes
+## Talk Notes
 
 [**Inside the Billion Dollar $$$ (Crypto) Punk Pixel Heads**](insidepunks)
 
 
 
 
-#  More Notes
+##  More Notes
 
-[**Awesome Ordinal Punks**](awesome-ordinalpunks)
+[**Awesome Ordinal Punks**](awesome-ordinalpunks) - All about the 100 pixel punks inscribed on the bitcoin (classic) blockchain in the (binary) image/png format - 8-bit colors (in r/g/b with alpha channel); 24×24 with 8x zoom, that is, 192×192 pixels.
 
 
 
