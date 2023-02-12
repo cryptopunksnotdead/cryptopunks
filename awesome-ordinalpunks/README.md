@@ -57,18 +57,143 @@ January
 
 -   Flow Stay starts discord (chat) channel and announces Ordinal Punks
 
+-  January 31st -- [Ordinal Punks](https://twitter.com/OrdinalPunks/status/1620230583711576068) writes:
+   > Going to be launching in a couple hours:
+   >
+   > Come join the discord. We will be giving away two free mints.
 
 
 Feburary
 
+- February 1st -- [Ordinal Punks](https://twitter.com/OrdinalPunks/status/1620605393083990018) writes:
+   > Soon ordinal punks will make up 10%
+   > of all inscriptions on bitcoin.
 - February 1st @ 10:17:24 -- [First Inscription @ #537](https://ordinals.com/inscription/96d87d7e59d75ebc0e6144b09fdd96355fcdaa86fd098d64c46f19a424012bbei0) (Ordinal Punk #1) by Flow Stay
+    >  From the discord minted-punks channel:
+    >  - Punk 1 given away to @drastics
+    >  - Punk 2 won by @RiskyBiscuit
+    >  - Punk 3 minted by @Skinned
+    >  - Punk 4 minted by @Skinned
+    >  - Punk 5 minted by @Skinned
+    >  - Punk 6 minted by @Skinned
+    >  - Punk 7 minted by @Skinned
+    >  - Punk 8 minted by @Skinned
+    >  - Punk 9 minted by @Skinned
+    >  - Punk 10 minted by @Skinned
+    >  - Punk 11 minted by @Skinned
+    >  - Punk 12 minted by @Skinned
+    >  - Punk 13 minted by @s0up
+    >  - Punk 14 minted by @jokie
+    > ...
 - February 1st @ 19:27:27 -- [Last Inscription @ #642](https://ordinals.com/inscription/0cc4000a34b8549afd96b48b78a0d491c541618b2b1f2e0364a48f2d9cccc8cei0) (Ordinal Punk #100)  by Flow Stay
+    > From the discord minted-punks channel (continued):
+    > - ...
+    > - Punk 94 minted by @NFTier
+    > - Punk 95 minted by @Mrmorgo
+    > - Punk 96 minted by @CollectorKev
+    > - Punk 97 minted by @Ares
+    > - Punk 98 minted by @Crabby
+    > - Punk 99 Minted by @RoyalOrdinal
+    > - Punk 100 minted by @jasonrosenstein
+    > - All punks have been minted onchain now
+
+- February 2nd  -- [Ordinal Punks](https://twitter.com/OrdinalPunks/status/1620977031575113729) writes:
+    > We are officially sold out. Our mint was oversubscribed
+    > by nearly 4x. Congrats to all the minters.
+    >
+    >>
+- February 5th  -- [Ordinal Punks](https://twitter.com/OrdinalPunks/status/1622087164140949504) writes:
+    > There was a point in time when Ordinal Punks were 15%
+    > of all inscriptions on bitcoin.
+    > Now we just broke 3500 inscriptions (2.85%) on bitcoin. Things are moving quickly
+    >
+    >> Inscriptions go brrrrr.
+    >>
+    >> o
+    >>
+    >> And 5 days later closing the 50 000 mark...
+
+
+- February 8th  -- [Punk #9059](https://twitter.com/punk9059/status/1623411865597407233) writes:
+    > Bids and asks are happening on Google Docs for Ordinal Punks.
+    >  Floor (ask) appears to be 55.4 ETH right now. Bids at 40.2 ETH.
+    >
+    >> Pricing BTC ordinals in ETH. LOL.
+    >>
+    >> o
+    >>
+    >> Blockchain minimalists using spreadsheets? LOL.
+    >>
+    >> o
+    >>
+    >> Pretty punk rock way to trade punks.
+
+- February 10th  -- [Tropo Farmer](https://twitter.com/tropoFarmer/status/1624101314664837123) writes:
+    > Ordinal Punks  have flipped Matt & John's® Punks V2
+    > [as the collection with the highest minimum floor price].
+    >
+    > Disclosure: [HODLing] 1 [Ordinal Punk]
+    >
+    >> Bro is that a spreadsheet?!?
+    >
+    > We're early.
+    >
+    >> You're aware these are asks right?
+    >
+    > That's what "floor" is.
+    >
+    >> It's a scam dude. LOL.
 - February 11th @ 21:39:00  -- [Metadata Inscription @ #58665](https://ordinals.com/inscription/d026ac5994f698dba475681359b6c29d6d39a895484b95e06b7ae49921d80df2i0) by Tropo Farmer
 
 
 
 
+
 ## Metadata
+
+From the official google docs:
+
+**Punk By Race** - Total 100
+- Zombie Ape 1
+- Alien Ape 2
+- Ape 3
+- Skeleton 3
+- Mummy 4
+- Robot 4
+- Orc 5
+- Vampire 5
+- Alien 6
+- Zombie 6
+- Demon 7
+- Human 54
+
+**Ape Type (By Skin Tone)**
+- Blue 1
+- Brown 1
+- Yellow 1
+
+**Alien Type (By Skin Tone)**
+- Green 1
+- Pink 1
+- Purple 1
+- Yellow 1
+- Gold 2
+
+**Human Type (By Skin Tone)**
+- Yellow (Punk #98) 1
+- Purple (Magenta) 1
+- Gold 2
+- Blue (Indigo) 4
+- Orange 5
+- 1 (Black) 11
+- 2 (Mixed) 10
+- 3 (White) 9
+- 4 (Albino) 11
+
+
+
+
+
 
 > [Ordinal Punks] Metadata on-chain forever. Thanks to the help of Tropo Farmer.
 >
@@ -137,8 +262,35 @@ at the [Ordinal Sandbox (& Cache)](https://github.com/pixelartexchange/ordinals.
 ## Market / Trading Data
 
 
+official market data (order book) @ google docs: [Ordinal's Punk Data](https://docs.google.com/spreadsheets/d/1_a690MxZUFGMnvU8VkchH1wLUxUQKdTbJpF9geBpHqI/edit#gid=0)
+
+Example - Bids & Asks on Feburary 12th, 2023:
+
+
+| BIDS     |     |      |     | ASKS |    |     |
+|---------|-----|------|-----|------|----|-----|
+|Username | BTC | ETH  | USD | USD | ETH | BTC | Punk and Username
+|beautifulnfts.eth | 4 | 57.17 | $87,760 | $107,506 | 70.04 | 4.9 | Punk 19 / Lib#3138
+|dennis | 3.85 | 55.03 | $84,469 | $109,700 | 71.47 | 5 | Punk 13 / s0up#2482
+|beezy | 3.80 | 54.31 | $83,372 | $131,640 | 85.76 | 6 | Punk 64 / jayefunk#2417
+|Shiba_Inu_Tax | 3.51 | 50.17 | $77,009 | $131,640 | 85.76 | 6 | Punk 49 / PattiHauseman#0001
+|lmontealegre | 3.504 | 50.08 | $76,878 | $151,123 | 98.45 | 6.888 | Punk 31 / 888bit#8888
+|PapiMaxi | 3.5 | 50.03 | $76,790 | $151,386 | 98.62 | 6.9 | Punk 39 / quantized#9334
+|pepe_crypto435 | 3.5 | 50.03 | $76,790 | $152,307 | 99.22 | 6.942 | Punk 45 / tnols#1970
+... |
+
+
+USD  Sales Chart of the First 63 Sales (From Feb/1st to Feb/12th, 2023)
+
+![](i/ordinalpunks-usd-sales-chart.png)
+
+
+
+
+
 > The [oridinal punk] floor [minimum] price has risen to 2.2 bitcoin (~$50 000) with a new all-time-high sale of 9.5 bitcoin (~$215 000) today.  -- Feb 9th, 2023
 
+o
 
 [Dingaling](https://twitter.com/dingalingts/status/1623374457791455233) comments:
 
@@ -163,6 +315,44 @@ at the [Ordinal Sandbox (& Cache)](https://github.com/pixelartexchange/ordinals.
 >
 > But there's lots of building being done behind the scenes...  [..]
 > Please do your own research everyone. Many of these will likely go to zero.
+
+
+o
+
+[Punk #9059 (Director of Research @ Proof Collective)](https://twitter.com/punk9059/status/1624180122793177088) comments:
+
+> Nice little 164 ETH (11.5 BTC) ordinal punk sale
+> New all-time high.
+>
+>> Love to see it, though I do think Ethereum
+>> is a better ledger than Google Sheets.
+>
+> Chart making capabilities far inferior.
+>
+>>  Come'on those are wash trades.
+>>
+>> o
+>>
+>> Crown doesn't even fit right [on the mummy].
+
+
+
+**Ordinal Punks Sales Bot**
+
+> Greetings, I am the Ordinal Punks Sales Bot,
+who announces Ordinal Punk over-the-counter (OTC) Sales!
+>
+> -- [Ordinal Punk Sale[s Bot]](https://twitter.com/OrdinalPunkSale)
+
+
+February 12th, 2023:
+- Confirmed sale on Punk #84 for 4.2 BTC
+- Confirmed sale on Punk #77 for 4.2 BTC
+- Confirmed sale on Punk #87 for 4.8 BTC
+- Confirmed sale on Punk #30 for 5 BTC
+- Confirmed sale on Punk #79 for 4.4 BTC
+- ...
+
 
 
 
@@ -226,6 +416,100 @@ Hint:  My humble self (Gerald Bauer), yes, I am the creator of the [**punk sprit
 PS:  Read-up on the history of the laser eyes (in punks) - see [**Inside The Saudis - Fun Fact About the Ulta-Rare $$$ Top-Selling MAX BIDDING Laser Eyes - It All Started on Punk's Not Dead In August 2021! - See DIY (Do-It-Yourself) - Yes, You Can! Make Your Own Punks With Laser Eyes**](https://old.reddit.com/r/CryptoPunksDev/comments/vvrlmf/inside_the_saudis_fun_fact_about_the_ultarare/).
 
 Or read-up on the history of the demon, skeleton, vampire, orc & more punk archetypes -  see [**Alpha, Alpha, Alpha - Historic Punk Collection (Anno 2021) - Many Firsts - First Use Of Hair Colors Trait! Incl. New Colors! Periwinkle! Rainbow! And Many More!**](https://old.reddit.com/r/DIYPunkArt/comments/we9k40/alpha_alpha_alpha_historic_punk_collection_anno/).
+
+
+
+
+## (More) Ordinal Punks On ...
+
+> Launching Ordinal Punks on Ethereum... exact Ordinal Punks but on Ethereum. Interact for whitelist.
+>
+>> I'm launching an Ordinal collection of your Ethereum collection
+>> of the Ordinal Punk collection... interact for whitelist. Or don't. Your loss.
+>>
+>> o
+>>
+>> Oow about we pamp the Mutant Punks collection since
+>> they minted over a year ago
+>> and a lot of the Ordinal Punk traits are from them.
+>> That'd be some degen ish.
+>>
+>> o
+>>
+>>  Let's fucking go (LFG).
+>>
+>> o
+>>
+>> Yes. please.
+>>
+>> o
+>>
+>> Wen?
+>>
+>> o
+>>
+>>  I'm in. Take my money.
+>>
+>> o
+>>
+>>  Already one step ahead of you with [Flipped Ordinal Punks (FONKS)](https://opensea.io/collection/fonks). LOL.
+>>
+>>
+> -- [Wizard of SoHo, February 11, 2023](https://twitter.com/wizardofsoho/status/1624531956321906691)
+
+
+
+
+
+**100 Flipped Ordinal Punks (FONKS) - SOLD OUT!**
+
+>  Fonks. [100] Flipped Ordinal Punks on the ethereum blockchain.
+> Who needs BTC when you have ETH?
+>
+> o
+>
+> Who wants to mint Flipped Ordinal Punks in about an hour?
+>
+> o
+>
+> FONKS ARE FLYING. You guys are crazy.
+>
+> o
+>
+> I did NOT expect FONKS to mint out today & even have secondary volume. Awesome surprise!
+> Appreciate all of you joining me on this meme journey!
+>  I will update the images and metadata tomorrow as I am not home right now. Stay tuned.
+> -- [John van Rijck, February 9th, 2023](https://twitter.com/John_ACW/status/1623818153661808641)
+
+
+by John van Rijck, Amsterdam, The Netherlands - web: [web3legal.xyz](https://web3legal.xyz/about-me/), twitter: [@John_ACW](https://twitter.com/John_ACW),
+
+> My real name is Jeroen (in Dutch).
+
+<!-- break -->
+
+- Opensea @ [fonks](https://opensea.io/collection/fonks)
+- Etherscan @ [0x923e18e8b54e83ba2803fbefdffbd2fce198a8c1](https://etherscan.io/address/0x923e18e8b54e83ba2803fbefdffbd2fce198a8c1) created on 2023-02-08 22:17:47
+- Token Metadata
+  e.g. <https://nft.bueno.art/api/contract/2608CYYuZumTfTuvOHoiT/chain/1/metadata/1>
+- 40 (Punk Base) Archetypes, 72 (Accesory) Attributes
+
+
+
+<!-- more inspired by collections:
+
+
+https://opensea.io/collection/unordinal-punks   ??  - not yed revealed - 1000 supply?
+
+
+-->
+
+
+**Are 444 Ordinals Punk (SOON!) the New 100 Ordinal Punks?**
+
+web: [ordinalspunk.com](https://www.ordinalspunk.com),
+twitter: [OrdinalsPunk](https://twitter.com/OrdinalsPunk)
+
 
 
 

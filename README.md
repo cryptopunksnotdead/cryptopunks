@@ -27,7 +27,8 @@ More / Experimental
 
 ##  More Notes
 
-[**Awesome Ordinal Punks**](awesome-ordinalpunks) - All about the 100 pixel punks inscribed on the bitcoin (classic) blockchain in the (binary) image/png format - 8-bit colors (in r/g/b with alpha channel); 24×24 with 8x zoom, that is, 192×192 pixels.
+[**Awesome 100 Ordinal Punks (Anno 2023) Notes**](awesome-ordinalpunks) - 24×24 Pixel Art on the (Bitcoin) Blockchain
+
 
 
 
