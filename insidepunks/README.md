@@ -1,4 +1,9 @@
-# Technologieplauscherl LXXVII Talk Notes - Inside the Billion Dollar $$$ (Crypto) Punk Pixel Heads
+#  Inside the Billion Dollar $$$ (Crypto) Punk Pixel Heads
+
+
+Version (& Live Talk) History:
+- October 2022 @ [Technologieplauscherl LXXVII](https://technologieplauscherl.at/77/), Linz, Austria
+
 
 
 
