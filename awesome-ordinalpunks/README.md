@@ -70,31 +70,31 @@ Feburary
    > of all inscriptions on bitcoin.
 - February 1st @ 10:17:24 -- [First Inscription @ #537](https://ordinals.com/inscription/96d87d7e59d75ebc0e6144b09fdd96355fcdaa86fd098d64c46f19a424012bbei0) (Ordinal Punk #1) by Flow Stay
     >  From the discord minted-punks channel:
-    >  - Punk 1 given away to @drastics
-    >  - Punk 2 won by @RiskyBiscuit
-    >  - Punk 3 minted by @Skinned
-    >  - Punk 4 minted by @Skinned
-    >  - Punk 5 minted by @Skinned
-    >  - Punk 6 minted by @Skinned
-    >  - Punk 7 minted by @Skinned
-    >  - Punk 8 minted by @Skinned
-    >  - Punk 9 minted by @Skinned
-    >  - Punk 10 minted by @Skinned
-    >  - Punk 11 minted by @Skinned
-    >  - Punk 12 minted by @Skinned
-    >  - Punk 13 minted by @s0up
-    >  - Punk 14 minted by @jokie
+    >  - ![](i/1.png) Punk 1 given away to @drastics
+    >  - ![](i/2.png) Punk 2 won by @RiskyBiscuit
+    >  - ![](i/3.png) Punk 3 minted by @Skinned
+    >  - ![](i/4.png) Punk 4 minted by @Skinned
+    >  - ![](i/5.png) Punk 5 minted by @Skinned
+    >  - ![](i/6.png) Punk 6 minted by @Skinned
+    >  - ![](i/7.png) Punk 7 minted by @Skinned
+    >  - ![](i/8.png) Punk 8 minted by @Skinned
+    >  - ![](i/9.png) Punk 9 minted by @Skinned
+    >  - ![](i/10.png) Punk 10 minted by @Skinned
+    >  - ![](i/11.png) Punk 11 minted by @Skinned
+    >  - ![](i/12.png) Punk 12 minted by @Skinned
+    >  - ![](i/13.png) Punk 13 minted by @s0up
+    >  - ![](i/14.png) Punk 14 minted by @jokie
     >  - ...
 - February 1st @ 19:27:27 -- [Last Inscription @ #642](https://ordinals.com/inscription/0cc4000a34b8549afd96b48b78a0d491c541618b2b1f2e0364a48f2d9cccc8cei0) (Ordinal Punk #100)  by Flow Stay
     > From the discord minted-punks channel (continued):
     > - ...
-    > - Punk 94 minted by @NFTier
-    > - Punk 95 minted by @Mrmorgo
-    > - Punk 96 minted by @CollectorKev
-    > - Punk 97 minted by @Ares
-    > - Punk 98 minted by @Crabby
-    > - Punk 99 Minted by @RoyalOrdinal
-    > - Punk 100 minted by @jasonrosenstein
+    > - ![](i/94.png) Punk 94 minted by @NFTier
+    > - ![](i/95.png) Punk 95 minted by @Mrmorgo
+    > - ![](i/96.png) Punk 96 minted by @CollectorKev
+    > - ![](i/97.png) Punk 97 minted by @Ares
+    > - ![](i/98.png) Punk 98 minted by @Crabby
+    > - ![](i/99.png) Punk 99 Minted by @RoyalOrdinal
+    > - ![](i/100.png) Punk 100 minted by @jasonrosenstein
     > - All punks have been minted onchain now
 
 - February 2nd  -- [Ordinal Punks](https://twitter.com/OrdinalPunks/status/1620977031575113729) writes:
@@ -111,7 +111,7 @@ Feburary
     >>
     >> o
     >>
-    >> And 5 days later closing the 50 000 mark...
+    >> And five days later closing the 50 000 mark...
 
 
 - February 8th  -- [Punk #9059](https://twitter.com/punk9059/status/1623411865597407233) writes:
@@ -180,7 +180,7 @@ From the official google docs:
 - Gold 2
 
 **Human Type (By Skin Tone)**
-- Yellow (Punk #98) 1
+- Yellow (![](i/98.png) Punk #98) 1
 - Purple (Magenta) 1
 - Gold 2
 - Blue (Indigo) 4
@@ -274,13 +274,13 @@ Example - Bids & Asks on Feburary 12th, 2023:
 | BIDS     |     |      |     | ASKS |    |     |
 |---------|-----|------|-----|------|----|-----|
 |Username | BTC | ETH  | USD | USD | ETH | BTC | Punk and Username
-|beautifulnfts.eth | 4 | 57.17 | $87,760 | $107,506 | 70.04 | 4.9 | Punk 19 / Lib#3138
-|dennis | 3.85 | 55.03 | $84,469 | $109,700 | 71.47 | 5 | Punk 13 / s0up#2482
-|beezy | 3.80 | 54.31 | $83,372 | $131,640 | 85.76 | 6 | Punk 64 / jayefunk#2417
-|Shiba_Inu_Tax | 3.51 | 50.17 | $77,009 | $131,640 | 85.76 | 6 | Punk 49 / PattiHauseman#0001
-|lmontealegre | 3.504 | 50.08 | $76,878 | $151,123 | 98.45 | 6.888 | Punk 31 / 888bit#8888
-|PapiMaxi | 3.5 | 50.03 | $76,790 | $151,386 | 98.62 | 6.9 | Punk 39 / quantized#9334
-|pepe_crypto435 | 3.5 | 50.03 | $76,790 | $152,307 | 99.22 | 6.942 | Punk 45 / tnols#1970
+|beautifulnfts.eth | 4 | 57.17 | $87,760 | $107,506 | 70.04 | 4.9 | ![](i/19.png) Punk 19 / Lib#3138
+|dennis | 3.85 | 55.03 | $84,469 | $109,700 | 71.47 | 5 | ![](i/13.png) Punk 13 / s0up#2482
+|beezy | 3.80 | 54.31 | $83,372 | $131,640 | 85.76 | 6 | ![](i/64.png) Punk 64 / jayefunk#2417
+|Shiba_Inu_Tax | 3.51 | 50.17 | $77,009 | $131,640 | 85.76 | 6 | ![](i/49.png) Punk 49 / PattiHauseman#0001
+|lmontealegre | 3.504 | 50.08 | $76,878 | $151,123 | 98.45 | 6.888 | ![](i/31.png) Punk 31 / 888bit#8888
+|PapiMaxi | 3.5 | 50.03 | $76,790 | $151,386 | 98.62 | 6.9 | ![](i/39.png) Punk 39 / quantized#9334
+|pepe_crypto435 | 3.5 | 50.03 | $76,790 | $152,307 | 99.22 | 6.942 | ![](i/45.png) Punk 45 / tnols#1970
 ... |
 
 
@@ -300,22 +300,25 @@ Or in totals: 62 sales - BTC 158.388 - about US$ 3,475,031 / ETH 2263.864
 
 
 
-> The [oridinal punk] floor [minimum] price has risen to 2.2 bitcoin (about $50 000) with a new all-time-high sale of 9.5 bitcoin (about $215 000) today.  -- Feb 9th, 2023
+> The [oridinal punk] floor [minimum] price has risen to 2.2 bitcoin (about $50 000)
+> with a new all-time-high (ATH)
+> sale of 9.5 bitcoin (about $215 000) today [for ![](i/94.png) Punk 94].  -- Feb 9th, 2023
 
 o
+
 
 [Dingaling](https://twitter.com/dingalingts/status/1623374457791455233) comments:
 
 > Just acquired these seven ordinal punks
 > for a total of 15.2 bitcoin (211 ETH)
 >
-> Punk 27 (inscription #444),
-> Punk 48 (ins #483),
-> Punk 73 (ins #599),
-> Punk 80 (ins #606),
-> Punk 88 (ins #614),
-> Punk 91 (ins #617),
-> Punk 92 (ins #618),
+> ![](i/27.png) Punk 27 (inscription #444),
+> ![](i/48.png) Punk 48 (ins #483),
+> ![](i/73.png) Punk 73 (ins #599),
+> ![](i/80.png) Punk 80 (ins #606),
+> ![](i/88.png) Punk 88 (ins #614),
+> ![](i/91.png) Punk 91 (ins #617),
+> ![](i/92.png) Punk 92 (ins #618),
 >
 > If you haven't looked into ordinal unique tokens on bitcoin classic (BTC) yet, you should, now.
 >
@@ -331,10 +334,11 @@ o
 
 o
 
+
 [Punk #9059 (Director of Research @ Proof Collective)](https://twitter.com/punk9059/status/1624180122793177088) comments:
 
-> Nice little 164 ETH (11.5 BTC) ordinal punk sale
-> New all-time high.
+> Nice little 164 ETH (11.5 BTC) ![](i/41.png) ordinal punk [no. 41] sale.
+> New all-time high (ATH).
 >
 >> Love to see it, though I do think Ethereum
 >> is a better ledger than Google Sheets.
@@ -352,17 +356,17 @@ o
 **Ordinal Punks Sales Bot**
 
 > Greetings, I am the Ordinal Punks Sales Bot,
-who announces Ordinal Punk over-the-counter (OTC) Sales!
+who announces Ordinal Punk over-the-counter (OTC) sales!
 >
 > -- [Ordinal Punk Sale[s Bot]](https://twitter.com/OrdinalPunkSale)
 
 
 February 12th, 2023:
-- Confirmed sale on Punk #84 for 4.2 BTC
-- Confirmed sale on Punk #77 for 4.2 BTC
-- Confirmed sale on Punk #87 for 4.8 BTC
-- Confirmed sale on Punk #30 for 5 BTC
-- Confirmed sale on Punk #79 for 4.4 BTC
+- Confirmed sale on ![](i/84.png) Punk #84 for 4.2 BTC
+- Confirmed sale on ![](i/77.png) Punk #77 for 4.2 BTC
+- Confirmed sale on ![](i/87.png) Punk #87 for 4.8 BTC
+- Confirmed sale on ![](i/30.png) Punk #30 for 5 BTC
+- Confirmed sale on ![](i/79.png) Punk #79 for 4.4 BTC
 - ...
 
 
@@ -404,7 +408,7 @@ February 12th, 2023:
 >
 >>  This repo was advertised and linked on the [ordinal punks] website from day 1.
 >
-> [...] I think there’s lots of better derivs honestly,
+> [...] I think there's lots of better derivs honestly,
 > I was just pointing out that many of the traits used in ordinal punks are directly taken from mutant punks.
 >
 >> Anyone got a link to mutant punks? Asking for a friend.
@@ -450,7 +454,7 @@ and sales are taking off, the (anonymous) [More Punks Founder](https://twitter.c
 >
 >  o
 >
-> We are extremely thankful for all the support [- sales with 10% creater's fee - ka-ching! -]
+> We are extremely thankful for all the support [- sales with 10% creator's fee - ka-ching! -]
 > you've shown us over the last several days.
 >
 > Hope you all have a nice weekend!
@@ -464,7 +468,11 @@ and sales are taking off, the (anonymous) [More Punks Founder](https://twitter.c
 
 
 
-## (More) Ordinal Punks On ...
+
+## (More) Ordinal Punks (SOON!) On ...
+
+
+[Wizard of SoHo](https://twitter.com/wizardofsoho/status/1624531956321906691) writes on February 11, 2023:
 
 > Launching Ordinal Punks on Ethereum... exact Ordinal Punks but on Ethereum. Interact for whitelist.
 >
@@ -473,10 +481,10 @@ and sales are taking off, the (anonymous) [More Punks Founder](https://twitter.c
 >>
 >> o
 >>
->> Oow about we pamp the Mutant Punks collection since
+>> How about we pump up the Mutant Punks collection since
 >> they minted over a year ago
 >> and a lot of the Ordinal Punk traits are from them.
->> That'd be some degen ish.
+>> That'd be degen-ish.
 >>
 >> o
 >>
@@ -497,10 +505,6 @@ and sales are taking off, the (anonymous) [More Punks Founder](https://twitter.c
 >> o
 >>
 >>  Already one step ahead of you with [Flipped Ordinal Punks (FONKS)](https://opensea.io/collection/fonks). LOL.
->>
->>
-> -- [Wizard of SoHo, February 11, 2023](https://twitter.com/wizardofsoho/status/1624531956321906691)
-
 
 
 
@@ -523,6 +527,7 @@ and sales are taking off, the (anonymous) [More Punks Founder](https://twitter.c
 > I did NOT expect FONKS to mint out today & even have secondary volume. Awesome surprise!
 > Appreciate all of you joining me on this meme journey!
 >  I will update the images and metadata tomorrow as I am not home right now. Stay tuned.
+>
 > -- [John van Rijck, February 9th, 2023](https://twitter.com/John_ACW/status/1623818153661808641)
 
 
@@ -533,10 +538,10 @@ by John van Rijck, Amsterdam, The Netherlands - web: [web3legal.xyz](https://web
 <!-- break -->
 
 - Opensea @ [fonks](https://opensea.io/collection/fonks)
-- Etherscan @ [0x923e18e8b54e83ba2803fbefdffbd2fce198a8c1](https://etherscan.io/address/0x923e18e8b54e83ba2803fbefdffbd2fce198a8c1) created on 2023-02-08 22:17:47
+- Etherscan @ [0x923e18e8b54e83ba2803fbefdffbd2fce198a8c1](https://etherscan.io/address/0x923e18e8b54e83ba2803fbefdffbd2fce198a8c1) contract created on 2023-02-08 22:17:47
 - Token Metadata
-  e.g. <https://nft.bueno.art/api/contract/2608CYYuZumTfTuvOHoiT/chain/1/metadata/1>
-- 40 (Punk Base) Archetypes, 72 (Accesory) Attributes
+  e.g. Flipped Ordinal Punk #1  <https://nft.bueno.art/api/contract/2608CYYuZumTfTuvOHoiT/chain/1/metadata/1>
+  - 40 (Punk Base) Archetypes, 72 (Accesory) Attributes
 
 
 
