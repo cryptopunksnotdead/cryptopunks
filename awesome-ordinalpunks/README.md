@@ -67,9 +67,6 @@ January
 
 February
 
-- February 1st -- [Ordinal Punks](https://twitter.com/OrdinalPunks/status/1620605393083990018) writes:
-   > Soon ordinal punks will make up 10%
-   > of all inscriptions on bitcoin.
 - February 1st @ 10:17:24 -- [First Inscription @ #537](https://ordinals.com/inscription/96d87d7e59d75ebc0e6144b09fdd96355fcdaa86fd098d64c46f19a424012bbei0) (Ordinal Punk #1) by Flow Stay
     >  From the discord minted-punks channel:
     >  - ![](i/1.png) Punk 1 given away to @drastics
@@ -87,6 +84,11 @@ February
     >  - ![](i/13.png) Punk 13 minted by @s0up
     >  - ![](i/14.png) Punk 14 minted by @jokie
     >  - ...
+
+- February 1st -- [Ordinal Punks](https://twitter.com/OrdinalPunks/status/1620605393083990018) writes:
+   > Soon ordinal punks will make up 10%
+   > of all inscriptions on bitcoin.
+
 - February 1st @ 19:27:27 -- [Last Inscription @ #642](https://ordinals.com/inscription/0cc4000a34b8549afd96b48b78a0d491c541618b2b1f2e0364a48f2d9cccc8cei0) (Ordinal Punk #100)  by Flow Stay
     > From the discord minted-punks channel (continued):
     > - ...
@@ -102,8 +104,8 @@ February
 - February 2nd  -- [Ordinal Punks](https://twitter.com/OrdinalPunks/status/1620977031575113729) writes:
     > We are officially sold out. Our mint was oversubscribed
     > by nearly 4x. Congrats to all the minters.
-    >
-    >>
+
+
 - February 5th  -- [Ordinal Punks](https://twitter.com/OrdinalPunks/status/1622087164140949504) writes:
     > There was a point in time when Ordinal Punks were 15%
     > of all inscriptions on bitcoin.
@@ -116,7 +118,7 @@ February
     >> And five days later closing the 50 000 mark...
 
 
-- February 8th  -- [Punk #9059](https://twitter.com/punk9059/status/1623411865597407233) writes:
+- February 8th  -- [Director of Research @ Proof Collective](https://twitter.com/punk9059/status/1623411865597407233) writes:
     > Bids and asks are happening on Google Docs for Ordinal Punks.
     >  Floor (ask) appears to be 55.4 ETH right now. Bids at 40.2 ETH.
     >
@@ -273,17 +275,18 @@ official market data (order book) @ google docs: [Ordinal's Punk Data](https://d
 Example - Bids & Asks on Feburary 12th, 2023:
 
 
-| BIDS     |     |      |     | ASKS |    |     |
-|---------|-----|------|-----|------|----|-----|
-|Username | BTC | ETH  | USD | USD | ETH | BTC | Punk and Username
-|beautifulnfts.eth | 4 | 57.17 | $87,760 | $107,506 | 70.04 | 4.9 | ![](i/19.png) Punk 19 / Lib#3138
-|dennis | 3.85 | 55.03 | $84,469 | $109,700 | 71.47 | 5 | ![](i/13.png) Punk 13 / s0up#2482
-|beezy | 3.80 | 54.31 | $83,372 | $131,640 | 85.76 | 6 | ![](i/64.png) Punk 64 / jayefunk#2417
-|Shiba_Inu_Tax | 3.51 | 50.17 | $77,009 | $131,640 | 85.76 | 6 | ![](i/49.png) Punk 49 / PattiHauseman#0001
-|lmontealegre | 3.504 | 50.08 | $76,878 | $151,123 | 98.45 | 6.888 | ![](i/31.png) Punk 31 / 888bit#8888
-|PapiMaxi | 3.5 | 50.03 | $76,790 | $151,386 | 98.62 | 6.9 | ![](i/39.png) Punk 39 / quantized#9334
-|pepe_crypto435 | 3.5 | 50.03 | $76,790 | $152,307 | 99.22 | 6.942 | ![](i/45.png) Punk 45 / tnols#1970
-... |
+| BIDS     |     |      |     | ASKS |    |     |    |
+|---------|-----|------|-----|------|----|-----|-----|
+|Username | BTC | ETH  | USD | USD | ETH | BTC | Punk and Username |
+|beautifulnfts.eth | 4 | 57.17 | $87,760 | $107,506 | 70.04 | 4.9 | ![](i/19.png) Punk 19 / Lib#3138 |
+|dennis | 3.85 | 55.03 | $84,469 | $109,700 | 71.47 | 5 | ![](i/13.png) Punk 13 / s0up#2482 |
+|beezy | 3.80 | 54.31 | $83,372 | $131,640 | 85.76 | 6 | ![](i/64.png) Punk 64 / jayefunk#2417 |
+|Shiba_Inu_Tax | 3.51 | 50.17 | $77,009 | $131,640 | 85.76 | 6 | ![](i/49.png) Punk 49 / PattiHauseman#0001 |
+|lmontealegre | 3.504 | 50.08 | $76,878 | $151,123 | 98.45 | 6.888 | ![](i/31.png) Punk 31 / 888bit#8888 |
+|PapiMaxi | 3.5 | 50.03 | $76,790 | $151,386 | 98.62 | 6.9 | ![](i/39.png) Punk 39 / quantized#9334 |
+|pepe_crypto435 | 3.5 | 50.03 | $76,790 | $152,307 | 99.22 | 6.942 | ![](i/45.png) Punk 45 / tnols#1970 |
+| ... |
+
 
 
 USD  Sales Chart of the First 63 Sales (From Feb/1st to Feb/12th, 2023)
@@ -337,7 +340,7 @@ o
 o
 
 
-[Punk #9059 (Director of Research @ Proof Collective)](https://twitter.com/punk9059/status/1624180122793177088) comments:
+[Director of Research @ Proof Collective](https://twitter.com/punk9059/status/1624180122793177088) comments:
 
 > Nice little 164 ETH (11.5 BTC) ![](i/41.png) ordinal punk [no. 41] sale.
 > New all-time high (ATH).
