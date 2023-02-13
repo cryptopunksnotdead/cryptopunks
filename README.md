@@ -1,5 +1,5 @@
 
-Welcome to the Home of the Ordinal Punks Text-To-Image Generation Algorithm (& Spritesheet)
+Welcome to the Home of the Ordinal Punks Text-To-Image Generation Algorithm ([& Spritesheet](https://github.com/cryptopunksnotdead/punks.spritesheet))
 
 
 
@@ -18,21 +18,53 @@ More / Experimental
 
 
 
-## Talk Notes
+
+## Talk & Collection Notes
 
 [**Inside the Billion Dollar $$$ (Crypto) Punk Pixel Heads**](insidepunks)
-
-
-
-
-##  More Notes
 
 [**Awesome 100 Ordinal Punks (Anno 2023) Notes**](awesome-ordinalpunks) - 24×24 Pixel Art on the (Bitcoin) Blockchain
 
 
 
 
+## Code / Build / Generate Your Own (Pixel) Punks In Your Own (Programming) Language - Yes, You Can!
 
+
+### Python
+
+
+[pixegami/pixel-punk-avatars](https://github.com/pixegami/pixel-punk-avatars) - a (getting started) script for generating (pixel) punk avatars in python
+
+
+
+### Go (Lang)
+
+[cryptopunksnotdead/lets-go-programming-cryptopunks](https://github.com/cryptopunksnotdead/lets-go-programming-cryptopunks) - Let's Go! Programming (Crypto) Pixel Punk Profile Pictures & (Generative) Art with Go - Step-by-Step Book / Guide Inside Unique 24×24 Pixel Art on the Blockchain...
+
+[learnpixelart/pixelart.go](https://github.com/learnpixelart/pixelart.go) - Let's Go! Pixel Art
+
+
+
+### JavaScript
+
+[cryptopunksnotdead/punks.js](https://github.com/cryptopunksnotdead/punks.js) - draw punk (pixel) art images using any design (in ascii text) in any colors; incl. 2x/4x/8x zoom for bigger sizes and more
+
+[learnpixelart/pixelart.js](https://github.com/learnpixelart/pixelart.js) - Programming Pixel Art in JavaScript
+
+
+
+
+### Solidity
+
+
+[stephancill/synthetic-punks](https://github.com/stephancill/synthetic-punks) - a unique, fully on-chain (pixel) punk associated with each ethereum address
+
+[0xTycoon/punk-blocks](https://github.com/0xTycoon/punk-blocks) - (pixel) punk attributes on-chain
+
+
+
+Anything missing? Yes, you can. Add your source code repo (or step-by-step programming guide).
 
 
 
