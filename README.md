@@ -19,11 +19,20 @@ More / Experimental
 
 
 
-## Talk & Collection Notes
+
+
+## How-Tos, Talks  & Collection Notes
+
 
 [**Inside the Billion Dollar $$$ (Crypto) Punk Pixel Heads**](insidepunks)
 
 [**Awesome 100 Ordinal Punks (Anno 2023) Notes**](awesome-ordinalpunks) - 24×24 Pixel Art on the (Bitcoin) Blockchain
+
+
+
+[**100 Ordinal Punks - The Free White Label Quick Starter Edition**](ordinalpunks) - Let's (re)create from zero / scratch a pixel-perfect
+copy of the Ordinal Punks collection (Anno 2021) using text prompts ("attributes").
+
 
 
 
