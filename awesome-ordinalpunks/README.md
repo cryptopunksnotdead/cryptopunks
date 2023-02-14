@@ -148,7 +148,14 @@ February
     >
     >> It's a scam dude. LOL.
 - February 11th @ 21:39:00  -- [Metadata Inscription @ #58665](https://ordinals.com/inscription/d026ac5994f698dba475681359b6c29d6d39a895484b95e06b7ae49921d80df2i0) by Tropo Farmer
+- February 14th -- 75 000+ Ordinal Inscriptions
+     >
+     > ![](i/ordinals-by-type.png)
 
+
+<!--
+ Most inscriptions on Feb 9th - 20848 images, 965 text, ...
+-->
 
 
 
