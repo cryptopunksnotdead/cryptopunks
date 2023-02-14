@@ -28,10 +28,38 @@ twitter:  [@OrdinalPunks](https://twitter.com/OrdinalPunks)
 
 
 
+
 Q: Who is the creator?
 
-Flow Stay (anonymous discord handle)
-is the creator of Ordinal Punks.
+Flow Stay is the creator of Ordinal Punks.
+
+Q: Who is Flow Stay?
+
+Flow Stay is the anonymous discord (chat) handle
+of the Ordinal Punks creator
+and likely the creator of the official website
+and twitter page & posts.
+
+As of February 14th, 2023 Flow Stay is still posting
+(and hasn't yet disappeared Sathosi-like forever).
+
+If you know more, please tell / share!
+
+
+
+Q: How are punk (pixel art) images generated?
+
+Note / Disclaimer:  I (Gerald Bauer) am the creator of the punk's not dead text-to-image generation algorithm  (& [punk spritesheet](https://github.com/cryptopunksnotdead/punks.spritesheet)) BUT
+have heard about Ordinal Punks in the news and
+I have no insight knowledge and
+I am NOT affiliated with Ordinal Punks (HODLing: 0).
+
+
+Anyways,
+to give you an idea on how-to-use
+the punk (open source) algorithm / machinery
+I have put together [**100 Ordinal Punks - The Free White Label Quick Starter Edition**](../ordinalpunks) - Yes, you can. Let's (re)create from zero / scratch a pixel-perfect
+copy of the Ordinal Punks collection (Anno 2023) using text prompts ("attributes").
 
 
 
@@ -256,6 +284,44 @@ Tropo Farmer writes in "[Bringing collections to Ordinals through metadata, a th
 > A: The manifest doesn't track ownership -
 > the ordinal itself will show the address that currently owns it
 > (which is related via the inscription ID).
+
+
+
+
+Triva / Errata:   While preparing [**100 Ordinal Punks - The Free White Label Quick Starter Edition**](../ordinalpunks/)
+I found two bugs / errors in the official metadata:
+
+- ![](i/25.png) Ordinal Punk #25  - Incl. An Extra Hoodie
+    >     "attributes": [{"trait_type": "Type",   "value": "Male 2"},
+    >                    {"trait_type": "Hair",   "value": "Sombrero"},
+    >                    {"trait_type": "Mouth",  "value": "Mustache"},
+    >                    {"trait_type": "Clothes","value": "Hoodie"}]
+- ![](i/84.png) Ordinal Punk #84  - The (Punk) Type Reads:  Alien Male Green BUT is really (Human) Male 1
+    >     "attributes": [{"trait_type": "Type", "value": "Male Alien Green"},
+    >                    {"trait_type": "Eyes", "value": "Eye Mask"},
+    >                    {"trait_type": "Mouth","value": "Chinstrap"},
+    >                    {"trait_type": "Hair", "value": "Fedora Black & White"}]
+
+
+
+Bonus:  For your convenience I have reformated
+the dataset in javascript notation (.json)
+into the tabular dataset in the comma-separated values (.csv) format.
+The [**ordinalpunks.csv**](../ordinalpunks/ordinalpunks.csv) dataset (with 100 records / rows) reads:
+
+``` csv
+id,  type,  gender, skin_tone,  count, accessories
+1,  Robot,   Male,,       1,  Big Beard
+2,  Human,   Male,    2,  2,  Bubble Gum / Birthday Hat
+3,  Human,   Female,  1,  3,  Flowers / Frown / Gold Chain
+4,  Demon,   Male,,       2,  Hoodie / Pipe
+5,  Ape,     Male, Blue,  2,  Buck Teeth / Cowboy Hat
+6,  Human,   Male,    3,  2,  Laser Eyes / Cowboy Hat B & W
+7,  Human,   Male,    1,  1,  Cap Burger King
+8,  Vampire, Male,,       1,  Demon Horns
+9,  Human,   Female,  Orange,  1,  Crown
+...
+```
 
 
 
