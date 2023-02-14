@@ -33,12 +33,25 @@ Let's get the official metadata (text-prompt attributes)
 from [Inscription @ #58665](https://ordinals.com/inscription/d026ac5994f698dba475681359b6c29d6d39a895484b95e06b7ae49921d80df2i0) uploaded by [Tropo Farmer](https://twitter.com/tropoFarmer/status/1624528735700385792) (on February 11th, 2023).
 
 
+Triva / Errata:   While preparing this step-by-step guide / tutorial
+I found two bugs / errors in the official metadata:
+
+- ![](i/25.png) Ordinal Punk #25  - Incl. An Extra Hoodie
+    >     "attributes": [{"trait_type": "Type",   "value": "Male 2"},
+    >                    {"trait_type": "Hair",   "value": "Sombrero"},
+    >                    {"trait_type": "Mouth",  "value": "Mustache"},
+    >                    {"trait_type": "Clothes","value": "Hoodie"}]
+- ![](i/84.png) Ordinal Punk #84  - The (Punk) Type Reads:  Alien Male Green BUT is really (Human) Male 1
+    >     "attributes": [{"trait_type": "Type", "value": "Male Alien Green"},
+    >                    {"trait_type": "Eyes", "value": "Eye Mask"},
+    >                    {"trait_type": "Mouth","value": "Chinstrap"},
+    >                    {"trait_type": "Hair", "value": "Fedora Black & White"}]
+
+
 
 For your convenience I have reformated
 the dataset in javascript notation (.json)
 into the tabular dataset in the comma-separated values (.csv) format.
-
-
 The [**ordinalpunks.csv**](ordinalpunks.csv) dataset (with 100 records / rows) reads:
 
 ``` csv
@@ -56,22 +69,6 @@ id,  type,  gender, skin_tone,  count, accessories
 ```
 
 
-Triva / Errata:   While preparing this step-by-step guide / tutorial
-if found two bugs / errors in the official metadata:
-
-- ![](i/25.png) Ordinal Punk #25  - Incl. An Extra Hoodie
-    >     "attributes": [{"trait_type": "Type",   "value": "Male 2"},
-    >                    {"trait_type": "Hair",   "value": "Sombrero"},
-    >                    {"trait_type": "Mouth",  "value": "Mustache"},
-    >                    {"trait_type": "Clothes","value": "Hoodie"}]
-- ![](i/84.png) Ordinal Punk #84  - The (Punk) Type Reads:  Alien Male Green BUT is really (Human) Male 1
-    >     "attributes": [{"trait_type": "Type", "value": "Male Alien Green"},
-    >                    {"trait_type": "Eyes", "value": "Eye Mask"},
-    >                    {"trait_type": "Mouth","value": "Chinstrap"},
-    >                    {"trait_type": "Hair", "value": "Fedora Black & White"}]
-
-
-
 
 
 ##  Method №1  -  Using The "Classic" Punk Command-Line Tool
@@ -84,15 +81,11 @@ Let's try to generate some punks on the command-line in your terminal
 using official text-to-image prompts / attributes.
 
 
-Once you have install the punk's not dead command-line tool package
-try:
+Once you have installed the (crypto) punk's not dead command-line tool package try:
 
 ```
 $ punk -h
 ```
-
-resulting in:
-
 
 
 resulting in:
@@ -153,15 +146,15 @@ resulting in:
 
 ```
 ==> generating  >robot_male + big_beard<...
- lookup 24x24 >robotmale< => 69: Robot / Archetype - Robot (m+l)
- lookup 24x24 >bigbeard_(m+l)< => 387: Big Beard / Attribute (m+l)
+ lookup 24×24 >robotmale< => 69: Robot / Archetype - Robot (m+l)
+ lookup 24×24 >bigbeard_(m+l)< => 387: Big Beard / Attribute (m+l)
     saving punk #1 to >./punk-0001.png<...
 ```
 
 ![](i/1.png)
 
-Let's regenerate with a zoom factor of 8x (8 times 24 = 192)
-to get the "original" inscribed size.
+Let's regenerate with a zoom factor of 8x (8 times 24px = 192px)
+to get the "original" inscribed size of 192×192px.
 Type:
 
 
@@ -173,8 +166,8 @@ resulting in:
 
 ```
 ==> generating  >robot_male + big_beard<...
- lookup 24x24 >robotmale< => 69: Robot / Archetype - Robot (m+l)
- lookup 24x24 >bigbeard_(m+l)< => 387: Big Beard / Attribute (m+l)
+ lookup 24×24 >robotmale< => 69: Robot / Archetype - Robot (m+l)
+ lookup 24×24 >bigbeard_(m+l)< => 387: Big Beard / Attribute (m+l)
     setting zoom to 8x
     saving punk #1 to >./punk-0001@8x.png<...
 ```
@@ -185,7 +178,7 @@ resulting in:
 Voila!
 
 Note:  The text-to-image generator uses space-separated
-text prompts, that is,   change  "Male 2"  to `male_2` (or `male2`)
+text prompts / attributes, that is,   change  "Male 2"  to `male_2` (or `male2`)
 and "Bubble Gum" to `bubble_gum` (or `bubblegum`) and so on.
 Let's try some more:
 
@@ -208,7 +201,7 @@ And so on.    Wondering what "magic" text-prompts / attributes
 you can use?  Sorry, no artificial intelligence (a.i.) model
 in use :-(  - you can lookup the "hard-coded" names
 in the official punk spritesheet name list -
-see [spritesheet.csv](https://github.com/cryptopunksnotdead/punks.spritesheet/blob/master/spritesheet.csv).
+see [**spritesheet.csv**](https://github.com/cryptopunksnotdead/punks.spritesheet/blob/master/spritesheet.csv).
 
 
 
@@ -230,13 +223,13 @@ resulting in:
 
 ```
 ==> welcome to the fab(ricate) tool:
- lookup 24x24 >robotmale< => 69: Robot / Archetype - Robot (m+l)
- lookup 24x24 >bigbeard_(m+l)< => 387: Big Beard / Attribute (m+l)
-    saving original punk (192x192) to >./punk1@8x.png<...
- lookup 24x24 >male2< => 6: Human 2 / Archetype - Human (m+l)
- lookup 24x24 >bubblegum_(u+l)< => 376: Bubble Gum / Attribute (u+l)
- lookup 24x24 >birthdayhat_(u+l)< => 434: Birthday Hat / Attribute (u+l)
-    saving original punk (192x192) to >./punk2@8x.png<...
+ lookup 24×24 >robotmale< => 69: Robot / Archetype - Robot (m+l)
+ lookup 24×24 >bigbeard_(m+l)< => 387: Big Beard / Attribute (m+l)
+    saving original punk (192×192) to >./punk1@8x.png<...
+ lookup 24×24 >male2< => 6: Human 2 / Archetype - Human (m+l)
+ lookup 24×24 >bubblegum_(u+l)< => 376: Bubble Gum / Attribute (u+l)
+ lookup 24×24 >birthdayhat_(u+l)< => 434: Birthday Hat / Attribute (u+l)
+    saving original punk (192×192) to >./punk2@8x.png<...
  ...
 ```
 
@@ -256,6 +249,144 @@ And so on.
 ##  Method №2  -  Using The Punk Image Script
 
 
+Let's automate and use the punk machinery with a script.
+Let's read in the 100 ordinal punk metadata records:
+
+``` ruby
+require 'punks'
+
+recs = read_csv( "./ordinalpunks.csv" )
+puts "    #{recs.size} record(s)"
+#=> 100 record(s)
+```
+
+
+And let's wipe-up a `rec_to_attributes`
+method that "transforms" a metadata record
+such as
+
+``` ruby
+{"id"         =>"1",
+ "type"       =>"Robot",
+ "gender"     =>"Male",
+ "skin_tone"  =>"",
+ "count"      =>"1",
+ "accessories"=>"Big Beard"}
+# or
+{"id"         =>"2",
+ "type"       =>"Human",
+ "gender"     =>"Male",
+ "skin_tone"  =>"2",
+ "count"      =>"2",
+ "accessories"=>"Bubble Gum / Birthday Hat"}
+```
+
+into an array of strings / attributes ready for text-to-image generation
+e.g.
+
+``` ruby
+["Robot Male", "Big Beard"]
+# or
+["Human Male 2", "Bubble Gum", "Birthday Hat"]
+```
+
+
+
+``` ruby
+def rec_to_attributes( rec )
+  type =     rec['type']
+  gender =   rec['gender']
+  skin_tone = rec['skin_tone']
+
+  # note: merge type+gender+skin_tone into one attribute
+  base = "#{type} #{gender}"
+  base << " #{skin_tone}"       unless skin_tone.empty?
+
+  accessories = rec['accessories'].split( '/' ).map { |acc| acc.strip }
+  attributes = [base] + accessories
+  attributes
+end
+```
+
+
+And all-together now. Let's generate the 100 ordinal punk
+images in 24×24 format and in 192×192 with 8x zoom:
+
+``` ruby
+recs.each do |rec|
+  id  =      rec['id']
+  puts "==> generating punk ##{id}..."
+
+  attributes = rec_to_attributes( rec )
+  pp attributes
+
+  img = Punk::Image.generate( *attributes )
+  img.save( "./tmp/#{id}.png")
+  img.zoom(8).save( "./tmp/#{id}@8x.png")
+end
+```
+
+Run the script - resulting in:
+
+```
+/1.png
+ 1@8x.png
+ 2.png
+ 2@8x.png
+ ...
+ 100.png
+ 100@8x.png
+```
+
+
+![](i/1.png) ![](i/2.png)  ...  ![](i/100.png)
+
+
+![](i/1@8x.png) ![](i/2@8x.png)  ...  ![](i/100@8x.png)
+
+
+
+Bonus: Let's generate an all-in-one composite.
+Change the loop to:
+
+
+``` ruby
+composite = ImageComposite.new( 10, 10, width: 24,
+                                        height: 24 )
+
+recs.each do |rec|
+  id  =      rec['id']
+  puts "==> generating punk ##{id}..."
+
+  attributes = rec_to_attributes( rec )
+  pp attributes
+
+  img = Punk::Image.generate( *attributes )
+  img.save( "./tmp/#{id}.png")
+  img.zoom(8).save( "./tmp/#{id}@8x.png")
+
+
+  composite << img    ## bonus: add to composite
+end
+
+
+## save all-in-one composite
+composite.save( "./tmp/punks.png" )
+composite.zoom(4).save( "./tmp/punks@2x.png" )
+```
+
+Rerun the script. Resulting in:
+
+
+![](i/punks.png)
+
+and the 2x version:
+
+![](i/punks@2x.png)
+
+
+
+That's it.
 
 
 
