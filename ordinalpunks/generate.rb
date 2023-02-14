@@ -50,7 +50,7 @@ end
 
 ## save all-in-one composite
 composite.save( "./tmp/punks.png" )
-composite.zoom(4).save( "./tmp/punks@2x.png" )
+composite.zoom(4).save( "./tmp/punks@4x.png" )
 
 
 puts "bye"

@@ -380,7 +380,7 @@ Rerun the script. Resulting in:
 
 ![](i/punks.png)
 
-and the 2x version:
+and the 4x version:
 
 ![](i/punks@2x.png)
 
