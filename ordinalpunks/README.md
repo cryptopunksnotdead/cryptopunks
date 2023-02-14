@@ -382,7 +382,7 @@ Rerun the script. Resulting in:
 
 and the 4x version:
 
-![](i/punks@2x.png)
+![](i/punks@4x.png)
 
 
 
