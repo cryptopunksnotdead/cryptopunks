@@ -190,15 +190,16 @@ From the official google docs:
 - Yellow 1
 - Gold 2
 
+
 **Human Type (By Skin Tone)**
 - Yellow (![](i/98.png) Punk #98) 1
 - Purple (Magenta) 1
 - Gold 2
 - Blue (Indigo) 4
 - Orange 5
-- 1 (Black) 11
-- 2 (Mixed) 10
-- 3 (White) 9
+- 1 (Dark) 11
+- 2 (Medium) 10
+- 3 (Light) 9
 - 4 (Albino) 11
 
 

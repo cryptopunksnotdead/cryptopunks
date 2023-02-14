@@ -1,5 +1,8 @@
 # do NOT check in dev/test enviroment variables in .env (dot env files)
 .env
+.env.yaml
+.env.yml
+
 
 
 ##################################
