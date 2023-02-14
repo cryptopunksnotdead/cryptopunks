@@ -14,7 +14,7 @@ New to Ordinal Punks? For some background see [**Awesome 100 Ordinal Punks (Anno
 # 100 Ordinal Punks - The Free White Label Quick Starter Edition
 
 Yes, you can. Let's (re)create from zero / scratch a pixel-perfect
-copy of the Ordinal Punks collection (Anno 2021) using text prompts ("attributes").
+copy of the Ordinal Punks collection (Anno 2023) using text prompts ("attributes").
 
 
 
