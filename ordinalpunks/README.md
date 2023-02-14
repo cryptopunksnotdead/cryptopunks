@@ -30,7 +30,8 @@ I am NOT affiliated with Ordinal Punks (HODLing: 0).
 
 
 Let's get the official metadata (text-prompt attributes)
-from Inscription @ #58665](https://ordinals.com/inscription/d026ac5994f698dba475681359b6c29d6d39a895484b95e06b7ae49921d80df2i0) uploaded by Tropo Farmer (on February 11th, 2023).
+from [Inscription @ #58665](https://ordinals.com/inscription/d026ac5994f698dba475681359b6c29d6d39a895484b95e06b7ae49921d80df2i0) uploaded by [Tropo Farmer](https://twitter.com/tropoFarmer/status/1624528735700385792) (on February 11th, 2023).
+
 
 
 For your convenience I have reformated
@@ -220,6 +221,9 @@ Let's retry with - bonus! - different backgrounds added in:
 ```
 $ fab --name=punk1 --zoom=8 --background=ukraine  punk  robot_male  big_beard
 $ fab --name=punk2 --zoom=8 --background=pride    punk  male_2  bubble_gum  birthday_hat
+$ fab --name=punk3 --zoom=8 --background=matrix1  punk  female_1  flowers  frown  gold_chain
+$ fab --name=punk4 --zoom=8 --background=0x638596 punk  demon_male  hoodie  pipe
+$ fab --name=punk5 --zoom=8 --background=0xffbf00 punk  ape_male_blue  buck_teeth  cowboy_hat
 ```
 
 resulting in:
@@ -233,10 +237,14 @@ resulting in:
  lookup 24x24 >bubblegum_(u+l)< => 376: Bubble Gum / Attribute (u+l)
  lookup 24x24 >birthdayhat_(u+l)< => 434: Birthday Hat / Attribute (u+l)
     saving original punk (192x192) to >./punk2@8x.png<...
+ ...
 ```
 
 ![](i/1@8x-ukraine.png)
 ![](i/2@8x-pride.png)
+![](i/3@8x-matrix1.png)
+![](i/4@8x-gray.png)
+![](i/5@8x-gold.png)
 
 
 And so on.
