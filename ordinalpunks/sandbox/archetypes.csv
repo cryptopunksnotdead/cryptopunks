@@ -1,0 +1,54 @@
+path, type, gender,  skin_tone, more_names
+
+base-m/humanmale1.png,      human, m,  1,
+base-m/humanmale2.png,      human, m,  2,
+base-m/humanmale3.png,      human, m,  3,
+base-m/humanmale4.png,      human, m,  4,
+base-m/humanmaleblue.png,      human, m,  blue
+base-m/humanmaleorange.png,      human, m, orange
+base-m/humanmalegold.png,      human, m,  gold
+
+base-m/zombiemale.png,         zombie, m,
+base-m/vampiremale.png,       vampire, m,
+base-m/demonmale.png,       demon, m,
+base-m/orcmale.png,           orc, m,
+base-m/mummymale.png,         mummy, m,
+base-m/skeletonmale.png,      skeleton, m,
+
+base-m/apemaleblue.png,     ape, m,     blue
+base-m/apemalegold.png,     ape, m,    gold
+base-m/zombieapemale.png,     zombie ape, m,
+base-m/alienapemale.png,    alien ape, m,
+base-m/alienmalegreen.png,  alien, m,   green
+base-m/alienmaleyellow.png, alien, m,   yellow
+base-m/alienmalegold.png,   alien,  m,   gold
+
+base-m/robotmale.png,         robot, m,
+
+
+
+base-f/humanfemale1.png,          human, f,  1
+base-f/humanfemale2.png,          human, f,  2
+base-f/humanfemale3.png,          human, f,  3
+base-f/humanfemale4.png,          human, f,  4
+base-f/humanfemaleblue.png,          human, f,  blue
+base-f/humanfemalepurple.png,          human, f, purple
+base-f/humanfemaleorange.png,          human, f, orange
+base-f/humanfemaleyellow.png,          human, f, yellow
+base-f/humanfemalegold.png,          human, f,  gold
+
+base-f/zombiefemale.png,              zombie, f,
+
+base-f/demonfemale.png,           demon, f,
+base-f/vampirefemale.png,              vampire, f,
+
+base-f/orcfemale.png,                  orc, f,
+base-f/mummyfemale.png,                mummy, f,
+base-f/skeletonfemale.png,             skeleton, f,
+
+base-f/apefemale.png,             ape, f,
+
+base-f/alienfemaleredmagenta.png, alien, f,     red magenta
+base-f/alienfemaleviolet.png,     alien, f,     violet
+
+base-f/robotfemale.png,                robot, f,
