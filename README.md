@@ -1,6 +1,4 @@
 
-Welcome to the Home of the Ordinal Punks Text-To-Image Generation Algorithm ([& Spritesheet](https://github.com/cryptopunksnotdead/punks.spritesheet))
-
 
 
 # cryptopunks libraries, tools & scripts
@@ -26,12 +24,12 @@ More / Experimental
 
 [**Inside the Billion Dollar $$$ (Crypto) Punk Pixel Heads**](insidepunks)
 
-[**Awesome 100 Ordinal Punks (Anno 2023) Notes**](awesome-ordinalpunks) - 24×24 Pixel Art on the (Bitcoin) Blockchain
+[**Awesome 100 Ordinal Punks (Anno 2023) Notes @ Ordinal Punks Org**](https://github.com/ordinalpunks/awesome-ordinalpunks) - 24×24 Pixel Art on the (Bitcoin) Blockchain
 
 
-
-[**100 Ordinal Punks - The Free White Label Quick Starter Edition**](ordinalpunks) - Let's (re)create from zero / scratch a pixel-perfect
+[**100 Ordinal Punks - The Free White Label Quick Starter Edition @ Ordinal Punks Org**](https://github.com/ordinalpunks/ordinalpunks.starter) - Let's (re)create from zero / scratch a pixel-perfect
 copy of the Ordinal Punks collection (Anno 2023) using text prompts ("attributes").
+
 
 
 
@@ -71,6 +69,8 @@ copy of the Ordinal Punks collection (Anno 2023) using text prompts ("attributes
 
 [0xTycoon/punk-blocks](https://github.com/0xTycoon/punk-blocks) - (pixel) punk attributes on-chain
 
+[0xTycoon/punk-identicons](https://github.com/0xTycoon/punk-identicons) - (pixel) punk identicons; generate punks based on a random number
+
 
 
 Anything missing? Yes, you can. Add your source code repo (or step-by-step programming guide).
@@ -87,7 +87,6 @@ Use it as you please with no restrictions whatsoever.
 
 ## Questions? Comments?
 
-Post them on the [D.I.Y. Punk (Pixel) Art reddit](https://old.reddit.com/r/DIYPunkArt). Thanks.
-
+Post them over at the [Help & Support](https://github.com/geraldb/help) page. Thanks.
 
 
