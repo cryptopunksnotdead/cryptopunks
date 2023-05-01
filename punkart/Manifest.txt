@@ -1,0 +1,16 @@
+CHANGELOG.md
+Manifest.txt
+README.md
+Rakefile
+config/bronzecoin.png
+config/dollar.png
+config/goldcoin-back.png
+config/goldcoin-front.png
+config/goldcoin.png
+config/silvercoin.png
+lib/punkart.rb
+lib/punkart/bronzecoin.rb
+lib/punkart/dollar.rb
+lib/punkart/goldcoin.rb
+lib/punkart/silvercoin.rb
+lib/punkart/version.rb

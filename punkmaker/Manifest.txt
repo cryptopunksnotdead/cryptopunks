@@ -1,0 +1,12 @@
+CHANGELOG.md
+Manifest.txt
+README.md
+Rakefile
+config/human-female4.png
+config/human-male4.png
+config/mummy-female.png
+config/mummy-male.png
+lib/punkmaker.rb
+lib/punkmaker/human.rb
+lib/punkmaker/mummy.rb
+lib/punkmaker/version.rb

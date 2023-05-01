@@ -1,0 +1,42 @@
+require 'hoe'
+require './lib/punkart/version.rb'
+
+
+###
+# hack/ quick fix for broken intuit_values - overwrite with dummy
+class Hoe
+  def intuit_values( input ); end
+end
+
+
+Hoe.spec 'punkart' do
+
+  self.version = Pixelart::Module::Punkart::VERSION
+
+
+  self.summary = 'punkart gem - (automagically) turn your "classic" punk (pixel) heads into dollar greenbacks, gold/silver/bronze coins, and much more'
+  self.description = summary
+
+  self.urls    = { home: 'https://github.com/cryptopunksnotdead/cryptopunks' }
+
+  self.author  = 'Gerald Bauer'
+  self.email   = 'gerald.bauer@gmail.com'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'CHANGELOG.md'
+
+  self.extra_deps = [
+    ['pixelart'],
+    ['punks'],
+    ['punkmaker'],
+  ]
+
+  self.licenses = ['Public Domain']
+
+  self.spec_extras = {
+    required_ruby_version: '>= 2.3'
+  }
+
+end
+
