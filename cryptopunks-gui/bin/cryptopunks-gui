@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
 
 require_relative '../app/cryptopunks_gui.rb'
+
+#open/in/my wallet
+
+0xC8a8C4a36ae88821c097D10EFd62f9DEc736729e
