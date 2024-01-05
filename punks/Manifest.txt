@@ -5,6 +5,8 @@ Rakefile
 config/marcs-24x24.csv
 config/marcs-24x24.png
 config/philip-24x24.png
+config/punks-12x12.csv
+config/punks-12x12.png
 config/punks-24x24.csv
 config/punks-24x24.png
 config/punks-32x32.csv
@@ -25,6 +27,7 @@ lib/punks/phunks.rb
 lib/punks/pixelart/generator.rb
 lib/punks/pixelart/spritesheet.rb
 lib/punks/punks.rb
+lib/punks/punks_12.rb
 lib/punks/punks_xl.rb
 lib/punks/saudis.rb
 lib/punks/version.rb

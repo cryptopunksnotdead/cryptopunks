@@ -5,27 +5,28 @@ require 'artfactory/base'
 
 
 ## our own code
-require 'punks/version'    # note: let version always go first
+require_relative 'punks/version'    # note: let version always go first
 
 
-require 'punks/pixelart/spritesheet'
-require 'punks/pixelart/generator'
+require_relative 'punks/pixelart/spritesheet'
+require_relative 'punks/pixelart/generator'
 
 
 ## --- 24x24 series
-require 'punks/punks'
-require 'punks/phunks'
-require 'punks/marilyns'
-require 'punks/philips'
-require 'punks/saudis'
-require 'punks/marcs'
-require 'punks/ye_olde_punks_2017'
+require_relative 'punks/punks'
+require_relative 'punks/phunks'
+require_relative 'punks/marilyns'
+require_relative 'punks/philips'
+require_relative 'punks/saudis'
+require_relative 'punks/marcs'
+require_relative 'punks/ye_olde_punks_2017'
 ## --- 32x32 series
-require 'punks/punks_xl'
-require 'punks/bodies_32'
+require_relative 'punks/punks_xl'
+require_relative 'punks/bodies_32'
 ## --- 40x40 series
-require 'punks/bodies_40'
-
+require_relative 'punks/bodies_40'
+## --- 12x12 series
+require_relative 'punks/punks_12'
 
 
 
@@ -36,6 +37,14 @@ Punks       = Punk
 ## add singular too -why? why not?
 Cryptopunk  = Punk
 CryptoPunk  = Punk
+
+### add some convenience shortcuts / alternate spelling variants
+PunkXS   = Punk12 
+PunkXs   = Punk12
+PunkMini = Punk12
+Punkmini = Punk12
+MiniPunk = Punk12
+Minipunk = Punk12
 
 
 ### add some convenience shortcuts / alternate spelling variants
