@@ -93,28 +93,28 @@ end
 
 resulting in:
 
-![](i/punk0.png) 
-![](i/punk1.png)  
-![](i/punk2.png)  
-![](i/punk3.png)  
-![](i/punk4.png)  
-![](i/punk5.png)  
-![](i/punk6.png)  
-![](i/punk7.png)  
-![](i/punk8.png)  
+![](i/punk0.png)
+![](i/punk1.png)
+![](i/punk2.png)
+![](i/punk3.png)
+![](i/punk4.png)
+![](i/punk5.png)
+![](i/punk6.png)
+![](i/punk7.png)
+![](i/punk8.png)
 ...
 
 4x:
 
-![](i/punk0@4x.png) 
-![](i/punk1@4x.png)  
-![](i/punk2@4x.png)  
-![](i/punk3@4x.png)  
-![](i/punk4@4x.png)  
-![](i/punk5@4x.png)  
-![](i/punk6@4x.png)  
-![](i/punk7@4x.png)  
-![](i/punk8@4x.png)  
+![](i/punk0@4x.png)
+![](i/punk1@4x.png)
+![](i/punk2@4x.png)
+![](i/punk3@4x.png)
+![](i/punk4@4x.png)
+![](i/punk5@4x.png)
+![](i/punk6@4x.png)
+![](i/punk7@4x.png)
+![](i/punk8@4x.png)
 ...
 
 
