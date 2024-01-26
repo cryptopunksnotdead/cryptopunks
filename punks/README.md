@@ -32,11 +32,11 @@ punk.zoom(4).save( "./alien@4x.png" )
 
 resulting in:
 
-![](i/alien.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/alien.png)
 
 4x:
 
-![](i/alien@4x.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/alien@4x.png)
 
 
 or try a batch:
@@ -93,28 +93,28 @@ end
 
 resulting in:
 
-![](i/punk0.png)
-![](i/punk1.png)
-![](i/punk2.png)
-![](i/punk3.png)
-![](i/punk4.png)
-![](i/punk5.png)
-![](i/punk6.png)
-![](i/punk7.png)
-![](i/punk8.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk0.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk1.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk2.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk3.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk4.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk5.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk6.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk7.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk8.png)
 ...
 
 4x:
 
-![](i/punk0@4x.png)
-![](i/punk1@4x.png)
-![](i/punk2@4x.png)
-![](i/punk3@4x.png)
-![](i/punk4@4x.png)
-![](i/punk5@4x.png)
-![](i/punk6@4x.png)
-![](i/punk7@4x.png)
-![](i/punk8@4x.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk0@4x.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk1@4x.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk2@4x.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk3@4x.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk4@4x.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk5@4x.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk6@4x.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk7@4x.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk8@4x.png)
 ...
 
 
@@ -133,11 +133,44 @@ punk.zoom(10).save( "./punk12_alien_green@10x.png" )
 
 resulting in:
 
-![](i/punk12_pink_female@10x.png)
-![](i/punk12_alien_green@10x.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk12_pink_female@10x.png)
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/punk12_alien_green@10x.png)
 
 
 and so on and so forth. 
+
+
+
+
+## Bonus -  Factory of Modern Originals (FoMO)
+
+Do-it-yourself (DIY) - yes, you can! - fab(criate) your own unique punks w/ text attributes (via built-in spritesheets) incl. 2x/4x/8x zoom for bigger sizes and more.
+
+
+Let's try to fab(ricate) a node punk (24×24):
+
+```
+$ fab node maxibiz chinstrap tophat goldchain --zoom=4
+```
+
+resulting in:
+
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/nodepunk_maxibiz@4x.png)
+
+or an ultra-rare (green monster) orc:
+
+```
+$ fab node orc chinstrap_light wildhair_red classicshades --zoom=4
+```
+
+resulting in:
+
+![](https://github.com/cryptopunksnotdead/cryptopunks/raw/master/punks/i/nodepunk_orc@4x.png)
+
+
+
+More [**Factory of Modern Originals (FoMO) »**](https://github.com/profilepic/originals)
+
 
 
 ## Questions? Comments?

@@ -28,6 +28,9 @@ require_relative 'punks/bodies_40'
 ## --- 12x12 series
 require_relative 'punks/punks_12'
 
+## more 
+require_relative 'punks/nodepunks'   # 24x24
+
 
 
 ### add some convenience shortcuts
@@ -76,6 +79,13 @@ PunkV1     = YeOldePunkAnno2017
 Punkv1     = YeOldePunkAnno2017
 PunkV2     = YeOldePunkAnno2017
 Punkv2     = YeOldePunkAnno2017
+
+
+## add Node too as alias - why? why not?
+NodePunk   = Nodepunk
+NodePunks  = Nodepunk
+Nodepunks  = Nodepunk
+
 
 
 ###
