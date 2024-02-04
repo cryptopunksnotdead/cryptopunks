@@ -118,6 +118,7 @@ ATTRIBUTES = {
       'doge_zombie_(a)',
       'doge_alien',
       'doge_alien_(a)',
+      'pig',
       ],
    hair: [
       'blonde_bob',
@@ -149,6 +150,7 @@ ATTRIBUTES = {
       'red_mohawk',
       'red_mohawk_(bmp)',
       'red_mohawk_(doge)',
+      'red_mohawk_(pig)',
       'messy_hair_(m)',
       'messy_hair_(f)',
       'messy_hair_green_(f)',
@@ -349,7 +351,7 @@ ATTRIBUTES = {
         ## fix-up file path by category
         path =  category == :base ? name : "#{category}/#{name}"
 
-        img = Image.read( "../../../../punks.mini/attributes/#{path}.png" )
+        img = Image.read( "../../../punks.mini/attributes/#{path}.png" )
         recs << [name, category, img] 
      end
      recs
