@@ -3,12 +3,14 @@
 #  $  ruby -I lib script/accessories.rb
 
 
-require 'cryptopunks'
+require 'punks'
 
 
-punks = Punks::Dataset.read( './datasets/punks/*.csv' )
+punks = Punks::Dataset.read( '../../punks.attributes/original/cryptopunks-classic.csv' )
 puts "  #{punks.size} punk(s)"
 #=> 10000 punk(s)
+
+
 
 pp punks[0]
 pp punks[1]
@@ -16,10 +18,15 @@ pp punks[2]
 
 punk = punks[0]
 pp punk.id
-pp punk.type.name
+pp punk.type
 pp punk.accessories
-pp punk.accessories[0].name
-pp punk.accessories[0].type.name
+pp punk.accessories[0]
+pp punk.accessories[0]
+
+pp punk.attributes
+pp punk.attributes[0]
+pp punk.attributes[0]
+
 
 
 
@@ -27,13 +34,15 @@ pp punk.accessories[0].type.name
 ## 1) calculate popularity & raririty of types
 counter = Hash.new(0)
 punks.each do |punk|
-  counter[ punk.type.name ] += 1
+  counter[ punk.type ] += 1
 end
 
 pp counter.size
 #=> 5
 pp counter
 #=> {"Female"=>3840, "Male"=>6039, "Zombie"=>88, "Ape"=>24, "Alien"=>9}
+
+
 
 ## sort by count
 counter = counter.sort { |l,r| l[1]<=>r[1] }
@@ -50,18 +59,19 @@ counter.each do |rec|
 end
 
 
+
 ########################################################
 ## 2) calculate popularity & raririty of accessories
 
 counter = {}
 punks.each do |punk|
   punk.accessories.each do |acc|
-    rec = counter[ acc.name ] ||= { count: 0,
-                                    by_type: Hash.new(0)
-                                  }
+    rec = counter[ acc ] ||= { count: 0,
+                               by_type: Hash.new(0)
+                             }
 
     rec[ :count ] += 1
-    rec[ :by_type ][ punk.type.name ] += 1
+    rec[ :by_type ][ punk.type ] += 1
   end
 end
 
@@ -69,7 +79,6 @@ pp counter.size
 #=> 87
 pp counter
 #=>
-
 
 
 ## sort by count
@@ -97,18 +106,52 @@ counter.each do |rec|
 
   print types.map {|type| "#{type[0]} (#{type[1]})" }.join( ' · ')
   print "\n"
-
-
-  ### double check hard-coded limits
-  acc = Punks::Metadata::Accessory.find( name )
-  if acc.limit != count
-    puts "!! ERROR - punk data assertion failed - accessory >#{name}< count expected #{acc.limit}; got #{count}:"
-    pp rec
-    exit 1
-  end
 end
 
 
+
+###############################
+## 4) calculate popularity & raririty of accessory count
+
+counter = Hash.new(0)
+punks.each do |punk|
+  counter[ punk.accessories.size ] += 1
+end
+
+
+pp counter.size
+#=> 8
+pp counter
+#=> {"3"=>4501, "2"=>3560, "1"=>333, "4"=>1420, "5"=>166, "0"=>8, "6"=>11, "7"=>1}
+
+
+
+## sort by count 0,1,2,etc.
+counter = counter.sort { |l,r| l[0]<=>r[0] }
+pp counter
+#=> [["0", 8],
+#    ["1", 333],
+#    ["2", 3560],
+#    ["3", 4501],
+#    ["4", 1420],
+#    ...
+#   ]
+
+
+## pretty print
+counter.each do |rec|
+  name    = rec[0]
+  count   = rec[1]
+  percent =  Float(count*100)/Float(punks.size)
+
+  puts '%-12s | %4d  (%5.2f %%)' % [name, count, percent]
+end
+
+
+
+__END__
+
+# note - accessory type no longer (automagic) part of metadata struct
 
 
 ##########################################################
@@ -179,41 +222,4 @@ end
 
 
 
-
-###############################
-## 4) calculate popularity & raririty of accessory count
-
-counter = Hash.new(0)
-punks.each do |punk|
-  counter[ punk.accessories.size ] += 1
-end
-
-
-pp counter.size
-#=> 8
-pp counter
-#=> {"3"=>4501, "2"=>3560, "1"=>333, "4"=>1420, "5"=>166, "0"=>8, "6"=>11, "7"=>1}
-
-
-
-## sort by count 0,1,2,etc.
-counter = counter.sort { |l,r| l[0]<=>r[0] }
-pp counter
-#=> [["0", 8],
-#    ["1", 333],
-#    ["2", 3560],
-#    ["3", 4501],
-#    ["4", 1420],
-#    ...
-#   ]
-
-
-## pretty print
-counter.each do |rec|
-  name    = rec[0]
-  count   = rec[1]
-  percent =  Float(count*100)/Float(punks.size)
-
-  puts '%-12s | %4d  (%5.2f %%)' % [name, count, percent]
-end
 

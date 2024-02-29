@@ -27,7 +27,7 @@ Hoe.spec 'cryptopunks' do
 
   self.extra_deps = [
     ['pixelart', '>= 1.3.2'],
-    ['punks', '>= 0.2.0'],
+    ['punks', '>= 2024.2.29'],
     ['gli'],
   ]
 

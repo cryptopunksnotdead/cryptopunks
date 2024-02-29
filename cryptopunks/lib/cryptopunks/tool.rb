@@ -301,10 +301,11 @@ desc 'List all punk archetype and attribute names from builtin punk spritesheet'
 command [:l, :ls, :list] do |c|
   c.action do |g,o,args|
 
-    generator = Image.generator
+    # generator = Punk::Image.generator
+    sheet = Punk::Spritesheet.builtin
 
     puts "==> Archetypes"
-    generator.meta.each do |rec|
+    sheet.meta.each do |rec|
       next unless rec.archetype?
 
       print "  "
@@ -315,7 +316,7 @@ command [:l, :ls, :list] do |c|
 
     puts ""
     puts "==> Attributes"
-    generator.meta.each do |rec|
+    sheet.meta.each do |rec|
       next unless rec.attribute?
 
       print "  "
@@ -325,7 +326,7 @@ command [:l, :ls, :list] do |c|
     end
 
     puts ""
-    puts "  See github.com/cryptopunksnotdead/punks.spritesheet for more."
+    puts "  See github.com/openpunkart/punkart.spritesheet for more."
     puts ""
 
     puts 'Done.'

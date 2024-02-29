@@ -32,6 +32,11 @@ require_relative 'punks/punks_12'
 require_relative 'punks/nodepunks'   # 24x24
 
 
+## extra/bonus  - add dataset (csv reader) with metadata struct
+require_relative 'punks/dataset/dataset'
+
+
+
 
 ### add some convenience shortcuts
 Cryptopunks = Punk

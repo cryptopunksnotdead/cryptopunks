@@ -15,23 +15,8 @@ require 'cryptopunks/version'    # note: let version always go first
 
 
 require 'cryptopunks/attributes'
-require 'cryptopunks/structs'
 require 'cryptopunks/composite'
-
-
-## add old backwards compatible alias
-module Punk
-   class Image
-      Composite = ImageComposite
-   end
-end
-
-
-
-require 'cryptopunks/dataset'
-
 require 'cryptopunks/colors'
-require 'cryptopunks/image'
 
 
 ####

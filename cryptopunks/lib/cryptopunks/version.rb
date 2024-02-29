@@ -4,9 +4,9 @@ module Pixelart
 module Module
 module Cryptopunks
 
-  MAJOR = 3
-  MINOR = 0
-  PATCH = 1
+  MAJOR = 2024
+  MINOR = 2
+  PATCH = 29
   VERSION = [MAJOR,MINOR,PATCH].join('.')
 
   def self.version

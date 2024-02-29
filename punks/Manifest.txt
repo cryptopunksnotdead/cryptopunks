@@ -22,6 +22,7 @@ config/yeoldepunks-24x24.png
 lib/punks.rb
 lib/punks/bodies_32.rb
 lib/punks/bodies_40.rb
+lib/punks/dataset/dataset.rb
 lib/punks/marcs.rb
 lib/punks/marilyns.rb
 lib/punks/nodepunks.rb

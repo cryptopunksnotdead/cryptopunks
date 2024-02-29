@@ -4,8 +4,8 @@ module Module
 module Punks
 
   MAJOR = 2024
-  MINOR = 1
-  PATCH = 26
+  MINOR = 2
+  PATCH = 29
   VERSION = [MAJOR,MINOR,PATCH].join('.')
 
   def self.version

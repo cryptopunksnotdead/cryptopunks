@@ -11,8 +11,5 @@ lib/cryptopunks/composite.rb
 lib/cryptopunks/contract/punksdata-assets.rb
 lib/cryptopunks/contract/punksdata-contract.rb
 lib/cryptopunks/contract/punksdata-meta.rb
-lib/cryptopunks/dataset.rb
-lib/cryptopunks/image.rb
-lib/cryptopunks/structs.rb
 lib/cryptopunks/tool.rb
 lib/cryptopunks/version.rb
