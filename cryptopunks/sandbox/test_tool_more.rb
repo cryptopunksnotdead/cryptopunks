@@ -18,7 +18,7 @@ args = ['--file', './morepunks.png',
 
 args = ['--file', './morepunks.png',
         '--offset', '10000',
-        '--dir', './tmp',
+        '--outdir', './tmp',
         'tile', '100', '179', '180', '190'
        ]
 

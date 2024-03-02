@@ -5,8 +5,8 @@ module Module
 module Cryptopunks
 
   MAJOR = 2024
-  MINOR = 2
-  PATCH = 29
+  MINOR = 3
+  PATCH = 2
   VERSION = [MAJOR,MINOR,PATCH].join('.')
 
   def self.version

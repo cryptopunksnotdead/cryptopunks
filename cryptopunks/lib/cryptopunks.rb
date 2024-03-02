@@ -6,7 +6,7 @@ require 'punks'
 ## extra stdlibs
 require 'digest'     ## move/add to pixelart upstream - why? why not?
 require 'optparse'
-require 'gli'        ## used for command line tool
+require 'cmdparse'        ## used for command line tool
 
 
 
@@ -15,7 +15,6 @@ require 'cryptopunks/version'    # note: let version always go first
 
 
 require 'cryptopunks/attributes'
-require 'cryptopunks/composite'
 require 'cryptopunks/colors'
 
 

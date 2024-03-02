@@ -33,7 +33,7 @@
 
 # Crypto Punks
 
-cryptopunks - generate your own 24×24 pixel punk images (off-chain) from the True Official Matt & John's® Punks sha256-verified original 10 000 unique character collection; incl. 2x/4x/8x zoom for bigger sizes
+cryptopunks - generate your own 24×24 pixel punk images from text prompts incl. 2x/4x/8x zoom for bigger sizes  (or crop 'n' save tiles from all-in-one composites incl. the True Official Matt & John's® Punks sha256-verified original 10 000 unique character collection)  
 
 * home  :: [github.com/cryptopunksnotdead/cryptopunks](https://github.com/cryptopunksnotdead/cryptopunks)
 * bugs  :: [github.com/cryptopunksnotdead/cryptopunks/issues](https://github.com/cryptopunksnotdead/cryptopunks/issues)
@@ -67,24 +67,23 @@ VERSION
     3.0.0
 
 GLOBAL OPTIONS
-    -d, --dir,
-    -o, --out, --outdir=DIR - Output directory (default: .)
-    -f, --file=FILE         - All-in-one
-                              composite image (default: ./punks.png)
-    --offset=NUM            - Start counting at offset (default: 0)
-    --seed=NUM              - Seed for random number generation /
-                              shuffle (default: 4142)
-    -z, --zoom=ZOOM         - Zoom factor x2, x4, x8, etc. (default: 1)
+    -o, --out, --dir, --outdir=DIR - Output directory (default: .)
+    -f, --file=FILE                - All-in-one
+                                     composite image (default: ./punks.png)
+    --offset=NUM                   - Start counting at offset (default: 0)
+    --seed=NUM                     - Seed for random number generation /
+                                     shuffle (default: 4142)
+    -z, --zoom=NUM                 - Zoom factor x2, x4, x8, etc. (default: 1)
 
-    --help                  - Show this message
-    --version               - Display the program version
-    --verbose               - (Debug) Show debug messages
+    --help                         - Show this message
+    --version                      - Display the program version
+    --verbose                      - (Debug) Show debug messages
 
 
 COMMANDS
-    g, gen, generate - Generate punk characters from text attributes (from
+    g, gen,          - Generate punk characters from text attributes (from
                        scratch / zero) via builtin punk spritesheet
-    l, ls, list      - List all punk archetype and attribute names from builtin
+    l, ls            - List all punk archetype and attribute names from builtin
                        punk spritesheet
     q, query         - Query (builtin off-chain) punk contract for punk text
                        attributes by IDs - use 0 to 9999
@@ -107,7 +106,7 @@ _Generate punk characters from text attributes (from scratch / zero) via builtin
 Let's try punk #0:
 
 ```
-$ punk generate female_2 earring blonde_bob green_eye_shadow
+$ punk gen female_2 earring blonde_bob green_eye_shadow
 ```
 
 resulting in:
@@ -117,9 +116,9 @@ resulting in:
 Let's try  the `-z/--zoom` factor 2x, 4x, 8x, etc.:
 
 ```
-$ punk --zoom 4 generate female_2 earring blonde_bob green_eye_shadow
+$ punk --zoom=4 gen female_2 earring blonde_bob green_eye_shadow
 # -or-
-$ punk -z2 g female_2 earring blonde_bob green_eye_shadow
+$ punk -z4 g female_2 earring blonde_bob green_eye_shadow
 ```
 
 resulting in:
@@ -132,8 +131,8 @@ resulting in:
 Let's try never-before-seen super-rare punks:
 
 ```
-$ punk generate demon heart_shades
-$ punk generate vampire_female wild_hair
+$ punk gen demon heart_shades
+$ punk gen vampire_female wild_hair
 ```
 
 resulting in:
@@ -156,9 +155,9 @@ _List all punk archetype and attribute names from builtin punk spritesheet_
 Let's try:
 
 ```
-$ punk list
-# -or-
 $ punk ls
+# -or-
+$ punk l
 ```
 
 resulting in:
@@ -391,7 +390,7 @@ And voila!
 Let's give it a try.  Let's save punk #0, #2890, and #8219 in 2x format:
 
 ```
-$ punk --zoom 2 tile 0 2890 8219
+$ punk --zoom=2 tile 0 2890 8219
 # -or-
 $ punk -z2 t 0 2890 8219
 ```
@@ -456,7 +455,7 @@ and let's add an offset of 10000
 (to start counting at 10000 instead of 0):
 
 ```
-$ punk --file ./more-punks-1.png --offset 10000 tile 0 18 40 88
+$ punk --file=./more-punks-1.png --offset=10000 tile 0 18 40 88
 ```
 
 printing:
@@ -500,7 +499,7 @@ and let's add an offset of 10100
 (to start counting at 10000 plus 100 instead of 0):
 
 ```
-$ punk --file ./more-punks-2.png --offset 10100 tile 0 79 80 90
+$ punk --file=./more-punks-2.png --offset=10100 tile 0 79 80 90
 ```
 
 printing:
@@ -550,7 +549,7 @@ all punks. Phree the phunks! Let's give it a try:
 ```
 $ punk flip
 #  - same as -
-$ punk --file ./punks.png flip
+$ punk --file=./punks.png flip
 ```
 
 printing:
@@ -571,7 +570,7 @@ Yes, you can.  Use any all-in-one composite image in the 24x24 format. Use the `
 Example - let's flip the 1000 More Punks collection:
 
 ```
-$ punk --file ./morepunks.png flip
+$ punk --file=./morepunks.png flip
 ```
 
 And so on.
@@ -590,7 +589,7 @@ Let's give it a try:
 ```
 $ punk shuffle
 #  - same as -
-$ punk --file ./punks.png --seed 4142 shuffle
+$ punk --file=./punks.png --seed=4142 shuffle
 ```
 
 printing:
@@ -630,7 +629,7 @@ Yes, you can.  Use any all-in-one composite image in the 24x24 format. Use the `
 Example - let's shuffle the 1000 More Punks collection:
 
 ```
-$ punk --file ./morepunks.png shuffle
+$ punk --file=./morepunks.png shuffle
 ```
 
 And so on.

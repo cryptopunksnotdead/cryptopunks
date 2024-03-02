@@ -9,7 +9,7 @@ require 'cryptopunks'
 pp ARGV
 
 
-args = ['--dir', './tmp',
+args = ['--outdir', './tmp',
       #  '--seed', '1234',
         'shuffle',
        ]

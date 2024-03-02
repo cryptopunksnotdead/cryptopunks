@@ -9,7 +9,7 @@ require 'cryptopunks'
 pp ARGV
 
 
-args = ['list',
+args = ['ls',
        ]
 
 Punk.main( args )

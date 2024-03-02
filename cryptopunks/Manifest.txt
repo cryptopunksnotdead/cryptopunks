@@ -7,7 +7,6 @@ bin/punk
 lib/cryptopunks.rb
 lib/cryptopunks/attributes.rb
 lib/cryptopunks/colors.rb
-lib/cryptopunks/composite.rb
 lib/cryptopunks/contract/punksdata-assets.rb
 lib/cryptopunks/contract/punksdata-contract.rb
 lib/cryptopunks/contract/punksdata-meta.rb
